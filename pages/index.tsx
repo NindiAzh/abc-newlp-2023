@@ -1,5 +1,5 @@
-import Button from '@components/button'
-import Head from 'next/head'
+import Button from "@components/button"
+import Head from "next/head"
 
 export default function Home() {
   return (
