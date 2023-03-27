@@ -1,6 +1,13 @@
-import Button from '@components/button'
-import Head from 'next/head'
-import Layout from "@components/layout"
+import Head from "next/head";
+import Layout from "@components/layout";
+
+import Hero from "../components/Hero";
+import Stats from "@components/Stats";
+import Solution from "@components/Solution";
+import Belief from "@components/Belief";
+import Project from "@components/Project";
+import Client from "@components/Client";
+import Newsletter from "@components/Newsletter";
 
 export default function Home() {
   return (
@@ -8,16 +15,23 @@ export default function Home() {
       <Head>
         <title>Art By Code</title>
         <meta name="description" content="Art By Code" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="keywords" content="Art By Code" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <main>
-        <div className="flex py-4">
-          <Button>
-            Ini Button
-          </Button>
+        <div className="container w-full">
+          <Hero />
+          <Stats />
+          <Solution />
+        </div>
+          <Belief />
+        <div className="container w-full">
+          <Project />
+          <Client/>
+          <Newsletter/>
         </div>
       </main>
     </>
-  )
+  );
 }
