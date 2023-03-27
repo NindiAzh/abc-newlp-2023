@@ -8,7 +8,7 @@ interface Props {
 
 export default function Layout({ children }: Props) {
   return (
-    <div className="p-4">
+    <div>
       <Navbar />
       <main>{children}</main>
       <Footer />
