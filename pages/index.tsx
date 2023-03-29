@@ -16,7 +16,6 @@ export default function Home() {
         <title>Art By Code</title>
         <meta name="description" content="Art By Code" />
         <meta name="keywords" content="Art By Code" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
