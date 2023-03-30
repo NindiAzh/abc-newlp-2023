@@ -72,7 +72,7 @@ export default function Navbar() {
 
       {/* Mobile Nav */}
       <div
-        className={`container absolute duration-500 bg-white py-8 z-50 block xl:hidden ${
+        className={`container absolute duration-500 bg-white py-10 z-50 block xl:hidden ${
           open
             ? "translate-y-0 z-50 opacity-100"
             : "-translate-y-96 z-0 opacity-0"
@@ -82,7 +82,7 @@ export default function Navbar() {
           {navigation.map((nav, index) => (
             <li
               key={index}
-              className="text-lg mb-2 text-gray-600 font-semibold hover:text-green-600  duration-200"
+              className="text-lg mb-2 text-gray-600 font-semibold hover:text-green-600 duration-200"
             >
               <Link href={nav.path} legacyBehavior>
                 <a className={router.pathname === nav.path ? "active" : ""}>

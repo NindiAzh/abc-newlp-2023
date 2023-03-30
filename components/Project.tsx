@@ -1,5 +1,6 @@
 import Judul from "@components/judul";
 import Tema from "@components/tema";
+import Image from "next/image";
 import ProjectsItem from "./ProjectsItem";
 
 export default function Project() {
@@ -8,6 +9,22 @@ export default function Project() {
       <div className="grid grid-cols-12 py-20 sm:py-24">
         <Judul>Art By Code</Judul>
         <Tema>Project Kami</Tema>
+        <div className="overflow-hidden absolute -left-12">
+          <Image
+            src="/gradient-project.svg"
+            alt=""
+            width={1427.5}
+            height={841.5}
+            className="lg:block hidden relative w-[1427.5px] h-[841.5px] object-cover xl:-top-0"
+          ></Image>
+          <Image
+            className="lg:hidden block relative w-[1427.5px] h-[841.5px] object-cover md:-top-10 -top-20"
+            src="/gradient-project-mobile.svg"
+            alt=""
+            width={1427.5}
+            height={841.5}
+          />
+        </div>{" "}
         <p className="col-span-full xl:w-4/6 lg:w-5/6 text-grey-600 mx-auto text-center text-xl leading-[30px]">
           Dari desain website yang menakjubkan hingga aplikasi yang mudah
           digunakan dan lain-lain, kami sangat bangga dengan proyek-proyek kami

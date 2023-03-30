@@ -1,22 +1,11 @@
 import Image from "next/image";
 import Button from "./button";
 import Gradient1 from "./gradient/gradient1";
-import Gradient2 from "./gradient/gradient2";
-import Gradient3 from "./gradient/gradient3";
-import Gradient4 from "./gradient/gradient4";
 
 export default function Hero() {
   return (
     <section className="mt-10 py-10 sm:py-20">
-      {/* bg-gradient hero */}
       <Gradient1 />
-      {/* bg-gradient solution */}
-      <Gradient2 />
-      {/* bg-gradient project */}
-      <Gradient3 />
-      {/* bg-gradient klien */}
-      <Gradient4 />
-
       <div className="mx-auto grid lg:grid-cols-2 gap-0">
         <div className="flex flex-col justify-center lg:mx-0 mx-0">
           <h3 className="md:text-xl text-base text-green-600 font-semibold">

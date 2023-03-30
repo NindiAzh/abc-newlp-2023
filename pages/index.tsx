@@ -1,6 +1,5 @@
 import Head from "next/head";
-import Layout from "@components/layout";
-
+import Gradient2 from "../components/gradient/gradient2";
 import Hero from "../components/Hero";
 import Stats from "@components/Stats";
 import Solution from "@components/Solution";
@@ -23,13 +22,14 @@ export default function Home() {
         <div className="container w-full">
           <Hero />
           <Stats />
+          <Gradient2 />
           <Solution />
         </div>
-          <Belief />
+        <Belief />
         <div className="container w-full">
           <Project />
-          <Client/>
-          <Newsletter/>
+          <Client />
+          <Newsletter />
         </div>
       </main>
     </>

@@ -8,6 +8,17 @@ export default function Client() {
       <div className="grid grid-cols-12 py-10 sm:py-24">
         <Judul>Art By Code</Judul>
         <Tema>Klien Kami</Tema>
+        <div className="overflow-hidden absolute -left-32">
+        <Image
+          src="/gradient-klien.svg"
+          alt=""
+          width={1427.5}
+          height={841.5}
+          className="lg:block hidden relative w-[1427.5px] h-[841.5px] object-cover "
+        ></Image>
+        <Image  className="lg:hidden block relative w-[1427.5px] h-[841.5px] object-cover " src='/gradient-klien-md.svg' alt=""  width={1427.5}
+          height={841.5}/>
+      </div>{" "}
         <p className="col-span-full xl:w-4/6 lg:w-5/6 text-grey-600 mx-auto text-center text-xl leading-[30px]">
           Bergabunglah dengan daftar klien puas kami yang telah mengalami
           layanan dan keahlian luar biasa yang kami tawarkan. Temukan bagaimana

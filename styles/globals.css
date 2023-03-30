@@ -2,10 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  overflow-x: hidden;
+}
 
 .active {
-    @apply text-green-600;
-  }
-
-
+  @apply text-green-600;
+}
 
