@@ -3,7 +3,6 @@ import Link from "next/link";
 import React from "react";
 import Newsletter from "@components/Newsletter";
 import Gradient1 from "../components/gradient/gradient1";
-import Gradient6 from "../components/gradient/gradient6";
 
 export default function solusi() {
   const appdev = [
@@ -80,7 +79,6 @@ export default function solusi() {
       {/* App Dev */}
       <section>
         <Gradient1 />
-        <Gradient6 />
         <div className="container grid grid-cols-12 py-10 sm:py-24 text-start">
           <h2 className="text-base font-semibold leading-[24px] text-green-600 flex">
             APP <span className="mx-1">DEVELOPMENT</span>
@@ -217,6 +215,23 @@ export default function solusi() {
             Buatlah Pengalaman Pengguna yang Menarik dan Tingkatkan Desain Anda
             dengan Solusi Pengembangan UI/UX Kami yang Komprehensif.
           </h2>
+          {/* gradient */}
+          <div className="absolute">
+            <Image
+              className="relative w-[1427.5px] h-[841.5px]"
+              src="/gradient-solusi-page1.svg"
+              alt=""
+              width={1427.5}
+              height={841.5}
+            />
+            <Image
+              className="relative w-[1427.5px] h-[841.5px] -top-44 -left-28"
+              src="/gradient-solusi-page2.svg"
+              alt=""
+              width={1427.5}
+              height={841.5}
+            />
+          </div>
           <p className="mt-[20px] col-span-full text-grey-600 md:text-xl text-lg leading-[30px] max-w-3xl">
             Di Art By Code, kami percaya bahwa desain yang baik lebih dari
             sekadar estetika - ini tentang menciptakan pengalaman yang dicintai

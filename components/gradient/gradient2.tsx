@@ -1,29 +1,20 @@
+import Image from "next/image";
 import React from "react";
 
 export default function gradient2() {
   return (
     <>
-<div className="absolute -inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-[50px] sm:-top-20">
-    <svg className="relative left-[calc(50%-11rem)] -z-10 h-[90.1875rem] max-w-none -translate-x-1/2 rotate-[0deg] sm:left-[calc(30%-30rem)] sm:h-[75.375rem] lg:mt-[750px] md:mt-[1850px] mt-[2400px]" viewBox="0 0 1155 678">
-      <path d="M106 109L1533.5 950.5" stroke="url(#paint0_linear_1354_93351)" strokeOpacity="0.5" strokeWidth={20} />
-      <defs>
-        <linearGradient id="paint0_linear_1354_93351" x1="819.75" y1={109} x2="819.75" y2="950.5" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#1DC0AD" />
-          <stop offset={1} stopColor="#1DC0AD" stopOpacity={0} />
-        </linearGradient>
-      </defs>
-    </svg>
+<div className="overflow-hidden hidden md:block absolute -inset-x-0 -top-40 -z-10">
+  <Image className="relative w-[1427.5px] h-[841.5px] lg:left-[calc(20%-20rem)] md:left-0 lg:mt-[1250px] md:mt-[1900px]" src='/gradient-solusi1.svg' alt="" width={1427.5} height={841.5}/>
   </div>
-  <div className="absolute -inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-[50px] sm:-top-20">
-    <svg className="relative left-[calc(50%-11rem)] -z-10 h-[90.1875rem] max-w-none -translate-x-1/2 rotate-[0deg] sm:left-[calc(70%-30rem)] sm:h-[70.375rem] lg:mt-[750px] mt-[1400px]" viewBox="0 0 1155 678">
-      <path d="M106 109L1533.5 950.5" stroke="url(#paint0_linear_1354_93351)" strokeOpacity="0.5" strokeWidth={20} />
-      <defs>
-        <linearGradient id="paint0_linear_1354_93351" x1="819.75" y1={109} x2="819.75" y2="950.5" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#1DC0AD" />
-          <stop offset={1} stopColor="#1DC0AD" stopOpacity={0} />
-        </linearGradient>
-      </defs>
-    </svg>
-  </div>    </>
+  <div className="overflow-hidden hidden md:block absolute -inset-x-0 lg:-top-24 md:top-14 -z-10">
+    <Image className="relative w-[1427.5px] h-[841.5px] lg:left-[calc(40%-20rem)] md:left-[calc(75%-20rem)] lg:mt-[1250px] md:mt-[1700px]" src='/gradient-solusi2.svg' alt="" width={1427.5} height={841.5}/>
+  </div>
+ 
+ {/* For Mobile */}
+ <div className="overflow-hidden absolute block md:hidden top-0 left-0 -z-10">
+    <Image className="relative mt-[1530px] w-[1427.5px] h-[841.5px]" src='/gradient-solusi2.svg' alt="" width={1427.5} height={841.5}/>
+  </div>
+  </>
   );
 }

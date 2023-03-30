@@ -4,7 +4,7 @@ import Button from "./button";
 
 export default function Newsletter() {
   return (
-    <div className="bg-green-50 rounded-2xl py-16 sm:py-18 lg:py-20 md:mt-[96px] mt-20 lg:flex lg:items-center lg:justify-between 2xl:p-20 xl:p-14 lg:p-10 md:p-10 p-6">
+    <div className="bg-green-50 rounded-2xl py-16 sm:py-18 lg:py-20 md:mt-[96px] mt-20 md:flex md:items-center md:justify-between 2xl:p-20 xl:p-14 lg:p-10 md:p-10 p-6">
       <Image
         className="md:text-start md:mx-0 text-center mx-auto"
         src="/icon-newsletter.svg"
@@ -12,7 +12,7 @@ export default function Newsletter() {
         width={137}
         height={137}
       />
-      <div className="xl:px-10 lg:px-12 xl:mt-0 lg:mt-0 mt-8">
+      <div className="xl:px-10 lg:px-12 xl:mt-0 lg:mt-0 md:mx-8 mt-8">
         <h1 className="text-grey-900 lg:text-3xl text-2xl font-semibold leading-[38px] ">
           Apakah kamu siap?
         </h1>

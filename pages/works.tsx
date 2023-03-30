@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import Gradient1 from "../components/gradient/gradient1";
-import Gradient5 from "../components/gradient/gradient5";
 import Judul from "@components/judul";
 import Tema from "@components/tema";
 import Newsletter from "@components/Newsletter";
@@ -120,6 +119,20 @@ export default function works() {
       link: "View integration",
       href: "#",
     },
+    {
+      name: "Figma",
+      description: "Untuk berkelanjutan komunikasi dengan tim",
+      imageSrc: "/figma.svg",
+      link: "View integration",
+      href: "#",
+    },
+    {
+      name: "Whimsical",
+      description: "Untuk merancang dan menyajikandesain maket",
+      imageSrc: "/whimsical.svg",
+      link: "View integration",
+      href: "#",
+    },
   ];
 
   const toolTwo = [
@@ -142,7 +155,6 @@ export default function works() {
   return (
     <section>
       <Gradient1 />
-      <Gradient5 />
 
       {/* Collab */}
       <div className="container overflow-hidden py-16 sm:py-32">
@@ -254,6 +266,24 @@ export default function works() {
             <p className="mt-[14px] text-2xl font-semibold text-grey-900 sm:text-3xl">
               Kami percaya dengan kode yang bersih
             </p>
+            {/* gradient */}
+            <div className="absolute lg:block hidden">
+              <Image
+                className="relative w-[1427.5px] h-[841.5px] top-96 -z-10"
+                src="/gradient-work-page1.svg"
+                alt=""
+                width={1427.5}
+                height={841.5}
+              />
+              <Image
+                className="relative w-[1427.5px] h-[841.5px] -top-44 -left-28"
+                src="/gradient-work-page2.svg"
+                alt=""
+                width={1427.5}
+                height={841.5}
+              />
+            </div>
+
             <p className="mt-4 md:text-lg text-base leading-7 text-grey-600">
               Kode yang bersih dapat berbicara lebih jelas dibandingkan dengan
               catatan berwarna yang menumpuk - kami belajar dari pengalaman.
@@ -431,7 +461,7 @@ export default function works() {
       </div>
 
       {/* Alat Kolaborasi */}
-      <div className="grid grid-cols-12 py-24 sm:py-24">
+      <div className="container grid grid-cols-12 py-24 sm:py-24">
         <Judul>Art By Code</Judul>
         <Tema>Alat Kolaborasi Kami</Tema>
         <p className="col-span-full xl:w-4/6 lg:w-5/6 text-grey-600 mx-auto text-center sm:text-xl text-lg leading-[30px]">
@@ -441,14 +471,13 @@ export default function works() {
           dapat mencapai hal-hal luar biasa!
         </p>
       </div>
-
       {/* Line 1 */}
       <div className="mx-auto max-w-7xl py-4 sm:px-2 sm:py-16 lg:px-4">
-        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-y-10 gap-x-8 px-4 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-y-10 gap-x-8 px-4 lg:max-w-none lg:grid-cols-3 md:grid-cols-2">
           {toolOne.map((toolOnes) => (
             <div
               key={toolOnes.name}
-              className="text-center sm:flex sm:text-left lg:block lg:text-center"
+              className="text-center sm:flex sm:text-left md:block md:text-center"
             >
               <div className="sm:flex-shrink-0">
                 <div className="flow-root">
@@ -470,38 +499,18 @@ export default function works() {
                 </p>
                 <div className="relative mt-[20px] flex">
                   <div className="mt-0 flex mx-auto text-center">
-                    <a
-                      href="#"
-                      className="text-base text-green-600"
-                    >
-                     View integration{" "}
-                      <span aria-hidden="true">&rarr;</span>
+                    <a href="#" className="text-base text-green-600">
+                      View integration <span aria-hidden="true">&rarr;</span>
                     </a>
                   </div>
-                  {/* <a
-                    target="_blank"
-                    key={toolOnes.name}
-                    href={toolOnes.href}
-                    className="text-base text-green-600 mx-auto text-center"
-                  >
-                   <span>{toolOnes.link}</span>
-                  </a> */}
-                  {/* <Image
-                    className="absolute xl:left-64 lg:left-[213px] md:left-[218px] left-[258px] top-2"
-                    src="/arrow.svg"
-                    alt=""
-                    width={11.67}
-                    height={11.67}
-                  /> */}
                 </div>
               </div>
             </div>
           ))}
         </div>
       </div>
-
       {/* Line 2 */}
-      <div className="mx-auto max-w-7xl py-4 sm:px-2 lg:-my-0 md:-my-10 lg:px-4">
+      {/* <div className="mx-auto max-w-7xl py-4 sm:px-2 lg:-my-0 md:-my-10 lg:px-4">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-y-10 gap-x-8 px-4 lg:max-w-none lg:grid-cols-2">
           {toolTwo.map((toolTwos) => (
             <div
@@ -527,37 +536,11 @@ export default function works() {
                   {toolTwos.description}
                 </p>
                 <div className="relative mt-[20px] flex">
-                <div className="mt-0 flex mx-auto text-center">
-                    <a
-                      href="#"
-                      className="text-base text-green-600"
-                    >
-                     View integration{" "}
-                      <span aria-hidden="true">&rarr;</span>
+                  <div className="mt-0 flex mx-auto text-center">
+                    <a href="#" className="text-base text-green-600">
+                      View integration <span aria-hidden="true">&rarr;</span>
                     </a>
-                  </div>
-                  {/* <a
-                    target="_blank"
-                    key={toolTwos.name}
-                    href={toolTwos.href}
-                    className="text-base text-green-600 mx-auto text-center"
-                  >
-                    {toolTwos.link}
-                  </a>
-                  <Image
-                    className="absolute xl:left-[359px] lg:left-[295px] md:left-[224px] left-[258px] top-2"
-                    src="/arrow.svg"
-                    alt=""
-                    width={11.67}
-                    height={11.67}
-                  /> */}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
+                  </div> */}
       <div className="container">
         <Newsletter />
       </div>
