@@ -4,8 +4,10 @@ import Gradient1 from "../components/gradient/gradient1";
 import Judul from "@components/judul";
 import Tema from "@components/tema";
 import Newsletter from "@components/Newsletter";
+import { GetStaticProps } from "next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-export default function works() {
+export default function Works() {
   const collab = [
     {
       name: "Perencanaan Project",
@@ -547,3 +549,15 @@ export default function works() {
     </section>
   );
 }
+
+export const getStaticProps: GetStaticProps = async ({
+  locale,
+}) => ({
+  props: {
+    ...(await serverSideTranslations(locale ?? 'id', [
+      'common',
+      'footer',
+      'navbar'
+    ])),
+  },
+})

@@ -1,9 +1,13 @@
+import { GetStaticProps } from "next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Image from "next/image";
 import React from "react";
+import { Trans, useTranslation } from "next-i18next";
 import Gradient1 from "../components/gradient/gradient1";
 
+export default function Contact() {
+  const { t } = useTranslation()
 
-export default function contact() {
   return (
     <>
      <Gradient1 />
@@ -24,11 +28,10 @@ export default function contact() {
                 CONTACT ME
               </h2>
               <p className="col-span-full text-grey-900 font-semibold text-4xl md:text-5xl mb-[10px]">
-                Apakah kamu siap?
+                {t('contact.title')}
               </p>
               <p className="mt-[40px] col-span-full xl:w-11/12 lg:w-5/6 text-grey-600 md:text-xl text-lg leading-[30px]">
-                Kami selalu siap untuk menjawab segala pertanyaan dan kebutuhan
-                kamu
+                {t('contact.desc')}
               </p>
               <form
                 action="#"
@@ -41,12 +44,12 @@ export default function contact() {
                       htmlFor="first-name"
                       className="block text-sm font-semibold leading-6 text-gray-900"
                     >
-                      Nama depan
+                      {t('form.first_name')}
                     </label>
                     <div className="mt-2.5">
                       <input
                         type="text"
-                        placeholder="Nama depan kamu"
+                        placeholder={`${t('form.first_name')}`}
                         name="first-name"
                         id="first-name"
                         autoComplete="given-name"
@@ -59,12 +62,12 @@ export default function contact() {
                       htmlFor="last-name"
                       className="block text-sm font-semibold leading-6 text-gray-900"
                     >
-                      Nama belakang
+                      {t('form.last_name')}
                     </label>
                     <div className="mt-2.5">
                       <input
                         type="text"
-                        placeholder="Nama belakang kamu"
+                        placeholder={`${t('form.last_name')}`}
                         name="last-name"
                         id="last-name"
                         autoComplete="family-name"
@@ -95,12 +98,12 @@ export default function contact() {
                       htmlFor="name"
                       className="block text-sm font-semibold leading-6 text-gray-900"
                     >
-                      Nama Organisasi
+                      {t('form.organization')}
                     </label>
                     <div className="mt-2.5">
                       <input
                         type="text"
-                        placeholder="Beri tahu kami nama organisasi kamu"
+                        placeholder={`${t('form.organization')}`}
                         name="name-organisasi"
                         id="name-organisasi"
                         autoComplete="email"
@@ -113,12 +116,12 @@ export default function contact() {
                       htmlFor="message"
                       className="block text-sm font-semibold leading-6 text-gray-900"
                     >
-                      Pesan
+                      {t('form.message')}
                     </label>
                     <div className="mt-2.5">
                       <textarea
                         name="message"
-                        placeholder="Leave us a message..."
+                        placeholder={`${t('form.message')}`}
                         id="message"
                         rows={4}
                         className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -257,12 +260,14 @@ export default function contact() {
                   </div>
                 </fieldset>
                 <div className="mt-10">
-                  <button
-                    type="submit"
-                    className="block w-full rounded-md bg-grey-900 px-3.5 py-2.5 text-center text-base font-semibold text-white shadow-sm hover:bg-green-600"
-                  >
-                    Aku siap, Kirimkan Pesan!
-                  </button>
+                  <Trans i18nKey="form.submit">
+                    <button
+                      type="submit"
+                      className="block w-full rounded-md bg-grey-900 px-3.5 py-2.5 text-center text-base font-semibold text-white shadow-sm hover:bg-green-600"
+                    >
+                      Aku siap, Kirimkan Pesan!
+                    </button>
+                  </Trans>
                 </div>
               </form>
             </div>
@@ -272,3 +277,15 @@ export default function contact() {
     </>
   );
 }
+
+export const getStaticProps: GetStaticProps = async ({
+  locale,
+}) => ({
+  props: {
+    ...(await serverSideTranslations(locale ?? 'id', [
+      'common',
+      'footer',
+      'navbar'
+    ])),
+  },
+})

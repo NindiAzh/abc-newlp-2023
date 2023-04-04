@@ -2,12 +2,14 @@ import { Fragment } from "react";
 import { Tab } from "@headlessui/react";
 import ProjectsItem from "../components/ProjectsItem";
 import Gradient1 from "../components/gradient/gradient1";
+import { GetStaticProps } from "next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function project() {
+export default function Project() {
   const tabs = [
     {
       name: "Mobile",
@@ -108,3 +110,15 @@ export default function project() {
     </>
   );
 }
+
+export const getStaticProps: GetStaticProps = async ({
+  locale,
+}) => ({
+  props: {
+    ...(await serverSideTranslations(locale ?? 'id', [
+      'common',
+      'footer',
+      'navbar'
+    ])),
+  },
+})

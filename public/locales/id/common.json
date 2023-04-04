@@ -1,0 +1,52 @@
+{
+  "more": "<0>Mau tau lebih banyak</0>",
+  "contact_us": "<0>Hubungi kami</0>",
+  "belief": "Kami percaya pada pemberdayaan teknologi untuk semua, dan sadar bahwa <2>kami dapat membuat perubahan dengan memberikan layanan teknologi yang berkualitas</2>",
+  "home": {
+    "header": {
+      "title": "Hai, kami adalah Art By Code | ABC",
+      "desc": "Ayo ciptakan sesuatu yang <2>indah</2> dengan sebuah ",
+      "code": "kode"
+    },
+    "solution": {
+      "title": "Solusi Kami",
+      "desc": "Kami mengerti bahwa Kamu ingin fokus ke membuat ide dan kebutuhan bisnis Kamu menjadi realita. Para ahli dari kami siap membantu menenangkan pikiran Kamu - Ayo kita mulai membuat seni dari kode!",
+      "apps": "Hampir semua orang punya dan bawa telepon genggam kemanapun. Tunggu apa lagi?",
+      "web": "Tuangkan semua ide yang telah Anda simpan selama ini untuk website Anda, saatnya kami mewujudkan semuanya",
+      "uiux": "Apa yang pertama kali dilihat saat membuka web/aplikasi? Jelas penampilan dan lalu penggunaannya"
+    },
+    "project": {
+      "title": "Project Kami",
+      "desc": "Dari desain website yang menakjubkan hingga aplikasi yang mudah digunakan dan lain-lain, kami sangat bangga dengan proyek-proyek kami yang telah selesai"
+    },
+    "client": {
+      "title": "Klien Kami",
+      "desc": "Bergabunglah dengan daftar klien puas kami yang telah mengalami layanan dan keahlian luar biasa yang kami tawarkan. Temukan bagaimana kami telah membantu bisnis seperti milikmu mencapai tujuan mereka."
+    },
+    "contact": {
+      "title": "Apakah kamu siap?",
+      "desc": "Kami selalu siap untuk menjawab segala pertanyaan dan kebutuhan kamu"
+    }
+  },
+  "about": {
+    "help": {
+      "title": "Siapa yang kami bantu?",
+      "desc": "Dari usaha kecil, menengah, sampai dengan besar yang mencari teknologidalam pekembangan dan efisiensi bisnis. Kami bertujuan untuk menjadirekan strategis, jangka panjang yang dapat mewujudkan kebutuhan danjuga menjadi lawan diskusi dari para rekan kami."
+    },
+    "belief": {
+      "title": "Apa yang kamu percayai?",
+      "desc": "Bekerjalah dengan sepenuh hati integritas untuk memberikan hasil yangterbaik, karena kesuksesan rekankami akan menjadi pendiri kita untukbisa lebih berkembang juga"
+    }
+  },
+  "contact": {
+    "title": "Apakah kamu siap?",
+    "desc": "Kami selalu siap untuk menjawab segala pertanyaan dan kebutuhan kamu"
+  },
+  "form": {
+    "first_name": "Nama depan",
+    "last_name": "Nama belakang",
+    "organization": "Nama Organisasi",
+    "message": "Pesan",
+    "submit": "<0>Aku siap, Kirimkan Pesan!</0>"
+  }
+}

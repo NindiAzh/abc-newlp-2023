@@ -1,14 +1,17 @@
 import Judul from "@components/judul";
 import Tema from "@components/tema";
 import Image from "next/image";
+import { useTranslation } from "next-i18next";
 import ProjectsItem from "./ProjectsItem";
 
 export default function Project() {
+  const { t } = useTranslation()
+
   return (
     <>
       <div className="grid grid-cols-12 py-20 sm:py-24">
         <Judul>Art By Code</Judul>
-        <Tema>Project Kami</Tema>
+        <Tema>{t('home.project.title')}</Tema>
         <div className="overflow-hidden absolute -left-12">
           <Image
             src="/gradient-project.svg"
@@ -26,9 +29,7 @@ export default function Project() {
           />
         </div>{" "}
         <p className="col-span-full xl:w-4/6 lg:w-5/6 text-grey-600 mx-auto text-center text-xl leading-[30px]">
-          Dari desain website yang menakjubkan hingga aplikasi yang mudah
-          digunakan dan lain-lain, kami sangat bangga dengan proyek-proyek kami
-          yang telah selesai
+          {t('home.project.desc')}
         </p>
       </div>
 

@@ -1,0 +1,52 @@
+{
+  "more": "<0>Want to know more</0>",
+  "contact_us": "<0>Contact us</0>",
+  "belief": "We believe in empowering technology for all, and realize that <2>we can make a difference by providing quality technology services</2>",
+  "home": {
+    "header": {
+      "title": "Hello, we are Art By Code | ABC",
+      "desc": "Let's create something <2>beautiful</2> with a ",
+      "code": "code"
+    },
+    "solution": {
+      "title": "Solution",
+      "desc": "We understand that you want to focus on making your business ideas and needs a reality. Our experts are ready to help ease your mind - Let's start creating art from code",
+      "apps": "With almost everyone having a mobile phone and bringing it everywhere. What are you waiting for?",
+      "web": "Pour out all the ideas you have been keeping for your website, it's time for us to make them a reality",
+      "uiux": "Appearance and usability are the first things noticed when opening a website/application"
+    },
+    "project": {
+      "title": "Our Projects",
+      "desc": "From stunning website designs to user-friendly apps and more, we take great pride in our past projects"
+    },
+    "client": {
+      "title": "Our Clients",
+      "desc": "Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups."
+    },
+    "contact": {
+      "title": "Are you ready?",
+      "desc": "We are always ready to answer all your questions and meet your needs"
+    }
+  },
+  "about": {
+    "help": {
+      "title": "Who do we help?",
+      "desc": "From small to large businesses seeking technology in business development and efficiency. We aim to become a strategic, long-term partner who can fulfill their needs and also serve as a discussion partner for our colleagues."
+    },
+    "belief": {
+      "title": "What do you believe in?",
+      "desc": "Work with integrity and wholeheartedly to deliver the best results, because the success of our colleagues will be the foundation for us to grow as well"
+    }
+  },
+  "contact": {
+    "title": "Are you ready?",
+    "desc": "We are always ready to answer all your questions and meet your needs"
+  },
+  "form": {
+    "first_name": "First name",
+    "last_name": "Last name",
+    "organization": "Organization name",
+    "message": "Message",
+    "submit": "<0>I’m ready, send a message!</0>"
+  }
+}

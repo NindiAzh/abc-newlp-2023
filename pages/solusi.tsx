@@ -3,8 +3,10 @@ import Link from "next/link";
 import React from "react";
 import Newsletter from "@components/Newsletter";
 import Gradient1 from "../components/gradient/gradient1";
+import { GetStaticProps } from "next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-export default function solusi() {
+export default function Solusi() {
   const appdev = [
     {
       name: "Pembuatan aplikasi yang berfokus pada pengguna dan unik",
@@ -291,4 +293,14 @@ export default function solusi() {
   );
 }
 
-// xl:pl-36
+export const getStaticProps: GetStaticProps = async ({
+  locale,
+}) => ({
+  props: {
+    ...(await serverSideTranslations(locale ?? 'id', [
+      'common',
+      'footer',
+      'navbar'
+    ])),
+  },
+})

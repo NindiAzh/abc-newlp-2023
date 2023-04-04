@@ -1,13 +1,16 @@
 import Judul from "@components/judul";
 import Tema from "@components/tema";
 import Image from "next/image";
+import { useTranslation } from "next-i18next";
 
 export default function Client() {
+  const { t } = useTranslation()
+
   return (
     <>
       <div className="grid grid-cols-12 py-10 sm:py-24">
         <Judul>Art By Code</Judul>
-        <Tema>Klien Kami</Tema>
+        <Tema>{t('home.client.title')}</Tema>
         <div className="overflow-hidden absolute -left-32">
         <Image
           src="/gradient-klien.svg"
@@ -20,9 +23,7 @@ export default function Client() {
           height={841.5}/>
       </div>{" "}
         <p className="col-span-full xl:w-4/6 lg:w-5/6 text-grey-600 mx-auto text-center text-xl leading-[30px]">
-          Bergabunglah dengan daftar klien puas kami yang telah mengalami
-          layanan dan keahlian luar biasa yang kami tawarkan. Temukan bagaimana
-          kami telah membantu bisnis seperti milikmu mencapai tujuan mereka.
+          {t('home.client.desc')}
         </p>
       </div>
 

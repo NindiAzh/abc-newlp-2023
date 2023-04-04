@@ -5,17 +5,19 @@ import { BiX, BiMenu } from "react-icons/bi";
 import { useRouter } from "next/router";
 import Language from "@components/language";
 import Button from "@components/button";
+import { Trans, useTranslation } from "next-i18next";
 
 export default function Navbar() {
   const router = useRouter();
   const [open, setOpen] = useState(false);
+  const { t } = useTranslation("navbar")
 
   const navigation = [
-    { path: "/", title: "Home" },
-    { path: "/solusi", title: "Solusi Kami" },
-    { path: "/about", title: "Tentang Kami" },
-    { path: "/project", title: "Project" },
-    { path: "/works", title: "Cara Kerja" },
+    { path: "/", title: t('home') },
+    { path: "/solusi", title: t('solution') },
+    { path: "/about", title: t('about') },
+    { path: "/project", title: t('project') },
+    { path: "/works", title: t('work') },
   ];
 
   return (
@@ -65,7 +67,9 @@ export default function Navbar() {
             <Language />
           </div>
           <div className="ml-8">
-            <Button>Hubungi Kami</Button>
+            <Trans i18nKey="contact_us">
+              <Button>Hubungi Kami</Button>
+            </Trans>
           </div>
         </ul>
       </div>
@@ -96,9 +100,7 @@ export default function Navbar() {
           <Language />
         </div>
         <div className="ml-0 mt-8">
-        
-            <Button>Hubungi Kami</Button>
-          
+          <Button>Hubungi Kami</Button>
         </div>
       </div>
     </header>

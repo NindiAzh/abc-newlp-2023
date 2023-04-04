@@ -5,38 +5,19 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
+import { useTranslation } from "next-i18next";
 
 export default function Solution() {
-  const people = [
-    {
-      icon: "/icon-apps.svg",
-      title: "Apps Development",
-      imageUrl: "/img-apps3.svg",
-      desc: "Hampir semua orang punya dan bawa telepon genggam kemanapun. Tunggu apa lagi?",
-    },
-    {
-      icon: "/icon-web.svg",
-      title: "Web Development",
-      imageUrl: "/img-web.svg",
-      desc: "Tuangkan semua ide yang telah Anda simpan selama ini untuk website Anda, saatnya kami mewujudkan semuanya",
-    },
-    {
-      icon: "/icon-uiux.svg",
-      title: "UI/UX Design",
-      imageUrl: "/img-uiux.svg",
-      desc: "Pertama yang diperhatikan saat membuka website/aplikasi adalah penampilan dan penggunaannya",
-    },
-  ];
+  const { t } = useTranslation()
+
   return (
     <>
       <section>
         <div className="grid grid-cols-12 py-10 sm:py-8">
           <Judul>Art By Code</Judul>
-          <Tema>Solusi Kami</Tema>
+          <Tema>{t('home.solution.title')}</Tema>
           <p className="col-span-full xl:w-4/6 lg:w-5/6 text-grey-600 mx-auto text-center text-xl leading-[30px]">
-            Kami mengerti bahwa Kamu ingin fokus ke membuat ide dan kebutuhan
-            bisnis Kamu menjadi realita. Para ahli dari kami siap membantu
-            menenangkan pikiran Kamu - Ayo kita mulai membuat seni dari kode!
+            {t('home.solution.desc')}
           </p>
         </div>
 
@@ -63,8 +44,7 @@ export default function Solution() {
                 height={90}
               />
               <p className="text-grey-600 text-base leading-[24px] mb-6 mt-[24px]">
-                Hampir semua orang punya dan bawa telepon genggam kemanapun.
-                Tunggu apa lagi?
+                {t('home.solution.apps')}
               </p>
             </div>
           </li>
@@ -79,7 +59,7 @@ export default function Solution() {
                 height={48}
               />
               <h3 className="mt-[12px] text-xl font-medium text-gray-900">
-                Apps Development
+                Web Development
               </h3>
               <Image
                 className="mx-auto mt-[24px]"
@@ -89,8 +69,7 @@ export default function Solution() {
                 height={250}
               />
               <p className="text-grey-600 text-base leading-[24px] mb-6 mt-[24px]">
-                Tuangkan semua ide yang telah Anda simpan selama ini untuk
-                website Anda, saatnya kami mewujudkan semuanya
+                {t('home.solution.web')}
               </p>
             </div>
           </li>
@@ -115,14 +94,13 @@ export default function Solution() {
                 height={250}
               />
               <p className="text-grey-600 text-base leading-[24px] mb-6 mt-[24px]">
-                Pertama yang diperhatikan saat membuka website/aplikasi adalah
-                penampilan dan penggunaannya
+                {t('home.solution.uiux')}
               </p>
             </div>
           </li>
         </ul>
       </section>
-      
+
       {/* Swipper */}
       <section className="block lg:hidden">
         <Swiper
@@ -169,8 +147,7 @@ export default function Solution() {
                   height={90}
                 />
                 <p className="text-grey-600 text-base leading-[24px] mb-6 mt-[24px]">
-                  Hampir semua orang punya dan bawa telepon genggam kemanapun.
-                  Tunggu apa lagi?
+                  {t('home.solution.apps')}
                 </p>
               </div>
             </div>
@@ -197,8 +174,7 @@ export default function Solution() {
                 height={250}
               />
               <p className="text-grey-600 text-base leading-[24px] mb-6 mt-[24px]">
-                Tuangkan semua ide yang telah Anda simpan selama ini untuk
-                website Anda, saatnya kami mewujudkan semuanya
+                {t('home.solution.web')}
               </p>
               </div>
             </div>
@@ -225,8 +201,7 @@ export default function Solution() {
                 height={250}
               />
               <p className="text-grey-600 text-base leading-[24px] mb-6 mt-[24px]">
-                Pertama yang diperhatikan saat membuka website/aplikasi adalah
-                penampilan dan penggunaannya
+                {t('home.solution.uiux')}
               </p>
               </div>
             </div>
@@ -237,27 +212,4 @@ export default function Solution() {
       </section>
     </>
   );
-}
-
-{
-  /* <Image
-                    className="mx-auto mt-6"
-                    src={person.icon}
-                    alt=""
-                    width={48}
-                    height={48}
-                  />
-                  <h3 className="mt-[12px] text-xl font-medium text-gray-900">
-                    {person.title}
-                  </h3>
-                  <Image
-                    className="mx-auto mt-[24px]"
-                    src={person.imageUrl}
-                    alt=""
-                    width={200}
-                    height={200}
-                  />
-                  <p className="text-grey-600 text-base leading-[24px] mb-6 mt-[24px]">
-                    {person.desc}
-                  </p> */
 }
