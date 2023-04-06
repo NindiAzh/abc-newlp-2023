@@ -6,46 +6,49 @@ import Tema from "@components/tema";
 import Newsletter from "@components/Newsletter";
 import { GetStaticProps } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 export default function Works() {
+  const { t } = useTranslation();
+
   const collab = [
     {
-      name: "Perencanaan Project",
+      name: t("work.collab.explainTitleOne"),
       description:
-        "Membahas perencanaan pengembangan kebutuhan kamu yang transparan",
+      t("work.collab.explainDescOne"),
       icon: "/icon-check.svg",
     },
     {
-      name: "Laporan Eksekutif",
+      name: t("work.collab.explainTitleTwo"),
       description:
-        "Dapatkan laporan berkala mengenai pengembangan yang telah dikerjakan",
+      t("work.collab.explainDescTwo"),
       icon: "/icon-check.svg",
     },
     {
-      name: "Komunikasi Rutin",
+      name: t("work.collab.explainTitleThree"),
       description:
-        "Kami siap menjawab semua pertanyaan dan memberikan informasi yang kamu butuhkan",
+      t("work.collab.explainDescTwo"),
       icon: "/icon-check.svg",
     },
   ];
 
   const passion = [
     {
-      name: "Kualitas Kode",
+      name: t("work.passion.explainTitleOne"),
       description:
-        "Memberiakan Kode berkualitas baik yang telah kami tinjau dan uji.",
+      t("work.passion.explainDescOne"),
       icon: "/icon-check.svg",
     },
     {
-      name: "Tes Otomatis",
+      name:  t("work.passion.explainTitleTwo"),
       description:
-        "Melakukan rangkaian tes otomatis dengan solusi internasional",
+      t("work.passion.explainDescTwo"),
       icon: "/icon-check.svg",
     },
     {
-      name: "Selalu Terkini",
+      name: t("work.passion.explainTitleThree"),
       description:
-        "Membangun solusi kamu dengan teknologi dan informasi terkini",
+      t("work.passion.explainDescThree"),
       icon: "/icon-check.svg",
     },
   ];
@@ -102,57 +105,36 @@ export default function Works() {
   const toolOne = [
     {
       name: "Telegram",
-      description: "Untuk berkelanjutan komunikasi dengan tim",
+      description:  t("work.collabTools.teleDesc"),
       imageSrc: "/telegram.svg",
-      link: "View integration",
       href: "#",
     },
     {
       name: "Microsoft Teams",
-      description: "Untuk konferensi video dan koordinas ",
+      description: t("work.collabTools.microDesc"),
       imageSrc: "/micro.svg",
-      link: "View integration",
       href: "#",
     },
     {
       name: "Google Docs",
-      description: "Untuk dinamis kolaborasi dan dokumentasi",
+      description: t("work.collabTools.gdocsDesc"),
       imageSrc: "/gdocs.svg",
-      link: "View integration",
       href: "#",
     },
     {
       name: "Figma",
-      description: "Untuk berkelanjutan komunikasi dengan tim",
+      description: t("work.collabTools.figmaDesc"),
       imageSrc: "/figma.svg",
-      link: "View integration",
       href: "#",
     },
     {
       name: "Whimsical",
-      description: "Untuk merancang dan menyajikandesain maket",
+      description: t("work.collabTools.whimDesc"),
       imageSrc: "/whimsical.svg",
-      link: "View integration",
       href: "#",
     },
   ];
 
-  const toolTwo = [
-    {
-      name: "Figma",
-      description: "Untuk berkelanjutan komunikasi dengan tim",
-      imageSrc: "/figma.svg",
-      link: "View integration",
-      href: "#",
-    },
-    {
-      name: "Whimsical",
-      description: "Untuk merancang dan menyajikandesain maket",
-      imageSrc: "/whimsical.svg",
-      link: "View integration",
-      href: "#",
-    },
-  ];
 
   return (
     <section>
@@ -165,15 +147,13 @@ export default function Works() {
             <div className="lg:pr-8 lg:pt-4">
               <div className="lg:max-w-lg">
                 <h2 className="text-base font-semibold leading-[24px] text-green-600">
-                  COLLABORATIUM
+                  {t("work.collab.coll")}
                 </h2>
                 <p className="mt-[24px] text-4xl font-semibold text-grey-900 sm:text-3xl">
-                  Kami suka bekolaborasi
+                  {t("work.collab.title")}
                 </p>
                 <p className="mt-4 text-lg leading-7 text-gray-600">
-                  Komunikasi dan transparasi adalah pondasi dari hubungan jangka
-                  panjang yang kita semua inginkan. Jadi, ayo ngobrol dan gali
-                  lebih dalam lagi kebutuhan kamu!
+                  {t("work.collab.desc")}
                 </p>
                 <dl className="mt-8 max-w-xl space-y-[20px] lg:max-w-none md:text-lg text-base leading-7 px-4">
                   {collab.map((collabs) => (
@@ -215,15 +195,13 @@ export default function Works() {
             <div className="lg:ml-auto lg:pt-4 lg:pl-4">
               <div className="lg:max-w-lg">
                 <h2 className="md:text-base text-sm font-semibold leading-6 text-green-600">
-                  PASSION
+                {t("work.passion.pass")}
                 </h2>
                 <p className="mt-[14px] text-2xl font-semibold text-grey-900 sm:text-3xl">
-                  Kami membangun dengan sepenuh hati
+                {t("work.passion.title")}
                 </p>
                 <p className="mt-4 text-lg leading-7 text-grey-600">
-                  Membangun sesuatu bukan hanya merupakan sebuah pekerjaan bagi
-                  kami. Kami suka (dengan penuh hasrat) membangun solusi luar
-                  biasa untuk orang-orang luar biasa!
+                {t("work.passion.desc")}
                 </p>
                 <dl className="mt-8 max-w-xl space-y-8 lg:max-w-none md:text-lg text-base leading-6 px-4">
                   {passion.map((passions) => (
@@ -263,10 +241,10 @@ export default function Works() {
         <div className="mx-auto grid lg:grid-cols-2 gap-0">
           <div className="flex flex-col justify-center lg:mx-0 mx-0 lg:max-w-lg">
             <h2 className="md:text-base text-sm font-semibold leading-6 text-green-600">
-              CLEAN CODE
+            {t("work.cleanCode.code")}
             </h2>
             <p className="mt-[14px] text-2xl font-semibold text-grey-900 sm:text-3xl">
-              Kami percaya dengan kode yang bersih
+            {t("work.cleanCode.title")}
             </p>
             {/* gradient */}
             <div className="absolute lg:block hidden">
@@ -287,11 +265,7 @@ export default function Works() {
             </div>
 
             <p className="mt-4 md:text-lg text-base leading-7 text-grey-600">
-              Kode yang bersih dapat berbicara lebih jelas dibandingkan dengan
-              catatan berwarna yang menumpuk - kami belajar dari pengalaman.
-              Fokus kami adalah untuk membangun dengan prinsip kode yang bersih
-              (yang tentunya akan membuat tenang tim IT kamu juga) demi produk
-              yang berjangka panjang dan dapat selalu dikembangkan.
+            {t("work.cleanCode.desc")}
             </p>
           </div>
           <Image
@@ -311,14 +285,13 @@ export default function Works() {
             <div className="lg:ml-auto lg:pt-4 lg:pl-4">
               <div className="lg:max-w-lg">
                 <h2 className="md:text-base text-sm font-semibold leading-6 text-green-600">
-                  TECHNICAL EXPERTISE
+                {t("work.technical.tech")}
                 </h2>
                 <p className="mt-[14px] text-2xl font-semibold text-grey-900 sm:text-3xl">
-                  Kemampuan teknis kami
+                {t("work.technical.title")}
                 </p>
                 <p className="mt-4 text-lg leading-7 text-grey-600">
-                  Kami tidak akan pernah berhenti belajar bahasa dan teknologi
-                  terbaru agar dapat memberikan solusi yang terbaik bagi kamu
+                {t("work.technical.desc")}
                 </p>
                 <dl className="col-span-2 grid grid-cols-1 gap-x-8 gap-y-2 sm:text-base text-lg leading-7 sm:grid-cols-2 lg:gap-y-2 px-4 mt-8">
                   {tech.map((techs) => (
@@ -338,115 +311,6 @@ export default function Works() {
                     </div>
                   ))}
                 </dl>
-
-                {/* <div className="mx-auto mt-10 max-w-7xl px-6 sm:mt-8 md:mt-8 lg:px-2">
-                  <dl className="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-0 text-lg sm:text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:gap-x-8 lg:gap-y-2">
-                    {features.map((feature) => (
-                      <div key={feature.name} className="relative pl-11">
-                        <dt className="font-semibold text-grey-9900">
-                          <Image
-                            src={feature.icon}
-                            alt=""
-                            width={28}
-                            height={28}
-                            className="absolute top-1 left-1 h-[28] w-[28]"
-                            aria-hidden="true"
-                          />
-                          {feature.name}
-                        </dt>{" "}
-                        <dd className="text-grey-600">{feature.description}</dd>
-                      </div>
-                    ))}
-                  </dl>
-                </div> */}
-
-                {/* <div className="col-span-2 grid grid-cols-1 gap-x-8 gap-y-2 text-lg sm:text-base leading-7 sm:grid-cols-2 lg:gap-y-2 mt-8">
-                  <div className="relative pl-9">
-                    <dt className="font-semibold text-gray-900">
-                      <Image
-                        src="/icon-check.svg"
-                        alt=""
-                        width={28}
-                        height={28}
-                        className="absolute top-1 left-0 h-[28] w-[28]"
-                        aria-hidden="true"
-                      />
-                      <h1 className="text-puerto-rico-500 font-black text-lg font-nuni">
-                        Mobile Development
-                      </h1>
-                      <p className="font-normal text-sm font-nuni">
-                        Flutter, Dart, Kotlin
-                      </p>
-                      <h1 className="text-puerto-rico-500 font-black text-lg font-nuni mt-7">
-                        Framework Backend & Frontend
-                      </h1>
-                      <p className="font-normal text-sm font-nuni w-4/6">
-                        Laravel, Django, Flask, Next JS, Nuxt JS, React JS, Vue
-                        JS, Angular JS
-                      </p>
-
-                      <h1 className="text-puerto-rico-500 font-black text-lg font-nuni mt-7">
-                        Programming Language Development
-                      </h1>
-                      <p className="font-normal text-sm font-nuni">
-                        PHP, Node JS, Golang, Python, Javascript
-                      </p>
-
-                      <h1 className="text-puerto-rico-500 font-black text-lg font-nuni mt-7">
-                        Middleware
-                      </h1>
-                      <p className="font-normal text-sm font-nuni">
-                        Spatial Laravel, JSON Web Token (JWT)
-                      </p>
-                      <h1 className="text-puerto-rico-500 font-black text-lg font-nuni ml-3">
-                        Database
-                      </h1>
-                    </dt>
-                  </div>
-                  <div className="relative pl-9">
-                    <dt className="font-semibold text-gray-900">
-                      <Image
-                        src="/icon-check.svg"
-                        alt=""
-                        width={28}
-                        height={28}
-                        className="absolute top-1 left-0 h-[28] w-[28]"
-                        aria-hidden="true"
-                      />
-                      <p className="font-normal text-sm font-nuni ml-3 mx-4">
-                        MySQL, PostgreSQL, Redis DB
-                      </p>
-
-                      <h1 className="text-puerto-rico-500 font-black text-lg font-nuni mt-2 ml-3">
-                        Framework CSS
-                      </h1>
-                      <p className="font-normal text-sm font-nuni ml-3">
-                        Tailwind CSS, Bootstrap 5
-                      </p>
-
-                      <h1 className="text-puerto-rico-500 font-black text-lg font-nuni mt-2 ml-3">
-                        Stack
-                      </h1>
-                      <p className="font-normal text-sm font-nuni ml-3">
-                        MERN, MEVN, MEAN, TALL
-                      </p>
-
-                      <h1 className="text-puerto-rico-500 font-black text-lg font-nuni  mt-2 ml-3">
-                        Notification
-                      </h1>
-                      <p className="font-normal text-sm font-nuni ml-3">
-                        Firebase
-                      </p>
-
-                      <h1 className="text-puerto-rico-500 font-black text-lg font-nuni  mt-2 ml-3">
-                        Design
-                      </h1>
-                      <p className="font-normal text-sm font-nuni ml-3">
-                        Figma, Zeplin
-                      </p>
-                    </dt>
-                </div>
-                </div> */}
               </div>
             </div>
             <div className="flex items-start justify-end lg:order-first">
@@ -465,12 +329,9 @@ export default function Works() {
       {/* Alat Kolaborasi */}
       <div className="container grid grid-cols-12 py-24 sm:py-24">
         <Judul>Art By Code</Judul>
-        <Tema>Alat Kolaborasi Kami</Tema>
+        <Tema>{t("work.collabTools.title")}</Tema>
         <p className="col-span-full xl:w-4/6 lg:w-5/6 text-grey-600 mx-auto text-center sm:text-xl text-lg leading-[30px]">
-          Kami sepenuhnya mengutamakan kolaborasi dan kerja sama tim! Oleh
-          karena itu, kami menggunakan sejumlah alat yang memudahkan Anda untuk
-          bergabung dan menjadi bagian dari proses tersebut. Bersama-sama, kita
-          dapat mencapai hal-hal luar biasa!
+        {t("work.collabTools.desc")}
         </p>
       </div>
       {/* Line 1 */}
@@ -502,7 +363,7 @@ export default function Works() {
                 <div className="relative mt-[20px] flex">
                   <div className="mt-0 flex mx-auto text-center">
                     <a href="#" className="text-base text-green-600">
-                      View integration <span aria-hidden="true">&rarr;</span>
+                    {t("work.collabTools.link")} <span aria-hidden="true">&rarr;</span>
                     </a>
                   </div>
                 </div>
@@ -550,14 +411,12 @@ export default function Works() {
   );
 }
 
-export const getStaticProps: GetStaticProps = async ({
-  locale,
-}) => ({
+export const getStaticProps: GetStaticProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale ?? 'id', [
-      'common',
-      'footer',
-      'navbar'
+    ...(await serverSideTranslations(locale ?? "id", [
+      "common",
+      "footer",
+      "navbar",
     ])),
   },
-})
+});

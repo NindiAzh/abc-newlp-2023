@@ -23,16 +23,18 @@ export default function About() {
   ];
 
   const stats = [
-    { id: 1, name: "Projects completed", value: "400+" },
-    { id: 2, name: "Global downloads", value: "10k" },
-    { id: 3, name: "5-star reviews", value: "200+" },
+    { id: 1, name: t('about.stats.project'), value: "400+" },
+    { id: 2, name: t('about.stats.global'), value: "10k" },
+    { id: 3, name: t('about.stats.star'), value: "200+" },
   ];
 
   return (
     <section>
       <Gradient1 />
       <div className="grid grid-cols-12 py-[64px] sm:py-[132px]">
-        <Judul>Who we are!</Judul>
+        <Judul>
+        {t('about.titleAbout')}
+        </Judul>
         <p className="col-span-full 2xl:w-7/12 xl:w-8/12 lg:w-5/6 w-5/6 text-grey-900 mx-auto text-center text-3xl leading-[38px]">
           <Trans i18nKey="belief">
             Kami percaya pada pemberdayaan teknologi untuk semua, dan sadar bahwa{" "}

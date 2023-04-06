@@ -12,9 +12,9 @@ export default function Contact() {
     <>
      <Gradient1 />
       <div className="container relative mb-2">
-        <div className="lg:absolute lg:inset-5 lg:left-1/2 md:-mt-24 2xl:-mt-0 xl:-mt-0 lg:-mt-0 -mt-20">
+        <div className="lg:absolute lg:inset-5 lg:left-1/2 md:-mt-2 2xl:-mt-0 xl:-mt-0 lg:-mt-0 -mt-20">
           <Image
-            className="w-[608px] h-[685.5px] md:mt-60 mx-auto md:block hidden"
+            className="w-[608px] h-[685.5px] md:mt-60 mx-auto lg:block hidden"
             src="/img-contact.svg"
             alt="imgPartner"
             width={608}

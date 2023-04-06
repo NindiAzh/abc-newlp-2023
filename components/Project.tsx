@@ -5,13 +5,13 @@ import { useTranslation } from "next-i18next";
 import ProjectsItem from "./ProjectsItem";
 
 export default function Project() {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   return (
     <>
       <div className="grid grid-cols-12 py-20 sm:py-24">
         <Judul>Art By Code</Judul>
-        <Tema>{t('home.project.title')}</Tema>
+        <Tema>{t("home.project.title")}</Tema>
         <div className="overflow-hidden absolute -left-12">
           <Image
             src="/gradient-project.svg"
@@ -29,7 +29,7 @@ export default function Project() {
           />
         </div>{" "}
         <p className="col-span-full xl:w-4/6 lg:w-5/6 text-grey-600 mx-auto text-center text-xl leading-[30px]">
-          {t('home.project.desc')}
+          {t("home.project.desc")}
         </p>
       </div>
 
@@ -37,21 +37,21 @@ export default function Project() {
         <div className="md:w-6/12 px-5 pb-10">
           <ProjectsItem
             name="Trans Shopping Mall App Design"
-            desc="Visit Google Play"
+            desc={t("project.abc.link")}
             image="/img-trans.svg"
           />
         </div>
         <div className="md:w-6/12 px-5 pb-10">
           <ProjectsItem
             name="Sato Carwash park App Design"
-            desc="Visit Google Play"
+            desc={t("project.abc.link")}
             image="/img-sato-carwash.svg"
           />
         </div>
         <div className="md:w-6/12 px-5 pb-10 md:mt-[64px]">
           <ProjectsItem
             name="Sato Point Of Sale App Design"
-            desc="Visit Google Play"
+            desc={t("project.abc.link")}
             image="/img-sato-pos.svg"
           />
         </div>
