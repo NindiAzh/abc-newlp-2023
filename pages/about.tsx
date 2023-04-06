@@ -2,40 +2,47 @@ import Judul from "@components/judul";
 import Newsletter from "@components/Newsletter";
 import Gradient1 from "../components/gradient/gradient1";
 import Image from "next/image";
+import { GetStaticProps } from "next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { Trans, useTranslation } from "next-i18next";
 
-export default function about() {
+export default function About() {
+  const { t } = useTranslation()
+
   const features = [
     {
-      name: "Siapa yang kami bantu?",
-      description:
-        "Dari usaha kecil, menengah, sampai dengan besar yang mencari teknologidalam pekembangan dan efisiensi bisnis. Kami bertujuan untuk menjadirekan strategis, jangka panjang yang dapat mewujudkan kebutuhan danjuga menjadi lawan diskusi dari para rekan kami.",
+      name: t('about.help.title'),
+      description: t('about.help.desc'),
       icon: "/icon-about1.svg",
     },
     {
-      name: "Apa yang kamu percayai?",
-      description:
-        "Bekerjalah dengan sepenuh hati integritas untuk memberikan hasil yangterbaik, karena kesuksesan rekankami akan menjadi pendiri kita untukbisa lebih berkembang juga",
+      name: t('about.belief.title'),
+      description: t('about.belief.desc'),
       icon: "/icon-about2.svg",
     },
   ];
 
   const stats = [
-    { id: 1, name: "Projects completed", value: "400+" },
-    { id: 2, name: "Global downloads", value: "10k" },
-    { id: 3, name: "5-star reviews", value: "200+" },
+    { id: 1, name: t('about.stats.project'), value: "400+" },
+    { id: 2, name: t('about.stats.global'), value: "10k" },
+    { id: 3, name: t('about.stats.star'), value: "200+" },
   ];
 
   return (
     <section>
       <Gradient1 />
       <div className="grid grid-cols-12 py-[64px] sm:py-[132px]">
-        <Judul>Who we are!</Judul>
+        <Judul>
+        {t('about.titleAbout')}
+        </Judul>
         <p className="col-span-full 2xl:w-7/12 xl:w-8/12 lg:w-5/6 w-5/6 text-grey-900 mx-auto text-center text-3xl leading-[38px]">
-          Kami percaya pada pemberdayaan teknologi untuk semua, dan sadar bahwa{" "}
-          <span className="font-semibold text-4xl leading-[44px]">
-            kami dapat membuat perubahan dengan memberikan layanan teknologi
-            yang berkualitas
-          </span>
+          <Trans i18nKey="belief">
+            Kami percaya pada pemberdayaan teknologi untuk semua, dan sadar bahwa{" "}
+            <span className="font-semibold text-4xl leading-[44px]">
+              kami dapat membuat perubahan dengan memberikan layanan teknologi
+              yang berkualitas
+            </span>
+          </Trans>
         </p>
       </div>
 
@@ -106,3 +113,15 @@ export default function about() {
     </section>
   );
 }
+
+export const getStaticProps: GetStaticProps = async ({
+  locale,
+}) => ({
+  props: {
+    ...(await serverSideTranslations(locale ?? 'id', [
+      'common',
+      'footer',
+      'navbar'
+    ])),
+  },
+})

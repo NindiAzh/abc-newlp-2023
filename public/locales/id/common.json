@@ -1,0 +1,152 @@
+{
+  "more": "<0>Mau tau lebih banyak</0>",
+  "contact_us": "<0>Hubungi kami</0>",
+  "belief": "Kami percaya pada pemberdayaan teknologi untuk semua, dan sadar bahwa <2>kami dapat membuat perubahan dengan memberikan layanan teknologi yang berkualitas</2>",
+  "home": {
+    "header": {
+      "title": "Hai, kami adalah Art By Code | ABC",
+      "desc": "Ayo ciptakan sesuatu yang <2>indah</2> dengan sebuah ",
+      "code": "kode"
+    },
+    "stats": {
+      "success": "Proyek yang Berhasil",
+      "happy": "Klien yang bahagia",
+      "pro": "Personil Profesional"
+    },
+    "solution": {
+      "title": "Solusi Kami",
+      "desc": "Kami mengerti bahwa Kamu ingin fokus ke membuat ide dan kebutuhan bisnis Kamu menjadi realita. Para ahli dari kami siap membantu menenangkan pikiran Kamu - Ayo kita mulai membuat seni dari kode!",
+      "apps": "Hampir semua orang punya dan bawa telepon genggam kemanapun. Tunggu apa lagi?",
+      "web": "Tuangkan semua ide yang telah Anda simpan selama ini untuk website Anda, saatnya kami mewujudkan semuanya",
+      "uiux": "Apa yang pertama kali dilihat saat membuka web/aplikasi? Jelas penampilan dan lalu penggunaannya"
+    },
+    "project": {
+      "title": "Project Kami",
+      "desc": "Dari desain website yang menakjubkan hingga aplikasi yang mudah digunakan dan lain-lain, kami sangat bangga dengan proyek-proyek kami yang telah selesai"
+    },
+    "client": {
+      "title": "Klien Kami",
+      "desc": "Bergabunglah dengan daftar klien puas kami yang telah mengalami layanan dan keahlian luar biasa yang kami tawarkan. Temukan bagaimana kami telah membantu bisnis seperti milikmu mencapai tujuan mereka."
+    },
+    "contact": {
+      "title": "Apakah kamu siap?",
+      "desc": "Kami selalu siap untuk menjawab segala pertanyaan dan kebutuhan kamu"
+    }
+  },
+  "solution": {
+    "appdev": {
+      "app": "PENGEMBANGAN APLIKASI",
+      "title": "Ayo Bangun Aplikasi Bersama! Tim Ahli ABC Akan Membantu Anda Mencapai Tujuan Digital dengan Solusi yang Disesuaikan dan Sentuhan Ceria!",
+      "desc": "Hai! Siap untuk membawa bisnis Anda ke level selanjutnya dengan aplikasi yang luar biasa? Art By Code siap membantu! Tim ahli kami menawarkan solusi pengembangan aplikasi yang disesuaikan dengan kebutuhan dan tujuan Anda. Dengan teknologi terbaru dan sentuhan kreatif yang ceria, kami akan membuat aplikasi yang pasti mengesankan dan membantu Anda mencapai mimpi digital Anda. Mari kita bekerja sama untuk menghidupkan visi aplikasi Anda!",
+      "explainTitleOne": "Pembuatan aplikasi yang berfokus pada pengguna dan unik",
+      "explainDescOne": "Kami akan bekerja sama dengan Anda untuk membuat aplikasi seluler yang benar-benar milik Anda.",
+      "explainTitleTwo": "Ahli yang penuh semangat untuk melayani Anda",
+      "explainDescTwo": "Di Art By Code, kami sangat senang memiliki tim ahli pengembangan aplikasi yang bersemangat membantu bisnis mencapai tujuan digital mereka.",
+      "explainTitleThree": "Integrasi lancar dengan sistem dan proses bisnis Anda",
+      "explainDescThree": "Di Art By Code, kami memahami pentingnya memastikan bahwa aplikasi Anda terintegrasi dengan sistem dan proses yang sudah ada dengan mulus.",
+      "link": "Lihat Lainnya"
+    },
+    "webdev": {
+      "web": "PENGEMBANGAN WEB",
+      "title": "Mentransformasikan Kehadiran Web Anda dengan Seni Melalui Kode: Dimana Kreativitas Ceria Bertemu dengan Keahlian Profesional!",
+      "desc": "Hai! Ingin memiliki website yang unik dan menonjol dari yang lain? Art By Code adalah solusinya untuk pengembangan website yang terbaik! Tim ahli kami akan menghidupkan visi Anda dengan sentuhan kreatif yang ceria. Mari kita membuat website Anda menjadi perbincangan di kota!",
+      "explainTitleOne": "Desain web yang menakjubkan dan menonjol!",
+      "explainDescOne": "Tim ahli kami akan menghidupkan website Anda dengan desain yang menarik perhatian, sehingga merek Anda akan lebih mencolok.",
+      "explainTitleTwo": "Website yang disesuaikan untuk Anda!",
+      "explainDescTwo": "Kami tidak percaya pada solusi yang cocok untuk semua. Sebaliknya, kami bekerja dengan Anda untuk memahami kebutuhan unik Anda dan mengembangkan website yang disesuaikan dengan merefleksikan merek dan tujuan Anda.",
+      "explainTitleThree": "Pengembangan yang menyenangkan di depan!",
+      "explainDescThree": "Kami percaya bahwa pengembangan web seharusnya menyenangkan! Itulah mengapa kami menambahkan sentuhan ceria pada proyek kami sehingga membedakan kami dari pesaing."
+    },
+    "ui/ux": {
+      "uiux": "DESAIN UI/UX",
+      "title": "Buatlah Pengalaman Pengguna yang Menarik dan Tingkatkan Desain Anda dengan Solusi Pengembangan UI/UX Kami yang Komprehensif.",
+      "desc": "Di Art By Code, kami percaya bahwa desain yang baik lebih dari sekadar estetika - ini tentang menciptakan pengalaman yang dicintai pengguna Anda. Solusi pengembangan UI/UX kami menggabungkan kreativitas dan fungsionalitas untuk membuat antarmuka yang mulus yang tidak hanya memukau secara visual tetapi juga mudah digunakan. Dari tahap penemuan hingga pengujian, kami bekerja sama dengan Anda untuk memastikan bahwa antarmuka Anda memenuhi tujuan bisnis Anda dan memuaskan pengguna Anda pada setiap langkahnya.",
+      "explainTitleOne": "Desain berpusat pada pengguna untuk pengalaman yang intuitif",
+      "explainDescOne": "Tim desainer berpengalaman kami menggunakan pendekatan desain berpusat pada manusia untuk menciptakan pengalaman pengguna yang intuitif dan menarik yang mencerminkan merek Anda dan kebutuhan pelanggan Anda.",
+      "explainTitleTwo": "Solusi UI/UX yang disesuaikan dengan kebutuhan bisnis dan pelanggan Anda",
+      "explainDescTwo": "Kami meluangkan waktu untuk memahami bisnis dan pelanggan Anda, dan menggunakan pengetahuan itu untuk membuat solusi UI/UX yang disesuaikan dengan kebutuhan dan tujuan Anda yang spesifik.",
+      "explainTitleThree": "Desain yang sesuai dengan gaya dan suara merek Anda",
+      "explainDescThree": "Dari desain minimalis hingga desain berani, klasik hingga modern, desainer kami memiliki keberagaman untuk membuat desain UI/UX yang sesuai dengan gaya dan suara merek Anda, sambil juga efektif dalam mencapai hasil yang diinginkan."
+    }
+  },
+  "about": {
+    "titleAbout": "Siapa kami!",
+    "help": {
+      "title": "Siapa yang kami bantu?",
+      "desc": "Dari usaha kecil, menengah, sampai dengan besar yang mencari teknologidalam pekembangan dan efisiensi bisnis. Kami bertujuan untuk menjadirekan strategis, jangka panjang yang dapat mewujudkan kebutuhan danjuga menjadi lawan diskusi dari para rekan kami."
+    },
+    "belief": {
+      "title": "Apa yang kamu percayai?",
+      "desc": "Bekerjalah dengan sepenuh hati integritas untuk memberikan hasil yangterbaik, karena kesuksesan rekankami akan menjadi pendiri kita untukbisa lebih berkembang juga"
+    },
+    "stats": {
+      "project": "Proyek selesai",
+      "global": "Unduhan global",
+      "star": "Ulasan bintang lima"
+    }
+  },
+  "project": {
+    "abc": {
+      "title": "Proyek",
+      "desc": "Kami sangat senang untuk membagikan portofolio kami kepada Anda! Ini bukan hanya koleksi proyek masa lalu, tetapi juga bukti keahlian kami dan cara untuk membangun kepercayaan Anda bahwa kami dapat memberikan hasil yang Anda cari. Cek portofolio kami dan mari diskusikan bagaimana kami dapat membawa proyek Anda ke level yang lebih tinggi!",
+      "slideOne": "Ponsel",
+      "slideTwo": "Desain Web",
+      "link": "Kunjungi Google Play"
+    }
+  },
+  "work": {
+    "collab": {
+      "coll": "KOLABORASI",
+      "title": "Kami suka bekolaborasi",
+      "desc": "Komunikasi dan transparasi adalah pondasi dari hubungan jangka panjang yang kita semua inginkan. Jadi, ayo ngobrol dan gali lebih dalam lagi kebutuhan kamu!",
+      "explainTitleOne": "Perencanaan Project",
+      "explainDescOne": "Membahas perencanaan pengembangan kebutuhan kamu yang transparan",
+      "explainTitleTwo": "Laporan Eksekutif",
+      "explainDescTwo": "Dapatkan laporan berkala mengenai pengembangan yang telah dikerjakan",
+      "explainTitleThree": "Komunikasi Rutin",
+      "explainDescThree": "Kami siap menjawab semua pertanyaan dan memberikan informasi yang kamu butuhkan"
+    },
+    "passion": {
+      "pass": "SEMANGAT",
+      "title": "Kami membangun dengan sepenuh hati",
+      "desc": "Membangun sesuatu bukan hanya merupakan sebuah pekerjaan bagi kami. Kami suka (dengan penuh hasrat) membangun solusi luar biasa untuk orang-orang luar biasa!",
+      "explainTitleOne": "Kualitas Kode",
+      "explainDescOne": "Memberiakan Kode berkualitas baik yang telah kami tinjau dan uji.",
+      "explainTitleTwo": "Tes Otomatis",
+      "explainDescTwo": "Melakukan rangkaian tes otomatis dengan solusi internasional",
+      "explainTitleThree": "Selalu Terkini",
+      "explainDescThree": "Membangun solusi kamu dengan teknologi dan informasi terkini"
+    },
+    "cleanCode": {
+      "code": "KODE BERSIH",
+      "title": "Kami percaya dengan kode yang bersih",
+      "desc": "Kode yang bersih dapat berbicara lebih jelas dibandingkan dengan catatan berwarna yang menumpuk - kami belajar dari pengalaman. Fokus kami adalah untuk membangun dengan prinsip kode yang bersih (yang tentunya akan membuat tenang tim IT kamu juga) demi produk yang berjangka panjang dan dapat selalu dikembangkan."
+    },
+    "technical": {
+      "tech": "KEAHLIAN TEKNIS",
+      "title": "Kemampuan teknis kami",
+      "desc": "Kami tidak akan pernah berhenti belajar bahasa dan teknologi terbaru agar dapat memberikan solusi yang terbaik bagi kamu"
+    },
+    "collabTools": {
+      "title": "Alat Kolaborasi Kami",
+      "desc": "Kami sepenuhnya mengutamakan kolaborasi dan kerja sama tim! Oleh karena itu, kami menggunakan sejumlah alat yang memudahkan Anda untuk bergabung dan menjadi bagian dari proses tersebut. Bersama-sama, kita dapat mencapai hal-hal luar biasa!",
+      "teleDesc": "Untuk berkelanjutan komunikasi dengan tim",
+      "microDesc": "Untuk konferensi video dan koordinas ",
+      "gdocsDesc": "Untuk dinamis kolaborasi dan dokumentasi",
+      "figmaDesc": "Untuk merancang dan menyajikandesain maket",
+      "whimDesc": "Untuk merancang dan persentasi gambar rangka",
+      "link": "Lihat integrasi"
+    }
+  },
+  "contact": {
+    "title": "Apakah kamu siap?",
+    "desc": "Kami selalu siap untuk menjawab segala pertanyaan dan kebutuhan kamu"
+  },
+  "form": {
+    "first_name": "Nama depan",
+    "last_name": "Nama belakang",
+    "organization": "Nama Organisasi",
+    "message": "Pesan",
+    "submit": "<0>Aku siap, Kirimkan Pesan!</0>"
+  }
+}

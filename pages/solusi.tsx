@@ -3,73 +3,78 @@ import Link from "next/link";
 import React from "react";
 import Newsletter from "@components/Newsletter";
 import Gradient1 from "../components/gradient/gradient1";
+import { GetStaticProps } from "next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
-export default function solusi() {
+export default function Solusi() {
+  const { t } = useTranslation();
+
   const appdev = [
     {
-      name: "Pembuatan aplikasi yang berfokus pada pengguna dan unik",
+      name: t('solution.appdev.explainTitleOne'),
       description:
-        "Kami akan bekerja sama dengan Anda untuk membuat aplikasi seluler yang benar-benar milik Anda.",
+      t('solution.appdev.explainDescOne'),
       icon: "/icon-mess.svg",
-      link: "Lihat lainnya",
+      link: t('solution.appdev.link'),
       href: "#",
     },
     {
-      name: "Ahli yang penuh semangat untuk melayani Anda",
+      name: t('solution.appdev.explainTitleTwo'),
       description:
-        "Di Art By Code, kami sangat senang memiliki tim ahli pengembangan aplikasi yang bersemangat membantu bisnis mencapai tujuan digital mereka.",
+      t('solution.appdev.explainDescTwo'),
       icon: "/icon-kilat.svg",
-      link: "Lihat lainnya",
+      link: t('solution.appdev.link'),
       href: "#",
     },
     {
-      name: "Integrasi lancar dengan sistem dan proses bisnis Anda",
+      name: t('solution.appdev.explainTitleThree'),
       description:
-        "Di Art By Code, kami memahami pentingnya memastikan bahwa aplikasi Anda terintegrasi dengan sistem dan proses yang sudah ada dengan mulus.",
+      t('solution.appdev.explainDescThree'),
       icon: "/icon-share.svg",
-      link: "Lihat lainnya",
+      link:  t('solution.appdev.link'),
       href: "#",
     },
   ];
 
   const webdev = [
     {
-      name: "Desain web yang menakjubkan dan menonjol!",
+      name: t('solution.webdev.explainTitleOne'),
       description:
-        "Tim ahli kami akan menghidupkan website Anda dengan desain yang menarik perhatian, sehingga merek Anda akan lebih mencolok.",
+      t('solution.webdev.explainDescOne'),
       icon: "/icon-mess.svg",
     },
     {
-      name: "Website yang disesuaikan untuk Anda!",
+      name: t('solution.webdev.explainTitleTwo'),
       description:
-        "Kami tidak percaya pada solusi yang cocok untuk semua. Sebaliknya, kami bekerja dengan Anda untuk memahami kebutuhan unik Anda dan mengembangkan website yang disesuaikan dengan merefleksikan merek dan tujuan Anda.",
+      t('solution.webdev.explainDescTwo'),
       icon: "/icon-kilat.svg",
     },
     {
-      name: "Pengembangan yang menyenangkan di depan!",
+      name: t('solution.webdev.explainTitleThree'),
       description:
-        "Kami percaya bahwa pengembangan web seharusnya menyenangkan! Itulah mengapa kami menambahkan sentuhan ceria pada proyek kami sehingga membedakan kami dari pesaing.",
+      t('solution.webdev.explainDescThree'),
       icon: "/icon-share.svg",
     },
   ];
 
   const uiux = [
     {
-      name: "Desain berpusat pada pengguna untuk pengalaman yang intuitif",
+      name: t('solution.ui/ux.explainTitleOne'),
       description:
-        "Tim desainer berpengalaman kami menggunakan pendekatan desain berpusat pada manusia untuk menciptakan pengalaman pengguna yang intuitif dan menarik yang mencerminkan merek Anda dan kebutuhan pelanggan Anda.",
+      t('solution.ui/ux.explainDescOne'),
       icon: "/icon-mess.svg",
     },
     {
-      name: "Solusi UI/UX yang disesuaikan dengan kebutuhan bisnis dan pelanggan Anda",
+      name: t('solution.ui/ux.explainTitleTwo'),
       description:
-        "Kami meluangkan waktu untuk memahami bisnis dan pelanggan Anda, dan menggunakan pengetahuan itu untuk membuat solusi UI/UX yang disesuaikan dengan kebutuhan dan tujuan Anda yang spesifik.",
+      t('solution.ui/ux.explainDescTwo'),
       icon: "/icon-kilat.svg",
     },
     {
-      name: "Desain yang sesuai dengan gaya dan suara merek Anda",
+      name: t('solution.ui/ux.explainTitleThree'),
       description:
-        "Dari desain minimalis hingga desain berani, klasik hingga modern, desainer kami memiliki keberagaman untuk membuat desain UI/UX yang sesuai dengan gaya dan suara merek Anda, sambil juga efektif dalam mencapai hasil yang diinginkan.",
+      t('solution.ui/ux.explainDescOne'),
       icon: "/icon-share.svg",
     },
   ];
@@ -79,23 +84,15 @@ export default function solusi() {
       {/* App Dev */}
       <section>
         <Gradient1 />
-        <div className="container grid grid-cols-12 py-10 sm:py-24 text-start">
+        <div className="container grid grid-cols-14 py-10 sm:py-24 text-start">
           <h2 className="text-base font-semibold leading-[24px] text-green-600 flex">
-            APP <span className="mx-1">DEVELOPMENT</span>
+          {t('solution.appdev.app')}
           </h2>
           <h2 className="mt-[12px] col-span-full text-grey-900 font-semibold mb-[12px] md:text-4xl text-3xl leading-[44px] max-w-3xl">
-            Ayo Bangun Aplikasi Bersama! Tim Ahli ABC Akan Membantu Anda
-            Mencapai Tujuan Digital dengan Solusi yang Disesuaikan dan Sentuhan
-            Ceria!
+          {t('solution.appdev.title')}
           </h2>
           <p className="mt-[20px] col-span-full text-grey-600 md:text-xl text-lg leading-[30px] max-w-3xl">
-            Hai! Siap untuk membawa bisnis Anda ke level selanjutnya dengan
-            aplikasi yang luar biasa? Art By Code siap membantu! Tim ahli kami
-            menawarkan solusi pengembangan aplikasi yang disesuaikan dengan
-            kebutuhan dan tujuan Anda. Dengan teknologi terbaru dan sentuhan
-            kreatif yang ceria, kami akan membuat aplikasi yang pasti
-            mengesankan dan membantu Anda mencapai mimpi digital Anda. Mari kita
-            bekerja sama untuk menghidupkan visi aplikasi Anda!
+          {t('solution.appdev.desc')}
           </p>
         </div>
         <div className="container overflow-hidden md:-my-32 lg:my-0 sm:py-16">
@@ -148,20 +145,15 @@ export default function solusi() {
 
       {/* Web Dev */}
       <section className="bg-green-50 lg:mt-[96px] mt-16">
-        <div className="container grid grid-cols-12 py-10 sm:py-28 text-start">
+        <div className="container grid grid-cols-42 py-10 sm:py-28 text-start">
           <h2 className="text-base font-semibold leading-[24px] text-green-600 flex">
-            WEB <span className="mx-1">DEVELOPMENT</span>
+          {t('solution.webdev.web')}
           </h2>
           <h2 className="mt-[12px] col-span-full text-grey-900 font-semibold mb-[12px] md:text-4xl text-3xl leading-[44px] max-w-3xl">
-            Mentransformasikan Kehadiran Web Anda dengan Seni Melalui Kode:
-            Dimana Kreativitas Ceria Bertemu dengan Keahlian Profesional!
+          {t('solution.webdev.title')}
           </h2>
           <p className="mt-[20px] col-span-full text-grey-600 md:text-xl text-lg leading-[30px] max-w-3xl">
-            Hai! Ingin memiliki website yang unik dan menonjol dari yang lain?
-            Art By Code adalah solusinya untuk pengembangan website yang
-            terbaik! Tim ahli kami akan menghidupkan visi Anda dengan sentuhan
-            kreatif yang ceria. Mari kita membuat website Anda menjadi
-            perbincangan di kota!
+          {t('solution.webdev.desc')}
           </p>
         </div>
         <div className="overflow-hidden md:-my-40 lg:my-0 sm:py-16">
@@ -207,13 +199,12 @@ export default function solusi() {
 
       {/* UIUX Design */}
       <section>
-        <div className="container grid grid-cols-12 py-12 lg:py-24 md:py-60 text-start">
+        <div className="container grid grid-cols-14 py-12 lg:py-24 md:py-60 text-start">
           <h2 className="text-base font-semibold leading-[24px] text-green-600 flex">
-            UI/UX <span className="mx-1">DESIGN</span>
+          {t('solution.ui/ux.uiux')}
           </h2>
           <h2 className="mt-[12px] col-span-full text-grey-900 font-semibold mb-[12px] md:text-4xl text-3xl leading-[44px] max-w-3xl">
-            Buatlah Pengalaman Pengguna yang Menarik dan Tingkatkan Desain Anda
-            dengan Solusi Pengembangan UI/UX Kami yang Komprehensif.
+          {t('solution.ui/ux.title')}
           </h2>
           {/* gradient */}
           <div className="absolute">
@@ -233,14 +224,7 @@ export default function solusi() {
             />
           </div>
           <p className="mt-[20px] col-span-full text-grey-600 md:text-xl text-lg leading-[30px] max-w-3xl">
-            Di Art By Code, kami percaya bahwa desain yang baik lebih dari
-            sekadar estetika - ini tentang menciptakan pengalaman yang dicintai
-            pengguna Anda. Solusi pengembangan UI/UX kami menggabungkan
-            kreativitas dan fungsionalitas untuk membuat antarmuka yang mulus
-            yang tidak hanya memukau secara visual tetapi juga mudah digunakan.
-            Dari tahap penemuan hingga pengujian, kami bekerja sama dengan Anda
-            untuk memastikan bahwa antarmuka Anda memenuhi tujuan bisnis Anda
-            dan memuaskan pengguna Anda pada setiap langkahnya.
+          {t('solution.ui/ux.desc')}
           </p>
         </div>
         <div className="container overflow-hidden md:-my-32 lg:my-0 sm:py-16">
@@ -291,4 +275,12 @@ export default function solusi() {
   );
 }
 
-// xl:pl-36
+export const getStaticProps: GetStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale ?? "id", [
+      "common",
+      "footer",
+      "navbar",
+    ])),
+  },
+});

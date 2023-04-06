@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Button from "./button";
-import { HiArrowSmRight } from "react-icons/hi";
+import { Trans } from "next-i18next";
 
 export default function Belief() {
   return (
@@ -15,15 +15,21 @@ export default function Belief() {
                   OUR BELIEF
                 </h2>
                 <p className="text-3xl lg:text-4xl leading-[44px] text-grey-900">
-                  Kami percaya pada pemberdayaan teknologi untuk semua, dan
-                  sadar bahwa{" "}
-                  <span className="font-semibold text-grey-900">
-                    kami dapat membuat perubahan dengan memberikan layanan
-                    teknologi yang berkualitas
-                  </span>{" "}
+                  <Trans i18nKey="belief">
+                    Kami percaya pada pemberdayaan teknologi untuk semua, dan
+                    sadar bahwa{" "}
+                    <span className="font-semibold text-grey-900">
+                      kami dapat membuat perubahan dengan memberikan layanan
+                      teknologi yang berkualitas
+                    </span>{" "}
+                  </Trans>
                 </p>
                 <div className="mt-[54px]">
-                  <Button>Mau tau lebih banyak</Button>
+                  <Trans i18nKey={'more'}>
+                    <Button>
+                      Mau tahu lebih banyak
+                    </Button>
+                  </Trans>
                 </div>
               </div>
             </div>
@@ -40,34 +46,5 @@ export default function Belief() {
         </div>
       </section>
     </>
-
-    // <section className="mt-24 py-20 sm:py-24">
-    //   <div className="2xl:max-w-[1280px] w-full mx-auto flex lg:flex-row flex-col gap-8">
-    //     <div className="flex-1 flex justify-center items-center mx-auto">
-    //       <Image
-    //         className="w-[483px] h-[468px] mx-auto"
-    //         src="/img-belief.svg"
-    //         alt="img-belief"
-    //         width={0}
-    //         height={0}
-    //       />
-    //     </div>
-    //     <div className="xl:flex-[1.1] lg:flex-[1.4] flex justify-center flex-col">
-    //       <h2 className="text-green-600 font-semibold text-sm md:text-base mb-1 md:mb-3">
-    //       OUR BELIEF
-    //     </h2>
-    //     <p className="text-3xl lg:text-4xl leading-[44px] text-grey-900">
-    //       Kami percaya pada pemberdayaan teknologi untuk semua, dan sadar bahwa{" "}
-    //       <span className="font-semibold text-grey-900">
-    //         kami dapat membuat perubahan dengan memberikan layanan teknologi
-    //         yang berkualitas
-    //       </span>{" "}
-    //     </p>
-    //     <div className="mt-[54px]">
-    //       <Button>Mau tau lebih banyak</Button>
-    //     </div>
-    //     </div>
-    //   </div>
-    // </section>
   );
 }
