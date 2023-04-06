@@ -5,8 +5,16 @@ import Newsletter from "@components/Newsletter";
 import Gradient1 from "../components/gradient/gradient1";
 import { GetStaticProps } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
+import Head from "next/head";
 
 export default function Solusi() {
+  const router = useRouter()
+  const { pathname } = router
+  const { t } = useTranslation()
+  const desc = t('solution.appdev.title')
+
   const appdev = [
     {
       name: "Pembuatan aplikasi yang berfokus pada pengguna dan unik",
@@ -78,7 +86,21 @@ export default function Solusi() {
 
   return (
     <>
-      {/* App Dev */}
+      <Head>
+        <title>Art By Code - Solution</title>
+        <meta name="title" content="Art By Code - Solution" />
+        <meta name="description" content={desc} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={pathname} />
+        <meta property="og:title" content="Art By Code - Solution" />
+        <meta property="og:description" content={desc} />
+        <meta property="og:image" content="/favicon/logo.png" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content={pathname} />
+        <meta property="twitter:title" content="Art By Code - Solution" />
+        <meta property="twitter:description" content={desc} />
+        <meta property="twitter:image" content="/favicon/logo.png" />
+      </Head>
       <section>
         <Gradient1 />
         <div className="container grid grid-cols-12 py-10 sm:py-24 text-start">
@@ -297,10 +319,9 @@ export const getStaticProps: GetStaticProps = async ({
   locale,
 }) => ({
   props: {
-    ...(await serverSideTranslations(locale ?? 'id', [
-      'common',
-      'footer',
-      'navbar'
+    ...(await serverSideTranslations(locale ?? "id", [
+      "common",
+      "navbar"
     ])),
   },
 })

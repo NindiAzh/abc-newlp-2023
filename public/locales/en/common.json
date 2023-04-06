@@ -8,6 +8,11 @@
       "desc": "Let's create something <2>beautiful</2> with a ",
       "code": "code"
     },
+    "stats": {
+      "success": "Successful Projects",
+      "happy": "Happy Clients",
+      "pro": "Professional Personnels"
+    },
     "solution": {
       "title": "Solution",
       "desc": "We understand that you want to focus on making your business ideas and needs a reality. Our experts are ready to help ease your mind - Let's start creating art from code",
@@ -28,6 +33,43 @@
       "desc": "We are always ready to answer all your questions and meet your needs"
     }
   },
+  "solution": {
+    "appdev": {
+      "app": "APP DEVELOPMENT",
+      "title": "Let's Build an App Together! Art By Code's Expert Team Will Help You Achieve Your Digital Goals with Tailored Solutions and a Playful Touch!",
+      "desc": "Hey there! Ready to take your business to the next level with an amazing app? Art By Code is here to help! Our expert team offers tailored app development solutions to meet your unique needs and goals. With the latest technologies and a touch of playfulness, we'll create an app that's sure to impress and help you achieve your digital dreams. Let's work together to bring your app vision to life!",
+      "explainTitleOne": "User-centric and unique app crafting",
+      "explainDescOne": "We'll work closely with you to create a mobile app that is uniquely yours. Our team takes a personalized approach to app development",
+      "explainTitleTwo": "Passionate experts at your service",
+      "explainDescTwo": "At Art By Code, we're thrilled to have a team of app development experts who are passionate about helping businesses achieve their digital goals.",
+      "explainTitleThree": "Seamless integration with your systems and processes",
+      "explainDescThree": "At Art By Code, we understand the importance of making sure that your app integrates seamlessly with your existing systems and processes.",
+      "link": "See more"
+    },
+    "webdev": {
+      "web": "WEB DEVELOPMENT",
+      "title": "Transform Your Web Presence with Art By Code: Where Playful Creativity Meets Professional Expertise!",
+      "desc": "Hey there! Want a website that stands out from the crowd? Art By Code is your go-to for top-notch web development! Our team of experts will bring your vision to life with a playful touch. Let's make your website the talk of the town!",
+      "explainTitleOne": "Stunning web designs that stand out!",
+      "explainDescOne": "Our team of experts will bring your website to life with eye-catching designs that will make your brand stand out.",
+      "explainTitleTwo": "Customized websites for you!",
+      "explainDescTwo": "We don't believe in one-size-fits-all solutions. Instead, we work with you to understand your unique needs and develop a customized website that reflects your brand and goals",
+      "explainTitleThree": "Fun development ahead!",
+      "explainDescThree": "We believe that web development should be fun! That's why we infuse our projects with a playful touch that sets us apart from the competition",
+      "link": "See more"
+    },
+    "ui/ux": {
+      "uiux": "UI/UX DESIGN",
+      "title": "Craft an Engaging User Experience and Elevate Your Design with Our Full-Service UI/UX Development Solution",
+      "desc": "At Art By Code, we believe that good design is about more than just aesthetics – it's about creating an experience that your users will love. Our UI/UX development solution combines creativity and functionality to create a seamless interface that's both visually stunning and easy to use. From discovery to testing, we work closely with you to ensure that your interface meets your business goals and delights your users at every step",
+      "explainTitleOne": "User-centered design for intuitive experiences",
+      "explainDescOne": "Our team of experienced designers uses a human-centered design approach to create an intuitive and engaging user experience that reflects your brand and your customers' needs",
+      "explainTitleTwo": "Tailored UI/UX solutions that put your business & customers first",
+      "explainDescTwo": "We take the time to understand your business and your customers, and use that knowledge to craft UI/UX solutions that are tailored to your specific needs and goals",
+      "explainTitleThree": "Designs to match your brand's style and voice",
+      "explainDescThree": "From minimalist to bold, classic to cutting-edge, our designers have the versatility to create a UI/UX design that matches your brand's style and voice, while also being effective in achieving your desired outcomes"
+    }
+  },
   "about": {
     "help": {
       "title": "Who do we help?",
@@ -36,6 +78,64 @@
     "belief": {
       "title": "What do you believe in?",
       "desc": "Work with integrity and wholeheartedly to deliver the best results, because the success of our colleagues will be the foundation for us to grow as well"
+    },
+    "stats": {
+      "project": "Projects completed",
+      "global": "Global downloads",
+      "star": "5-star reviews"
+    }
+  },
+  "project": {
+    "abc": {
+      "title": "Project",
+      "desc" : "We're excited to share our portfolio with you! It's not just a collection of past projects, but a testament to our expertise and a way to build your confidence that we can deliver the results you're looking for. Check it out and let's discuss how we can take your project to the next level!",
+      "slideOne": "Mobile",
+      "slideTwo": "Web Design",
+      "link": "Visit Google Play"
+    }
+  },
+  "work": {
+    "collab": {
+      "coll": "COLLABORATIUM",
+      "title": "We love collaboration!",
+      "desc": "Communication and transparency are the foundation of the long-term relationships we all want. So, let's talk and delve deeper into your needs!",
+      "explainTitleOne": "Project Planning",
+      "explainDescOne": "Discuss transparent development planning of your needs.",
+      "explainTitleTwo": "Executive Report",
+      "explainDescTwo": "Get timely reports on the development progress that has been done.",
+      "explainTitleThree": "Routine Communication",
+      "explainDescThree": "We are ready to answer all questions and provide the information you need."
+    },
+    "passion": {
+      "pass": "PASSION",
+      "title": "We build with heart and passion!",
+      "desc": "Building something is not just a job for us. We love building outstanding solutions for outstanding people!",
+      "explainTitleOne": "Code Quality",
+      "explainDescOne": "Providing high-quality code that we have reviewed and tested.",
+      "explainTitleTwo": "Automated Testing",
+      "explainDescTwo": "Conducting a series of automated tests with international solutions.",
+      "explainTitleThree": "Always Up-to-Date",
+      "explainDescThree": "Building your solutions with the latest technology and information."
+    },
+    "cleanCode": {
+      "code": "CLEAN CODE",
+      "title": "We believe in clean code!",
+      "desc": "Clean code speaks more clearly than a pile of colorful sticky notes - we've learned that from experience. Our focus is on building with clean code principles (which will, of course, make your IT team happy too) for a long-lasting and easily maintainable product."
+    },
+    "technical": {
+      "tech": "TECHNICAL EXPERTISE",
+      "title": "Our technical capabilities",
+      "desc": "Our technical ability is continuously growing as we never stop learning the latest languages and technologies to provide you with the best solutions."
+    },
+    "collabTools": {
+      "title": "Our collaboration tools",
+      "desc": "We're all about collaboration and teamwork! That's why we use a set of tools that make it easy for you to join in and be a part of the process. Together, we can achieve amazing things!",
+      "teleDesc": "For continuous communication with the team",
+      "microDesc": "For video conferencing and coordination",
+      "gdocsDesc": "For dynamic collaboration and documentation",
+      "figmaDesc": "To design and present a mockup design",
+      "whimDesc": "To design and present truss drawings",
+      "link": "View integration"
     }
   },
   "contact": {

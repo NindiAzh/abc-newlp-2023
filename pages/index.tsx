@@ -17,7 +17,7 @@ const Home = (
 ) => {
   const router = useRouter()
   const { pathname } = router
-  const { t } = useTranslation('common')
+  const { t } = useTranslation()
   const desc = t('home.solution.desc')
 
   return (
@@ -61,7 +61,6 @@ export const getStaticProps: GetStaticProps = async ({
   props: {
     ...(await serverSideTranslations(locale ?? 'id', [
       'common',
-      'footer',
       'navbar'
     ])),
   },
