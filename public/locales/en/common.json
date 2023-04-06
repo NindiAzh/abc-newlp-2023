@@ -69,8 +69,13 @@
       "explainTitleThree": "Designs to match your brand's style and voice",
       "explainDescThree": "From minimalist to bold, classic to cutting-edge, our designers have the versatility to create a UI/UX design that matches your brand's style and voice, while also being effective in achieving your desired outcomes"
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5d9093dd37898cc78f643db9737216083a04ff69
   },
   "about": {
+    "titleAbout": "Who we are !",
     "help": {
       "title": "Who do we help?",
       "desc": "From small to large businesses seeking technology in business development and efficiency. We aim to become a strategic, long-term partner who can fulfill their needs and also serve as a discussion partner for our colleagues."

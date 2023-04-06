@@ -28,9 +28,9 @@ export default function About() {
   ];
 
   const stats = [
-    { id: 1, name: "Projects completed", value: "400+" },
-    { id: 2, name: "Global downloads", value: "10k" },
-    { id: 3, name: "5-star reviews", value: "200+" },
+    { id: 1, name: t('about.stats.project'), value: "400+" },
+    { id: 2, name: t('about.stats.global'), value: "10k" },
+    { id: 3, name: t('about.stats.star'), value: "200+" },
   ];
 
   return (

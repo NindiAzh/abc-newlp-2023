@@ -1,10 +1,14 @@
 import React from "react";
+import { useTranslation, Trans } from "next-i18next";
+
 
 export default function Stats() {
+    const { t } = useTranslation()
+
   const stats = [
-    { id: 1, name: "Successful Projects", value: "20+" },
-    { id: 2, name: "Happy Clients", value: "10+" },
-    { id: 3, name: "Professional Personnels", value: "200+" },
+    { id: 1, name:t('home.stats.success'), value: "20+" },
+    { id: 2, name:t('home.stats.happy'), value: "10+" },
+    { id: 3, name:t('home.stats.pro'), value: "200+" },
   ];
 
   return (

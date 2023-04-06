@@ -20,10 +20,11 @@ export default function Project() {
 
   const tabs = [
     {
-      name: "Mobile",
+      name:  t("project.abc.slideOne"),
+
     },
     {
-      name: "Web Design",
+      name: t("project.abc.slideTwo"),
     },
   ];
 
@@ -50,14 +51,10 @@ export default function Project() {
           Art By Code
         </h2>
         <p className="col-span-full text-grey-900 font-semibold text-3xl md:text-4xl mb-[20px]">
-          Project
+          {t("project.abc.title")}
         </p>
         <p className="mt-[40px] col-span-full xl:w-11/12 lg:w-5/6 text-grey-600 text-xl leading-[30px]">
-          Kami sangat senang untuk membagikan portofolio kami kepada Anda! Ini
-          bukan hanya koleksi proyek masa lalu, tetapi juga bukti keahlian kami
-          dan cara untuk membangun kepercayaan Anda bahwa kami dapat memberikan
-          hasil yang Anda cari. Cek portofolio kami dan mari diskusikan
-          bagaimana kami dapat membawa proyek Anda ke level yang lebih tinggi!
+          {t("project.abc.desc")}
         </p>
       </div>
 
@@ -74,7 +71,7 @@ export default function Project() {
                         selected
                           ? "border-green-600 text-green-600"
                           : "text-grey-500",
-                        "whitespace-nowrap border-b-4 py-6 text-xl font-semibold"
+                        "whitespace-nowrap border-b-4 py-6 text-xl font-semibold cursor-pointer"
                       )
                     }
                   >
@@ -91,21 +88,21 @@ export default function Project() {
                   <div className="md:w-6/12 px-5 pb-10">
                     <ProjectsItem
                       name="Trans Shopping Mall App Design"
-                      desc="Visit Google Play"
+                      desc= {t("project.abc.link")}
                       image="/img-trans.svg"
                     />
                   </div>
                   <div className="md:w-6/12 px-5 pb-10">
                     <ProjectsItem
                       name="Sato Carwash park App Design"
-                      desc="Visit Google Play"
+                      desc= {t("project.abc.link")}
                       image="/img-sato-carwash.svg"
                     />
                   </div>
                   <div className="md:w-6/12 px-5 pb-10 md:mt-[64px]">
                     <ProjectsItem
                       name="Sato Point Of Sale App Design"
-                      desc="Visit Google Play"
+                      desc= {t("project.abc.link")}
                       image="/img-sato-pos.svg"
                     />
                   </div>
@@ -120,7 +117,7 @@ export default function Project() {
                   <div className="md:w-6/12 px-5 pb-10">
                     <ProjectsItem
                       name="Trans Shopping Mall App Design"
-                      desc="Visit Google Play"
+                      desc= {t("project.abc.link")}
                       image="/img-trans.svg"
                     />
                   </div>
@@ -134,13 +131,11 @@ export default function Project() {
   );
 }
 
-export const getStaticProps: GetStaticProps = async ({
-  locale,
-}) => ({
+export const getStaticProps: GetStaticProps = async ({ locale }) => ({
   props: {
     ...(await serverSideTranslations(locale ?? "id", [
       "common",
       "navbar"
     ])),
   },
-})
+});

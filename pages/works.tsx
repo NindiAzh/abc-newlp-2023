@@ -18,42 +18,42 @@ export default function Works() {
 
   const collab = [
     {
-      name: "Perencanaan Project",
+      name: t("work.collab.explainTitleOne"),
       description:
-        "Membahas perencanaan pengembangan kebutuhan kamu yang transparan",
+      t("work.collab.explainDescOne"),
       icon: "/icon-check.svg",
     },
     {
-      name: "Laporan Eksekutif",
+      name: t("work.collab.explainTitleTwo"),
       description:
-        "Dapatkan laporan berkala mengenai pengembangan yang telah dikerjakan",
+      t("work.collab.explainDescTwo"),
       icon: "/icon-check.svg",
     },
     {
-      name: "Komunikasi Rutin",
+      name: t("work.collab.explainTitleThree"),
       description:
-        "Kami siap menjawab semua pertanyaan dan memberikan informasi yang kamu butuhkan",
+      t("work.collab.explainDescTwo"),
       icon: "/icon-check.svg",
     },
   ];
 
   const passion = [
     {
-      name: "Kualitas Kode",
+      name: t("work.passion.explainTitleOne"),
       description:
-        "Memberiakan Kode berkualitas baik yang telah kami tinjau dan uji.",
+      t("work.passion.explainDescOne"),
       icon: "/icon-check.svg",
     },
     {
-      name: "Tes Otomatis",
+      name:  t("work.passion.explainTitleTwo"),
       description:
-        "Melakukan rangkaian tes otomatis dengan solusi internasional",
+      t("work.passion.explainDescTwo"),
       icon: "/icon-check.svg",
     },
     {
-      name: "Selalu Terkini",
+      name: t("work.passion.explainTitleThree"),
       description:
-        "Membangun solusi kamu dengan teknologi dan informasi terkini",
+      t("work.passion.explainDescThree"),
       icon: "/icon-check.svg",
     },
   ];
@@ -110,57 +110,36 @@ export default function Works() {
   const toolOne = [
     {
       name: "Telegram",
-      description: "Untuk berkelanjutan komunikasi dengan tim",
+      description:  t("work.collabTools.teleDesc"),
       imageSrc: "/telegram.svg",
-      link: "View integration",
       href: "#",
     },
     {
       name: "Microsoft Teams",
-      description: "Untuk konferensi video dan koordinas ",
+      description: t("work.collabTools.microDesc"),
       imageSrc: "/micro.svg",
-      link: "View integration",
       href: "#",
     },
     {
       name: "Google Docs",
-      description: "Untuk dinamis kolaborasi dan dokumentasi",
+      description: t("work.collabTools.gdocsDesc"),
       imageSrc: "/gdocs.svg",
-      link: "View integration",
       href: "#",
     },
     {
       name: "Figma",
-      description: "Untuk berkelanjutan komunikasi dengan tim",
+      description: t("work.collabTools.figmaDesc"),
       imageSrc: "/figma.svg",
-      link: "View integration",
       href: "#",
     },
     {
       name: "Whimsical",
-      description: "Untuk merancang dan menyajikandesain maket",
+      description: t("work.collabTools.whimDesc"),
       imageSrc: "/whimsical.svg",
-      link: "View integration",
       href: "#",
     },
   ];
 
-  const toolTwo = [
-    {
-      name: "Figma",
-      description: "Untuk berkelanjutan komunikasi dengan tim",
-      imageSrc: "/figma.svg",
-      link: "View integration",
-      href: "#",
-    },
-    {
-      name: "Whimsical",
-      description: "Untuk merancang dan menyajikandesain maket",
-      imageSrc: "/whimsical.svg",
-      link: "View integration",
-      href: "#",
-    },
-  ];
 
   return (
     <>
@@ -422,13 +401,11 @@ export default function Works() {
   );
 }
 
-export const getStaticProps: GetStaticProps = async ({
-  locale,
-}) => ({
+export const getStaticProps: GetStaticProps = async ({ locale }) => ({
   props: {
     ...(await serverSideTranslations(locale ?? "id", [
       "common",
       "navbar"
     ])),
   },
-})
+});
