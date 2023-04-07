@@ -4,12 +4,32 @@ import Image from "next/image";
 import React from "react";
 import { Trans, useTranslation } from "next-i18next";
 import Gradient1 from "../components/gradient/gradient1";
+import { useRouter } from "next/router";
+import Head from "next/head";
 
 export default function Contact() {
+  const router = useRouter()
+  const { pathname } = router
   const { t } = useTranslation()
+  const desc = t('contact.desc')
 
   return (
     <>
+      <Head>
+        <title>Art By Code - Contact Us</title>
+        <meta name="title" content="Art By Code - Contact Us" />
+        <meta name="description" content={desc} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={pathname} />
+        <meta property="og:title" content="Art By Code - Contact Us" />
+        <meta property="og:description" content={desc} />
+        <meta property="og:image" content="/favicon/logo.png" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content={pathname} />
+        <meta property="twitter:title" content="Art By Code - Contact Us" />
+        <meta property="twitter:description" content={desc} />
+        <meta property="twitter:image" content="/favicon/logo.png" />
+      </Head>
      <Gradient1 />
       <div className="container relative mb-2">
         <div className="lg:absolute lg:inset-5 lg:left-1/2 md:-mt-2 2xl:-mt-0 xl:-mt-0 lg:-mt-0 -mt-20">
@@ -284,7 +304,6 @@ export const getStaticProps: GetStaticProps = async ({
   props: {
     ...(await serverSideTranslations(locale ?? 'id', [
       'common',
-      'footer',
       'navbar'
     ])),
   },

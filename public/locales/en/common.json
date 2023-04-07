@@ -11,7 +11,7 @@
     "stats": {
       "success": "Successful Projects",
       "happy": "Happy Clients",
-      "pro": "Professional Personnels"      
+      "pro": "Professional Personnels"
     },
     "solution": {
       "title": "Solution",
@@ -69,7 +69,6 @@
       "explainTitleThree": "Designs to match your brand's style and voice",
       "explainDescThree": "From minimalist to bold, classic to cutting-edge, our designers have the versatility to create a UI/UX design that matches your brand's style and voice, while also being effective in achieving your desired outcomes"
     }
-
   },
   "about": {
     "titleAbout": "Who we are !",
@@ -84,7 +83,7 @@
     "stats": {
       "project": "Projects completed",
       "global": "Global downloads",
-      "star": "5-star reviews"      
+      "star": "5-star reviews"
     }
   },
   "project": {

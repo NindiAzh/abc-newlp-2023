@@ -5,13 +5,18 @@ import Gradient1 from "../components/gradient/gradient1";
 import { GetStaticProps } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import {  useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
+import Head from "next/head";
 
 function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(" ");
 }
 
 export default function Project() {
-  const { t } = useTranslation();
+  const router = useRouter()
+  const { pathname } = router
+  const { t } = useTranslation()
+  const desc = t('project.abc.desc')
 
   const tabs = [
     {
@@ -25,6 +30,21 @@ export default function Project() {
 
   return (
     <>
+      <Head>
+        <title>Art By Code - Project</title>
+        <meta name="title" content="Art By Code - Project" />
+        <meta name="description" content={desc} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={pathname} />
+        <meta property="og:title" content="Art By Code - Project" />
+        <meta property="og:description" content={desc} />
+        <meta property="og:image" content="/favicon/logo.png" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content={pathname} />
+        <meta property="twitter:title" content="Art By Code - Project" />
+        <meta property="twitter:description" content={desc} />
+        <meta property="twitter:image" content="/favicon/logo.png" />
+      </Head>
       <div className="container grid grid-cols-12 py-10 sm:py-24 text-start ">
         <Gradient1 />
         <h2 className="col-span-full text-green-700 font-semibold mb-[12px] md:text-base">
@@ -115,8 +135,7 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => ({
   props: {
     ...(await serverSideTranslations(locale ?? "id", [
       "common",
-      "footer",
-      "navbar",
+      "navbar"
     ])),
   },
 });
