@@ -21,11 +21,10 @@ export default function Project() {
   const tabs = [
     {
       name:  t("project.abc.slideOne"),
-
     },
     {
       name: t("project.abc.slideTwo"),
-    },
+    }
   ];
 
   return (
@@ -71,7 +70,7 @@ export default function Project() {
                         selected
                           ? "border-green-600 text-green-600"
                           : "text-grey-500",
-                        "whitespace-nowrap border-b-4 py-6 text-xl font-semibold cursor-pointer"
+                        "outline-0 whitespace-nowrap border-b-4 py-6 text-xl font-semibold cursor-pointer"
                       )
                     }
                   >
