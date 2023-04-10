@@ -9,16 +9,15 @@ import Client from "@components/Client";
 import Newsletter from "@components/Newsletter";
 import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next"
+import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
+import ScrollToTop from "../components/scroll";
 
-const Home = (
-  _props: InferGetStaticPropsType<typeof getStaticProps>
-) => {
-  const router = useRouter()
-  const { pathname } = router
-  const { t } = useTranslation()
-  const desc = t('home.solution.desc')
+const Home = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
+  const router = useRouter();
+  const { pathname } = router;
+  const { t } = useTranslation();
+  const desc = t("home.solution.desc");
 
   return (
     <>
@@ -50,20 +49,16 @@ const Home = (
           <Client />
           <Newsletter />
         </div>
+        <ScrollToTop />
       </main>
     </>
   );
-}
+};
 
-export const getStaticProps: GetStaticProps = async ({
-  locale,
-}) => ({
+export const getStaticProps: GetStaticProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale ?? 'id', [
-      'common',
-      'navbar'
-    ])),
+    ...(await serverSideTranslations(locale ?? "id", ["common", "navbar"])),
   },
-})
+});
 
-export default Home
+export default Home;
