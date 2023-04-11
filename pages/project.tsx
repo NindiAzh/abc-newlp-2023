@@ -7,6 +7,8 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import {  useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import Head from "next/head";
+import ScrollToTop from "../components/scroll";
+
 
 function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(" ");
@@ -125,6 +127,8 @@ export default function Project() {
             </Tab.Panels>
           </Tab.Group>
         </div>
+
+        <ScrollToTop />
       </section>
     </>
   );

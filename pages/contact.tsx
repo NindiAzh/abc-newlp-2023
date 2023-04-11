@@ -6,6 +6,8 @@ import { Trans, useTranslation } from "next-i18next";
 import Gradient1 from "../components/gradient/gradient1";
 import { useRouter } from "next/router";
 import Head from "next/head";
+import ScrollToTop from "../components/scroll";
+
 
 export default function Contact() {
   const router = useRouter()
@@ -294,6 +296,8 @@ export default function Contact() {
           </div>
         </div>
       </div>
+
+      <ScrollToTop />
     </>
   );
 }

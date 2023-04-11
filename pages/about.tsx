@@ -7,6 +7,8 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { Trans, useTranslation } from "next-i18next";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import ScrollToTop from "../components/scroll";
+
 
 export default function About() {
   const router = useRouter()
@@ -131,6 +133,8 @@ export default function About() {
         <div className="container -mt-24">
           <Newsletter />
         </div>
+
+        <ScrollToTop />
       </section>
     </>
   );

@@ -8,6 +8,8 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import Head from "next/head";
+import ScrollToTop from "../components/scroll";
+
 
 export default function Solusi() {
   const router = useRouter()
@@ -290,6 +292,9 @@ export default function Solusi() {
       <div className="container">
         <Newsletter />
       </div>
+
+      <ScrollToTop />
+
     </>
   );
 }
