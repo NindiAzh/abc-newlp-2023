@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-export default function ProjectsItem({ name, desc, image }: any) {
+export default function ProjectsItem({ name, descPlay, descStore, image }: any) {
   return (
     <article className="text-start">
       <Image
@@ -23,9 +23,24 @@ export default function ProjectsItem({ name, desc, image }: any) {
         <Link href="https://play.google.com/" legacyBehavior>
           <a
             target="_blank"
-            className="lg:text-base text-sm text-grey font-semibold mx-[13px]"
+            className="lg:text-base text-sm text-grey font-semibold mx-[13px] hover:text-grey-900"
           >
-            {desc}
+            {descPlay}
+          </a>
+        </Link>
+
+        <Image
+          src="/icon-appstore.svg"
+          alt="icon-project"
+          width={28}
+          height={26}
+        />
+        <Link href="https://play.google.com/" legacyBehavior>
+          <a
+            target="_blank"
+            className="lg:text-base text-sm text-grey font-semibold mx-[8px] hover:text-grey-900"
+          >
+            {descStore}
           </a>
         </Link>
       </div>

@@ -4,30 +4,45 @@ import ProjectsItem from "../components/ProjectsItem";
 import Gradient1 from "../components/gradient/gradient1";
 import { GetStaticProps } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import {  useTranslation } from "next-i18next";
+import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import ScrollToTop from "../components/scroll";
-
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+import { list1, textSlideUP } from "../components/motion";
+import { Fade } from "react-awesome-reveal";
 
 function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(" ");
 }
 
 export default function Project() {
-  const router = useRouter()
-  const { pathname } = router
-  const { t } = useTranslation()
-  const desc = t('project.abc.desc')
+  const router = useRouter();
+  const { pathname } = router;
+  const { t } = useTranslation();
+  const desc = t("project.abc.desc");
 
   const tabs = [
     {
-      name:  t("project.abc.slideOne"),
+      name: t("project.abc.slideOne"),
     },
     {
       name: t("project.abc.slideTwo"),
-    }
+    },
   ];
+
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      control.start("vissible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
 
   return (
     <>
@@ -46,19 +61,20 @@ export default function Project() {
         <meta property="twitter:description" content={desc} />
         <meta property="twitter:image" content="/favicon/logo.png" />
       </Head>
-      <div className="container grid grid-cols-12 py-10 sm:py-24 text-start ">
-        <Gradient1 />
-        <h2 className="col-span-full text-green-700 font-semibold mb-[12px] md:text-base">
-          Art By Code
-        </h2>
-        <p className="col-span-full text-grey-900 font-semibold text-3xl md:text-4xl mb-[20px]">
-          {t("project.abc.title")}
-        </p>
-        <p className="mt-[40px] col-span-full xl:w-11/12 lg:w-5/6 text-grey-600 text-xl leading-[30px]">
-          {t("project.abc.desc")}
-        </p>
-      </div>
-
+          <Gradient1 />
+      <Fade direction="top-left" triggerOnce>
+        <div className="container grid grid-cols-12 py-10 sm:py-24 text-start ">
+          <h2 className="col-span-full text-green-700 font-semibold mb-[12px] md:text-base">
+            Art By Code
+          </h2>
+          <p className="col-span-full text-grey-900 font-semibold text-3xl md:text-4xl mb-[20px]">
+            {t("project.abc.title")}
+          </p>
+          <p className="mt-[40px] col-span-full xl:w-11/12 lg:w-5/6 text-grey-600 text-xl leading-[30px]">
+            {t("project.abc.desc")}
+          </p>
+        </div>
+      </Fade>
       <section className="mx-auto md:-my-[64px] -my-10">
         <div className="mx-auto container">
           <Tab.Group as="div" className="mt-4">
@@ -89,21 +105,24 @@ export default function Project() {
                   <div className="md:w-6/12 px-5 pb-10">
                     <ProjectsItem
                       name="Trans Shopping Mall App Design"
-                      desc= {t("project.abc.link")}
+                      descPlay={t("project.abc.linkPlay")}
+                      descStore={t("project.abc.linkStore")}
                       image="/img-trans.svg"
                     />
                   </div>
                   <div className="md:w-6/12 px-5 pb-10">
                     <ProjectsItem
                       name="Sato Carwash park App Design"
-                      desc= {t("project.abc.link")}
+                      descPlay={t("project.abc.linkPlay")}
+                      descStore={t("project.abc.linkStore")}
                       image="/img-sato-carwash.svg"
                     />
                   </div>
                   <div className="md:w-6/12 px-5 pb-10 md:mt-[64px]">
                     <ProjectsItem
                       name="Sato Point Of Sale App Design"
-                      desc= {t("project.abc.link")}
+                      descPlay={t("project.abc.linkPlay")}
+                      descStore={t("project.abc.linkStore")}
                       image="/img-sato-pos.svg"
                     />
                   </div>
@@ -118,7 +137,8 @@ export default function Project() {
                   <div className="md:w-6/12 px-5 pb-10">
                     <ProjectsItem
                       name="Trans Shopping Mall App Design"
-                      desc= {t("project.abc.link")}
+                      descPlay={t("project.abc.linkPlay")}
+                      descStore={t("project.abc.linkStore")}
                       image="/img-trans.svg"
                     />
                   </div>
@@ -136,9 +156,6 @@ export default function Project() {
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale ?? "id", [
-      "common",
-      "navbar"
-    ])),
+    ...(await serverSideTranslations(locale ?? "id", ["common", "navbar"])),
   },
 });

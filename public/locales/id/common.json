@@ -4,7 +4,7 @@
   "belief": "Kami percaya pada pemberdayaan teknologi untuk semua, dan sadar bahwa <2>kami dapat membuat perubahan dengan memberikan layanan teknologi yang berkualitas</2>",
   "home": {
     "header": {
-      "title": "Hai, kami adalah Art By Code | ABC",
+      "title": "Hai, kami adalah ",
       "desc": "Ayo ciptakan sesuatu yang <2>indah</2> dengan sebuah ",
       "code": "kode"
     },
@@ -91,7 +91,8 @@
       "desc": "Kami sangat senang untuk membagikan portofolio kami kepada Anda! Ini bukan hanya koleksi proyek masa lalu, tetapi juga bukti keahlian kami dan cara untuk membangun kepercayaan Anda bahwa kami dapat memberikan hasil yang Anda cari. Cek portofolio kami dan mari diskusikan bagaimana kami dapat membawa proyek Anda ke level yang lebih tinggi!",
       "slideOne": "Ponsel",
       "slideTwo": "Desain Web",
-      "link": "Kunjungi Google Play"
+      "linkPlay": "Kunjungi Google Play",
+      "linkStore": "Kunjungi AppStore"
     }
   },
   "work": {

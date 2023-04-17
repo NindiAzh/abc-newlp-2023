@@ -1,4 +1,6 @@
+
 export default function Footer() {
+
   const navigation = {
     social: [
       {
@@ -89,6 +91,7 @@ export default function Footer() {
     ],
   };
   return (
+    // <Fade direction="up">
     <footer>
       <div className="mx-auto max-w-7xl px-6 pb-8 pt-20 sm:pt-10 lg:px-8 lg:pt-16">
         <div className="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 md:flex md:items-center md:justify-between lg:mt-24">
@@ -110,5 +113,6 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+    // </Fade>
   );
 }

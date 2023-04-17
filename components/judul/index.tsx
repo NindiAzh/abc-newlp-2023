@@ -11,3 +11,4 @@ export default function index({ left, children }: any) {
     </h2>
   );
 }
+

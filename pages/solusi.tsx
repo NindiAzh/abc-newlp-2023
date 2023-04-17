@@ -9,79 +9,70 @@ import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import ScrollToTop from "../components/scroll";
-
+import { Fade } from "react-awesome-reveal";
 
 export default function Solusi() {
-  const router = useRouter()
-  const { pathname } = router
-  const { t } = useTranslation()
-  const desc = t('solution.appdev.title')
+  const router = useRouter();
+  const { pathname } = router;
+  const { t } = useTranslation();
+  const desc = t("solution.appdev.title");
 
   const appdev = [
     {
-      name: t('solution.appdev.explainTitleOne'),
-      description:
-      t('solution.appdev.explainDescOne'),
+      name: t("solution.appdev.explainTitleOne"),
+      description: t("solution.appdev.explainDescOne"),
       icon: "/icon-mess.svg",
-      link: t('solution.appdev.link'),
+      link: t("solution.appdev.link"),
       href: "#",
     },
     {
-      name: t('solution.appdev.explainTitleTwo'),
-      description:
-      t('solution.appdev.explainDescTwo'),
+      name: t("solution.appdev.explainTitleTwo"),
+      description: t("solution.appdev.explainDescTwo"),
       icon: "/icon-kilat.svg",
-      link: t('solution.appdev.link'),
+      link: t("solution.appdev.link"),
       href: "#",
     },
     {
-      name: t('solution.appdev.explainTitleThree'),
-      description:
-      t('solution.appdev.explainDescThree'),
+      name: t("solution.appdev.explainTitleThree"),
+      description: t("solution.appdev.explainDescThree"),
       icon: "/icon-share.svg",
-      link:  t('solution.appdev.link'),
+      link: t("solution.appdev.link"),
       href: "#",
     },
   ];
 
   const webdev = [
     {
-      name: t('solution.webdev.explainTitleOne'),
-      description:
-      t('solution.webdev.explainDescOne'),
+      name: t("solution.webdev.explainTitleOne"),
+      description: t("solution.webdev.explainDescOne"),
       icon: "/icon-mess.svg",
     },
     {
-      name: t('solution.webdev.explainTitleTwo'),
-      description:
-      t('solution.webdev.explainDescTwo'),
+      name: t("solution.webdev.explainTitleTwo"),
+      description: t("solution.webdev.explainDescTwo"),
       icon: "/icon-kilat.svg",
     },
     {
-      name: t('solution.webdev.explainTitleThree'),
-      description:
-      t('solution.webdev.explainDescThree'),
+      name: t("solution.webdev.explainTitleThree"),
+      description: t("solution.webdev.explainDescThree"),
       icon: "/icon-share.svg",
     },
   ];
 
   const uiux = [
     {
-      name: t('solution.ui/ux.explainTitleOne'),
-      description:
-      t('solution.ui/ux.explainDescOne'),
+      name: t("solution.ui/ux.explainTitleOne"),
+      description: t("solution.ui/ux.explainDescOne"),
       icon: "/icon-mess.svg",
     },
     {
-      name: t('solution.ui/ux.explainTitleTwo'),
-      description:
-      t('solution.ui/ux.explainDescTwo'),
+      name: t("solution.ui/ux.explainTitleTwo"),
+      description: t("solution.ui/ux.explainDescTwo"),
       icon: "/icon-kilat.svg",
     },
     {
-      name: t('solution.ui/ux.explainTitleThree'),
-      description:
-      t('solution.ui/ux.explainDescOne'),
+      name: t("solution.ui/ux.explainTitleThree"),
+      description: t("solution.ui/ux.explainDescOne"),
       icon: "/icon-share.svg",
     },
   ];
@@ -105,20 +96,24 @@ export default function Solusi() {
       </Head>
       <section>
         <Gradient1 />
-        <div className="container grid grid-cols-14 py-10 sm:py-24 text-start">
-          <h2 className="text-base font-semibold leading-[24px] text-green-600 flex">
-          {t('solution.appdev.app')}
-          </h2>
-          <h2 className="mt-[12px] col-span-full text-grey-900 font-semibold mb-[12px] md:text-4xl text-3xl leading-[44px] max-w-3xl">
-          {t('solution.appdev.title')}
-          </h2>
-          <p className="mt-[20px] col-span-full text-grey-600 md:text-xl text-lg leading-[30px] max-w-3xl">
-          {t('solution.appdev.desc')}
-          </p>
-        </div>
+        {/* App Dev */}
+        <Fade direction="left" triggerOnce>
+          <div className="container grid grid-cols-14 py-10 sm:py-24 text-start">
+            <h2 className="text-base font-semibold leading-[24px] text-green-600 flex">
+              {t("solution.appdev.app")}
+            </h2>
+            <h2 className="mt-[12px] col-span-full text-grey-900 font-semibold mb-[12px] md:text-4xl text-3xl leading-[44px] max-w-3xl">
+              {t("solution.appdev.title")}
+            </h2>
+            <p className="mt-[20px] col-span-full text-grey-600 md:text-xl text-lg leading-[30px] max-w-3xl">
+              {t("solution.appdev.desc")}
+            </p>
+          </div>
+        </Fade>
         <div className="container overflow-hidden md:-my-32 lg:my-0 sm:py-16">
           <div className="mx-auto max-w-7xl">
             <div className="mx-auto grid grid-cols-1 gap-y-16 gap-x-8 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+              <Fade direction="left">
               <div className="lg:pr-8 lg:-mt-24">
                 <div className="lg:max-w-xl">
                   <dl className="mt-8 max-w-xl space-y-[20px] lg:max-w-none px-4">
@@ -150,15 +145,18 @@ export default function Solusi() {
                   </dl>
                 </div>
               </div>
-              <div className="sm:-my-0 -my-[48px]">
-                <Image
-                  src="/img-solusi-app.svg"
-                  alt="AppDev"
-                  className="w-[548.33px] h-[450px] mx-auto"
-                  width={548.33}
-                  height={450}
-                />
-              </div>
+              </Fade>
+              <Fade direction="right">
+                <div className="sm:-my-0 -my-[48px]">
+                  <Image
+                    src="/img-solusi-app.svg"
+                    alt="AppDev"
+                    className="w-[548.33px] h-[450px] mx-auto"
+                    width={548.33}
+                    height={450}
+                  />
+                </div>
+              </Fade>
             </div>
           </div>
         </div>
@@ -166,20 +164,23 @@ export default function Solusi() {
 
       {/* Web Dev */}
       <section className="bg-green-50 lg:mt-[96px] mt-16">
+      <Fade direction="left" triggerOnce>
         <div className="container grid grid-cols-42 py-10 sm:py-28 text-start">
           <h2 className="text-base font-semibold leading-[24px] text-green-600 flex">
-          {t('solution.webdev.web')}
+            {t("solution.webdev.web")}
           </h2>
           <h2 className="mt-[12px] col-span-full text-grey-900 font-semibold mb-[12px] md:text-4xl text-3xl leading-[44px] max-w-3xl">
-          {t('solution.webdev.title')}
+            {t("solution.webdev.title")}
           </h2>
           <p className="mt-[20px] col-span-full text-grey-600 md:text-xl text-lg leading-[30px] max-w-3xl">
-          {t('solution.webdev.desc')}
+            {t("solution.webdev.desc")}
           </p>
         </div>
+        </Fade>
         <div className="overflow-hidden md:-my-40 lg:my-0 sm:py-16">
           <div className="container mx-auto">
             <div className="mx-auto grid grid-cols-1 gap-y-16 gap-x-8 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+              <Fade direction="left">
               <div className="lg:ml-auto lg:-mt-24 lg:pl-4">
                 <div className="lg:max-w-xl">
                   <dl className="mt-8 max-w-xl space-y-[48px] lg:max-w-none px-4">
@@ -204,6 +205,8 @@ export default function Solusi() {
                   </dl>
                 </div>
               </div>
+              </Fade>
+              <Fade direction="right">
               <div className="flex items-start justify-end lg:order-first">
                 <Image
                   src="/img-solusi-webdev.svg"
@@ -213,6 +216,7 @@ export default function Solusi() {
                   height={387}
                 />
               </div>
+              </Fade>
             </div>
           </div>
         </div>
@@ -220,12 +224,13 @@ export default function Solusi() {
 
       {/* UIUX Design */}
       <section>
+      <Fade direction="left" triggerOnce>
         <div className="container grid grid-cols-14 py-12 lg:py-24 md:py-60 text-start">
           <h2 className="text-base font-semibold leading-[24px] text-green-600 flex">
-          {t('solution.ui/ux.uiux')}
+            {t("solution.ui/ux.uiux")}
           </h2>
           <h2 className="mt-[12px] col-span-full text-grey-900 font-semibold mb-[12px] md:text-4xl text-3xl leading-[44px] max-w-3xl">
-          {t('solution.ui/ux.title')}
+            {t("solution.ui/ux.title")}
           </h2>
           {/* gradient */}
           <div className="absolute">
@@ -245,12 +250,14 @@ export default function Solusi() {
             />
           </div>
           <p className="mt-[20px] col-span-full text-grey-600 md:text-xl text-lg leading-[30px] max-w-3xl">
-          {t('solution.ui/ux.desc')}
+            {t("solution.ui/ux.desc")}
           </p>
         </div>
+        </Fade>
         <div className="container overflow-hidden md:-my-32 lg:my-0 sm:py-16">
           <div className="mx-auto max-w-7xl">
             <div className="mx-auto grid grid-cols-1 gap-y-16 gap-x-8 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+              <Fade direction="left">
               <div className="lg:pr-8 lg:-mt-24">
                 <div className="lg:max-w-xl">
                   <dl className="mt-8 max-w-xl space-y-[20px] lg:max-w-none px-4">
@@ -275,6 +282,8 @@ export default function Solusi() {
                   </dl>
                 </div>
               </div>
+              </Fade>
+              <Fade direction="right">
               <div className="sm:-my-0 -my-[48px]">
                 <Image
                   src="/img-solusi-uiux.svg"
@@ -284,6 +293,7 @@ export default function Solusi() {
                   height={351}
                 />
               </div>
+              </Fade>
             </div>
           </div>
         </div>
@@ -294,16 +304,12 @@ export default function Solusi() {
       </div>
 
       <ScrollToTop />
-
     </>
   );
 }
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale ?? "id", [
-      "common",
-      "navbar"
-    ])),
+    ...(await serverSideTranslations(locale ?? "id", ["common", "navbar"])),
   },
 });

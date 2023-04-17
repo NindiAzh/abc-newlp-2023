@@ -4,7 +4,7 @@
   "belief": "We believe in empowering technology for all, and realize that <2>we can make a difference by providing quality technology services</2>",
   "home": {
     "header": {
-      "title": "Hello, we are Art By Code | ABC",
+      "title": "Hello, we are ",
       "desc": "Let's create something <2>beautiful</2> with a ",
       "code": "code"
     },
@@ -92,7 +92,9 @@
       "desc" : "We're excited to share our portfolio with you! It's not just a collection of past projects, but a testament to our expertise and a way to build your confidence that we can deliver the results you're looking for. Check it out and let's discuss how we can take your project to the next level!",
       "slideOne": "Mobile",
       "slideTwo": "Web Design",
-      "link": "Visit Google Play"
+      "linkPlay": "Visit Google Play",
+      "linkStore": "Visit AppStore"
+
     }
   },
   "work": {
