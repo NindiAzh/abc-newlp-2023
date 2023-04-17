@@ -110,7 +110,9 @@ export default function Navbar() {
           <Language />
         </div>
         <div className="ml-0 mt-8">
-          <Button>Hubungi Kami</Button>
+          <Trans i18nKey="contact_us">
+            <Button>Hubungi Kami</Button>
+          </Trans>
         </div>
       </div>
     </motion.header>
