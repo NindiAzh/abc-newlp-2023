@@ -8,10 +8,9 @@ import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import ScrollToTop from "../components/scroll";
-import { motion, useAnimation } from "framer-motion";
+import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
-import { list1, textSlideUP } from "../components/motion";
 import { Fade } from "react-awesome-reveal";
 
 function classNames(...classes: any[]) {

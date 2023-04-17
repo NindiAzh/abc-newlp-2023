@@ -233,7 +233,7 @@ export default function Solusi() {
             {t("solution.ui/ux.title")}
           </h2>
           {/* gradient */}
-          <div className="absolute">
+          <div className="absolute pointer-events-none">
             <Image
               className="relative w-[1427.5px] h-[841.5px]"
               src="/gradient-solusi-page1.svg"
