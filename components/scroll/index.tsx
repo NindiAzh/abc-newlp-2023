@@ -38,7 +38,7 @@ export default function Index() {
         onClick={scrollToTop}
         className={classNames(
           isVisible ? "opacity-100" : "opacity-0",
-          "inline-flex items-center p-3 rounded-full shadow-lg shadow-green-600/40 bg-white transition-opacity hover:bg-primary-300 focus:outline-none"
+          "inline-flex items-center p-3 rounded-full shadow-lg shadow-green-600/40 bg-white transition-opacity hover:bg-primary-300 focus:outline-none hover:bg-green-50 animate-bounce"
         )}
       >
         <BsArrowUpShort className="h-6 w-6 text-green-500" aria-hidden="true" />

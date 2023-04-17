@@ -6,22 +6,28 @@ import { useRouter } from "next/router";
 import Language from "@components/language";
 import Button from "@components/button";
 import { Trans, useTranslation } from "next-i18next";
+import { motion } from "framer-motion";
+import { navVariants } from "@components/motion";
 
 export default function Navbar() {
   const router = useRouter();
   const [open, setOpen] = useState(false);
-  const { t } = useTranslation("navbar")
+  const { t } = useTranslation("navbar");
 
   const navigation = [
-    { path: "/", title: t('home') },
-    { path: "/solusi", title: t('solution') },
-    { path: "/about", title: t('about') },
-    { path: "/project", title: t('project') },
-    { path: "/works", title: t('work') },
+    { path: "/", title: t("home") },
+    { path: "/solusi", title: t("solution") },
+    { path: "/about", title: t("about") },
+    { path: "/project", title: t("project") },
+    { path: "/works", title: t("work") },
   ];
 
   return (
-    <header>
+    <motion.header
+    variants={navVariants}
+    initial="hidden"
+    whileInView="show"
+    >
       <div className="container w-full relative flex justify-between items-center py-4 md:py-6 z-50">
         {/* Logo */}
         <Link href="/" legacyBehavior>
@@ -29,7 +35,7 @@ export default function Navbar() {
             <Image
               src="/logo.svg"
               alt="Logo Art By Code"
-              className="max-h-16 md:max-h-20 md:cursor-pointer"
+              className="max-h-16 md:max-h-20 md:cursor-pointer animate-bounce"
               width={60}
               height={60}
             />
@@ -50,11 +56,15 @@ export default function Navbar() {
         </button>
 
         {/* Desktop Nav */}
-        <ul className="md:hidden hidden 2xl:flex xl:flex items-center">
+        <ul
+    
+          className="md:hidden hidden 2xl:flex xl:flex items-center"
+        >
           {navigation.map((nav, index) => (
             <li
+              // variants={navItem}
               key={index}
-              className="ml-8 text-lg text-gray-600 font-semibold hover:text-green-600 duration-200"
+              className="ml-8 text-lg text-gray-600 font-semibold hover:text-green-600 duration-300 hover:scale-110"
             >
               <Link href={nav.path} legacyBehavior>
                 <a className={router.pathname === nav.path ? "active" : ""}>
@@ -66,7 +76,7 @@ export default function Navbar() {
           <div className="ml-8">
             <Language />
           </div>
-          <div className="ml-8">
+          <div className="ml-8 duration-300 hover:scale-110">
             <Trans i18nKey="contact_us">
               <Button>Hubungi Kami</Button>
             </Trans>
@@ -103,6 +113,7 @@ export default function Navbar() {
           <Button>Hubungi Kami</Button>
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 }
+
