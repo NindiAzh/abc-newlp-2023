@@ -157,7 +157,7 @@ export default function About() {
           </div>
           <hr className="md:w-6/6 my-6 mt-4 border-[#EAECF0] sm:mx-auto lg:my-8" />
         </div>
-        <div className="container -mt-24">
+        <div className="container -mt-10">
           <Newsletter />
         </div>
 

@@ -26,7 +26,7 @@ export default function Newsletter() {
       initial="hidden"
       variants={Popup}
       animate={control}
-      className="bg-green-50 rounded-2xl py-16 sm:py-18 lg:py-20 md:mt-40 md:flex md:items-center md:justify-between 2xl:p-20 xl:p-14 lg:p-10 md:p-10 p-6"
+      className="bg-green-50 rounded-2xl py-16 sm:py-18 lg:py-20 md:mt-40 mt-24 md:flex md:items-center md:justify-between 2xl:p-20 xl:p-14 lg:p-10 md:p-10 p-6"
     >
       <Image
         className="md:text-start md:mx-0 text-center mx-auto"
