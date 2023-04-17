@@ -57,7 +57,7 @@ export default function Navbar() {
 
         {/* Desktop Nav */}
         <ul
-    
+
           className="md:hidden hidden 2xl:flex xl:flex items-center"
         >
           {navigation.map((nav, index) => (
@@ -94,6 +94,7 @@ export default function Navbar() {
         <ul>
           {navigation.map((nav, index) => (
             <li
+              onClick={() => setOpen(false)}
               key={index}
               className="text-lg mb-2 text-gray-600 font-semibold hover:text-green-600 duration-200"
             >

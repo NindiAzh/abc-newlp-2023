@@ -28,7 +28,7 @@ export default function Client() {
         <div className="grid grid-cols-12 py-10 sm:py-24">
           <Judul>Art By Code</Judul>
           <Tema>{t("home.client.title")}</Tema>
-          <div className="overflow-hidden absolute -left-32">
+          <div className="overflow-hidden absolute -left-32 pointer-events-none">
             <Image
               src="/gradient-klien.svg"
               alt=""
