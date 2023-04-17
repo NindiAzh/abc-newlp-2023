@@ -38,7 +38,7 @@ export default function Hero() {
               </h1>
             </div>
           </Fade>
-          <div className="mt-[64px]">
+          <div className="mt-[64px] duration-300 hover:scale-110">
             <Fade direction="left" delay={400}>
               <Trans i18nKey={"more"}>
                 <Button>Mau tahu lebih banyak</Button>

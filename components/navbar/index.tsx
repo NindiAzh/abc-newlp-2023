@@ -62,7 +62,6 @@ export default function Navbar() {
         >
           {navigation.map((nav, index) => (
             <li
-              // variants={navItem}
               key={index}
               className="ml-8 text-lg text-gray-600 font-semibold hover:text-green-600 duration-300 hover:scale-110"
             >

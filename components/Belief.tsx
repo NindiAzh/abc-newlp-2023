@@ -41,7 +41,7 @@ export default function Belief() {
                   </p>
                 </Fade>
                 <Fade direction="right" delay={300}>
-                  <div className="mt-[54px]">
+                  <div className="mt-[54px] duration-300 hover:scale-110">
                     <Trans i18nKey={"more"}>
                       <Button>Mau tahu lebih banyak</Button>
                     </Trans>

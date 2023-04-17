@@ -26,7 +26,7 @@ export default function Newsletter() {
       initial="hidden"
       variants={Popup}
       animate={control}
-      className="bg-green-50 rounded-2xl py-16 sm:py-18 lg:py-20 md:mt-40 mt-20 md:flex md:items-center md:justify-between 2xl:p-20 xl:p-14 lg:p-10 md:p-10 p-6"
+      className="bg-green-50 rounded-2xl py-16 sm:py-18 lg:py-20 md:mt-40 md:flex md:items-center md:justify-between 2xl:p-20 xl:p-14 lg:p-10 md:p-10 p-6"
     >
       <Image
         className="md:text-start md:mx-0 text-center mx-auto"
@@ -43,7 +43,7 @@ export default function Newsletter() {
           {t("home.contact.desc")}
         </p>
       </div>
-      <div className="mt-8 lg:mt-6 md:mt-10 lg:ml-3 md:ml-0 sm:flex-shrink-0">
+      <div className="mt-8 lg:mt-6 md:mt-10 lg:ml-3 md:ml-0 sm:flex-shrink-0 hover:scale-110">
         <Trans i18nKey="contact_us">
           <Button>Hubungi Kami</Button>
         </Trans>

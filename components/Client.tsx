@@ -63,56 +63,56 @@ export default function Client() {
             <Image
               className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
               src="/client1.svg"
-              alt="Transistor"
+              alt="majelis"
               width={158}
               height={48}
             />
             <Image
               className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
               src="/client2.svg"
-              alt="Reform"
+              alt="ctcrop"
               width={158}
               height={48}
             />
             <Image
               className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
               src="/client3.svg"
-              alt="Tuple"
+              alt="trans-shopping-mal"
               width={158}
               height={48}
             />
             <Image
               className="col-span-2 max-h-12 w-full object-contain  lg:col-span-1"
               src="/client4.svg"
-              alt="SavvyCal"
+              alt="mufit"
               width={158}
               height={48}
             />
             <Image
               className="col-span-2 max-h-12 w-full object-contain  lg:col-span-1"
               src="/client5.svg"
-              alt="SavvyCal"
+              alt="vbd"
               width={158}
               height={48}
             />
             <Image
               className="col-span-2 max-h-12 w-full object-contain  lg:col-span-1"
               src="/client6.svg"
-              alt="SavvyCal"
+              alt="sm"
               width={158}
               height={48}
             />
             <Image
               className="col-span-2 max-h-12 w-full object-contain  lg:col-span-1"
               src="/client7.svg"
-              alt="SavvyCal"
+              alt="docotel"
               width={158}
               height={48}
             />
             <Image
               className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
               src="/client8.svg"
-              alt="SavvyCal"
+              alt="kyoob"
               width={158}
               height={48}
             />
@@ -124,28 +124,28 @@ export default function Client() {
             <Image
               className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
               src="/client9.svg"
-              alt="Transistor"
+              alt="peradi"
               width={158}
               height={48}
             />
             <Image
               className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
               src="/client10.svg"
-              alt="Reform"
+              alt="menbiska"
               width={158}
               height={48}
             />
             <Image
               className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
               src="/client11.svg"
-              alt="Tuple"
+              alt="medco-energi"
               width={158}
               height={48}
             />
             <Image
               className="col-span-2 max-h-12 w-full object-contain  lg:col-span-1"
               src="/client12.svg"
-              alt="SavvyCal"
+              alt="bank-dki"
               width={158}
               height={48}
             />
