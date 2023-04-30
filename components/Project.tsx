@@ -31,17 +31,17 @@ export default function Project() {
           <div className="overflow-hidden absolute -left-12">
             <Image
               src="/gradient-project.svg"
-              alt=""
-              width={1427.5}
-              height={841.5}
+              alt="gradient-project"
+              width={0}
+              height={0}
               className="lg:block hidden relative w-[1427.5px] h-[841.5px] object-cover xl:-top-0"
-            ></Image>
+            />
             <Image
               className="lg:hidden block relative w-[1427.5px] h-[841.5px] object-cover md:-top-10 -top-20"
               src="/gradient-project-mobile.svg"
-              alt=""
-              width={1427.5}
-              height={841.5}
+              alt="gradient-project-mobile"
+              width={0}
+              height={0}
             />
           </div>{" "}
           <p className="col-span-full xl:w-4/6 lg:w-5/6 text-grey-600 mx-auto text-center text-xl leading-[30px]">
@@ -55,6 +55,9 @@ export default function Project() {
           <div className="md:w-6/12 px-5 pb-10">
             <ProjectsItem
               name="Trans Shopping Mall App Design"
+              desc={t("project.abc.descTrans")}
+              hrefgoogle='https://play.google.com/store/apps/details?id=com.transshoppingmall.app'
+              hrefappstore='https://play.google.com/store/apps/details?id=com.transshoppingmall.app'
               descPlay={t("project.abc.linkPlay")}
               descStore={t("project.abc.linkStore")}
               image="/img-trans.svg"
@@ -62,7 +65,10 @@ export default function Project() {
           </div>
           <div className="md:w-6/12 px-5 pb-10">
             <ProjectsItem
-              name="Sato Carwash park App Design"
+              name="Sato Carwash Park App Design"
+              desc={t("project.abc.descSatoCarwash")}
+              hrefgoogle='/carwash-park-cooming'
+              hrefappstore='/carwash-park-cooming'
               descPlay={t("project.abc.linkPlay")}
               descStore={t("project.abc.linkStore")}
               image="/img-sato-carwash.svg"
@@ -71,6 +77,9 @@ export default function Project() {
           <div className="md:w-6/12 px-5 pb-10 md:mt-[64px]">
             <ProjectsItem
               name="Sato Point Of Sale App Design"
+              desc={t("project.abc.descSatoPos")}
+              hrefgoogle='/carwash-pos-cooming'
+              hrefappstore='/carwash-pos-cooming'
               descPlay={t("project.abc.linkPlay")}
               descStore={t("project.abc.linkStore")}
               image="/img-sato-pos.svg"

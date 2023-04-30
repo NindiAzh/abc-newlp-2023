@@ -48,21 +48,21 @@ export default function Solution() {
             >
               <div className="p-4 px-14 lg:block hidden">
                 <Image
-                  className="mx-auto mt-6"
+                  className="mx-auto mt-6 h-auto w-[48px]"
                   src="/icon-apps.svg"
-                  alt=""
-                  width={48}
-                  height={48}
+                  alt="icon-apps"
+                  width={0}
+                  height={0}
                 />
                 <h3 className="mt-[12px] text-xl font-medium text-gray-900">
                   Apps Development
                 </h3>
                 <Image
-                  className="mx-auto mt-[24px]"
+                  className="mx-auto mt-[24px] w-[90px] h-auto"
                   src="/img-apps3.svg"
-                  alt=""
-                  width={90}
-                  height={90}
+                  alt="img-apps3"
+                  width={0}
+                  height={0}
                 />
                 <p className="text-grey-600 text-base leading-[24px] mb-6 mt-[24px]">
                   {t("home.solution.apps")}
@@ -77,21 +77,21 @@ export default function Solution() {
             >
               <div className="p-4 px-14 lg:block hidden">
                 <Image
-                  className="mx-auto mt-6"
+                  className="mx-auto mt-6 w-[48px] h-auto"
                   src="/icon-web.svg"
-                  alt=""
-                  width={48}
-                  height={48}
+                  alt="icon-web"
+                  width={0}
+                  height={0}
                 />
                 <h3 className="mt-[12px] text-xl font-medium text-gray-900">
                   Web Development
                 </h3>
                 <Image
-                  className="mx-auto mt-[24px]"
+                  className="mx-auto mt-[24px] w-[250px] h-auto"
                   src="/img-web.svg"
-                  alt=""
-                  width={250}
-                  height={250}
+                  alt="img-web"
+                  width={0}
+                  height={0}
                 />
                 <p className="text-grey-600 text-base leading-[24px] mb-6 mt-[24px]">
                   {t("home.solution.web")}
@@ -106,21 +106,21 @@ export default function Solution() {
             >
               <div className="p-4 px-14 lg:block hidden">
                 <Image
-                  className="mx-auto mt-6"
+                  className="mx-auto mt-6 w-[48px] h-auto"
                   src="/icon-uiux.svg"
-                  alt=""
-                  width={48}
-                  height={48}
+                  alt="icon-uiux"
+                  width={0}
+                  height={0}
                 />
                 <h3 className="mt-[12px] text-xl font-medium text-gray-900">
                   UI/UX Design
                 </h3>
                 <Image
-                  className="mx-auto mt-[24px]"
+                  className="mx-auto mt-[24px] w-[250px] h-auto"
                   src="/img-uiux.svg"
-                  alt=""
-                  width={250}
-                  height={250}
+                  alt="img-uiux"
+                  width={0}
+                  height={0}
                 />
                 <p className="text-grey-600 text-base leading-[24px] mb-6 mt-[24px]">
                   {t("home.solution.uiux")}

@@ -77,24 +77,26 @@
       "desc": "From small to large businesses seeking technology in business development and efficiency. We aim to become a strategic, long-term partner who can fulfill their needs and also serve as a discussion partner for our colleagues."
     },
     "belief": {
-      "title": "What do you believe in?",
+      "title": "What do we believe in?",
       "desc": "Work with integrity and wholeheartedly to deliver the best results, because the success of our colleagues will be the foundation for us to grow as well"
     },
     "stats": {
-      "project": "Projects completed",
-      "global": "Global downloads",
-      "star": "5-star reviews"
+      "success": "Successful Projects",
+      "happy": "Happy Clients",
+      "pro": "Professional Personnels"
     }
   },
   "project": {
     "abc": {
       "title": "Project",
-      "desc" : "We're excited to share our portfolio with you! It's not just a collection of past projects, but a testament to our expertise and a way to build your confidence that we can deliver the results you're looking for. Check it out and let's discuss how we can take your project to the next level!",
+      "desc": "We're excited to share our portfolio with you! It's not just a collection of past projects, but a testament to our expertise and a way to build your confidence that we can deliver the results you're looking for. Check it out and let's discuss how we can take your project to the next level!",
+      "descTrans": "In-mall shopping experience and navigation within a single app!",
+      "descSatoCarwash": "Who says a carwash park can't be personalized and fun?",
+      "descSatoPos": " A lightweight and easy to use POS for your carwash business!",
       "slideOne": "Mobile",
       "slideTwo": "Web Design",
       "linkPlay": "Visit Google Play",
       "linkStore": "Visit AppStore"
-
     }
   },
   "work": {

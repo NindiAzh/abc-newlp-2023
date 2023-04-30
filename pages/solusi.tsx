@@ -123,9 +123,9 @@ export default function Solusi() {
                           <Image
                             src={appdevs.icon}
                             alt="check"
-                            className="absolute top-1 left-1 h-[48px] w-[48px]"
-                            width={48}
-                            height={48}
+                            className="absolute top-1 left-1 h-auto w-[48px]"
+                            width={0}
+                            height={0}
                             aria-hidden="true"
                           />
                           {appdevs.name}
@@ -152,8 +152,9 @@ export default function Solusi() {
                     src="/img-solusi-app.svg"
                     alt="AppDev"
                     className="w-[548.33px] h-[450px] mx-auto"
-                    width={548.33}
-                    height={450}
+                    width={0}
+                    height={0}
+                    priority
                   />
                 </div>
               </Fade>
@@ -190,9 +191,9 @@ export default function Solusi() {
                           <Image
                             src={webdevs.icon}
                             alt="passion"
-                            width={48}
-                            height={48}
-                            className="absolute top-1 left-1 h-[48px] w-[48px]"
+                            width={0}
+                            height={0}
+                            className="absolute top-1 left-1 h-auto w-[48px]"
                             aria-hidden="true"
                           />
                           {webdevs.name}
@@ -212,8 +213,8 @@ export default function Solusi() {
                   src="/img-solusi-webdev.svg"
                   alt="passion"
                   className="w-[561px] h-[387px] mx-auto"
-                  width={561}
-                  height={387}
+                  width={0}
+                  height={0}
                 />
               </div>
               </Fade>
@@ -237,16 +238,16 @@ export default function Solusi() {
             <Image
               className="relative w-[1427.5px] h-[841.5px]"
               src="/gradient-solusi-page1.svg"
-              alt=""
-              width={1427.5}
-              height={841.5}
+              alt="gradient-solusi-page1"
+              width={0}
+              height={0}
             />
             <Image
               className="relative w-[1427.5px] h-[841.5px] -top-44 -left-28"
               src="/gradient-solusi-page2.svg"
-              alt=""
-              width={1427.5}
-              height={841.5}
+              alt="gradient-solusi-page2"
+              width={0}
+              height={0}
             />
           </div>
           <p className="mt-[20px] col-span-full text-grey-600 md:text-xl text-lg leading-[30px] max-w-3xl">
@@ -268,8 +269,8 @@ export default function Solusi() {
                             src={uiuxs.icon}
                             alt="check"
                             className="absolute top-1 left-1 h-[48px] w-[48px]"
-                            width={48}
-                            height={48}
+                            width={0}
+                            height={0}
                             aria-hidden="true"
                           />
                           {uiuxs.name}
@@ -289,8 +290,8 @@ export default function Solusi() {
                   src="/img-solusi-uiux.svg"
                   alt="AppDev"
                   className="w-[576px] h-[351px] mx-auto"
-                  width={576}
-                  height={351}
+                  width={0}
+                  height={0}
                 />
               </div>
               </Fade>

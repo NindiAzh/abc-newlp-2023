@@ -53,10 +53,10 @@ export default function Belief() {
               <Fade direction="left">
                 <Image
                   src="/img-belief.svg"
-                  alt="Product screenshot"
-                  className="w-[483px] h-[468px] mx-auto"
-                  width={2432}
-                  height={1442}
+                  alt="img-belief"
+                  className="w-[483px] h-auto mx-auto"
+                  width={0}
+                  height={0}
                 />
               </Fade>
             </div>

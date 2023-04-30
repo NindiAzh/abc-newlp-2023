@@ -28,10 +28,10 @@ export default function Hero() {
                 <span className="relative">
                   {t("home.header.code")}
                   <Image
-                    className="absolute left-0 bottom-0 animate-bounce"
+                    className="absolute left-0 bottom-0 animate-bounce h-auto w-[135px]"
                     src="/icon-code.svg"
                     alt="icon-code"
-                    width={135}
+                    width={0}
                     height={0}
                   />
                 </span>
@@ -54,6 +54,7 @@ export default function Hero() {
               alt="Art By Code Hero"
               width={0}
               height={0}
+              priority
             />
           </div>
         </Fade>
