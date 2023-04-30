@@ -10,7 +10,7 @@ export default function Stats() {
   const stats = [
     { id: 1, name: t("home.stats.success"), value: "20+" },
     { id: 2, name: t("home.stats.happy"), value: "10+" },
-    { id: 3, name: t("home.stats.pro"), value: "200+" },
+    { id: 3, name: t("home.stats.pro"), value: "30+" },
   ];
 
   const control = useAnimation();

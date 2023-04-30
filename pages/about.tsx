@@ -36,9 +36,9 @@ export default function About() {
   ];
 
   const stats = [
-    { id: 1, name: t("about.stats.project"), value: "400+" },
-    { id: 2, name: t("about.stats.global"), value: "10k" },
-    { id: 3, name: t("about.stats.star"), value: "200+" },
+    { id: 1, name: t("about.stats.success"), value: "20+" },
+    { id: 2, name: t("about.stats.happy"), value: "10k" },
+    { id: 3, name: t("about.stats.pro"), value: "30+" },
   ];
 
   const control = useAnimation();

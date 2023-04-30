@@ -180,8 +180,8 @@ export default function Works() {
                               src={collabs.icon}
                               alt="check"
                               className="absolute top-1 left-1 h-[28px] w-[28px]"
-                              width={28}
-                              height={28}
+                              width={0}
+                              height={0}
                               aria-hidden="true"
                             />
                             {collabs.name}
@@ -201,8 +201,9 @@ export default function Works() {
                     src="/img-works-collab.svg"
                     alt="collab"
                     className="w-[720px] h-[750px] mx-auto"
-                    width={2432}
-                    height={1442}
+                    width={0}
+                    height={0}
+                    priority
                   />
                 </div>
               </Fade>
@@ -233,8 +234,8 @@ export default function Works() {
                             <Image
                               src={passions.icon}
                               alt="passion"
-                              width={28}
-                              height={28}
+                              width={0}
+                              height={0}
                               className="absolute top-1 left-1 h-[28] w-[28]"
                               aria-hidden="true"
                             />
@@ -255,8 +256,8 @@ export default function Works() {
                     src="/img-works-passion.svg"
                     alt="passion"
                     className="w-[547px] h-[536px] mx-auto"
-                    width={547}
-                    height={536}
+                    width={0}
+                    height={0}
                   />
                 </Fade>
               </div>
@@ -281,16 +282,16 @@ export default function Works() {
                 <Image
                   className="relative w-[1427.5px] h-[841.5px] top-96 -z-10"
                   src="/gradient-work-page1.svg"
-                  alt=""
-                  width={1427.5}
-                  height={841.5}
+                  alt="gradient-work-page1"
+                  width={0}
+                  height={0}
                 />
                 <Image
                   className="relative w-[1427.5px] h-[841.5px] -top-44 -left-28"
                   src="/gradient-work-page2.svg"
-                  alt=""
-                  width={1427.5}
-                  height={841.5}
+                  alt="gradient-work-page2"
+                  width={0}
+                  height={0}
                 />
               </div>
               <Fade direction="left">
@@ -333,9 +334,9 @@ export default function Works() {
                           <dt className="font-semibold text-gray-900">
                             <Image
                               src={techs.icon}
-                              alt=""
-                              width={28}
-                              height={28}
+                              alt="tech icon"
+                              width={0}
+                              height={0}
                               className="absolute top-1 left-0 h-[28] w-[28]"
                               aria-hidden="true"
                             />
@@ -354,8 +355,8 @@ export default function Works() {
                     src="/img-works-tech.svg"
                     alt="passion"
                     className="w-[490px] h-[498.24px] mx-auto"
-                    width={547}
-                    height={536}
+                    width={0}
+                    height={0}
                   />
                 </Fade>
               </div>
@@ -385,11 +386,11 @@ export default function Works() {
                   <div className="sm:flex-shrink-0">
                     <div className="flow-root">
                       <Image
-                        className="mx-auto h-16 w-16"
+                        className="mx-auto w-16 h-auto"
                         src={toolOnes.imageSrc}
-                        alt=""
-                        width={64}
-                        height={64}
+                        alt="toolsOne"
+                        width={0}
+                        height={0}
                       />
                     </div>
                   </div>

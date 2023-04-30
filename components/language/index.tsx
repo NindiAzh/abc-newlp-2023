@@ -15,7 +15,7 @@ const LangComponent = () => {
 
   return (
     <div className="flex">
-      <Image src="/translate.svg" alt="icon translate" width={16} height={16} />
+      <Image src="/translate.svg" alt="icon translate" width={0} height={0} className="w-[16px] h-auto" />
       <select
         value={value}
         onChange={(e) => {

@@ -35,9 +35,9 @@ export default function Navbar() {
             <Image
               src="/logo.svg"
               alt="Logo Art By Code"
-              className="max-h-16 md:max-h-20 md:cursor-pointer animate-bounce"
-              width={60}
-              height={60}
+              className="max-h-16 md:max-h-20 md:cursor-pointer animate-bounce h-auto w-[60px]"
+              width={0}
+              height={0}
             />
           </a>
         </Link>

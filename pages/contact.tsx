@@ -40,8 +40,8 @@ export default function Contact() {
               className="w-[608px] h-[685.5px] md:mt-60 mx-auto lg:block hidden"
               src="/img-contact.svg"
               alt="imgPartner"
-              width={608}
-              height={685.5}
+              width={0}
+              height={0}
             />
           </div>
         </Fade>
@@ -160,8 +160,8 @@ export default function Contact() {
                       Services
                     </legend>
                     <div>
-                      <div className="grid grid-cols-1 gap-y-0 gap-x-0 sm:grid-cols-2">
-                        {/* website design */}
+                      <div className="grid grid-cols-1 gap-y-0 gap-x-0 sm:grid-cols-1">
+                        {/* Web Development */}
                         <div className="relative flex items-start">
                           <div className="mt-4 flex h-6 items-center">
                             <input
@@ -177,31 +177,11 @@ export default function Contact() {
                               htmlFor="comments"
                               className="text-base font-medium text-grey-700"
                             >
-                              Website design
+                              Web Development
                             </label>
                           </div>
                         </div>
-                        {/* Strategy & consulting */}
-                        <div className="relative flex items-start">
-                          <div className="mt-4 flex h-6 items-center">
-                            <input
-                              id="strategy-consulting"
-                              aria-describedby="strategy-consulting"
-                              name="strategy-consulting"
-                              type="checkbox"
-                              className="h-4 w-4 rounded-md border-grey-300 text-green-600 focus:ring-indigo-600"
-                            />
-                          </div>
-                          <div className="mt-4 ml-3 text-sm leading-6">
-                            <label
-                              htmlFor="comments"
-                              className="text-base font-medium text-grey-700"
-                            >
-                              Strategy & consulting
-                            </label>
-                          </div>
-                        </div>
-                        {/* uiux design */}
+                        {/* UI/UX design */}
                         <div className="relative flex items-start">
                           <div className="mt-4 flex h-6 items-center">
                             <input
@@ -221,27 +201,7 @@ export default function Contact() {
                             </label>
                           </div>
                         </div>
-                        {/* content creation */}
-                        <div className="relative flex items-start">
-                          <div className="mt-4 flex h-6 items-center">
-                            <input
-                              id="content-creation"
-                              aria-describedby="content-creation"
-                              name="content-creation"
-                              type="checkbox"
-                              className="h-4 w-4 rounded-md border-grey-300 text-green-600 focus:ring-indigo-600"
-                            />
-                          </div>
-                          <div className="mt-4 ml-3 text-sm leading-6">
-                            <label
-                              htmlFor="comments"
-                              className="text-base font-medium text-grey-700"
-                            >
-                              Content creation
-                            </label>
-                          </div>
-                        </div>
-                        {/* user research */}
+                        {/* Application Development */}
                         <div className="relative flex items-start">
                           <div className="mt-4 flex h-6 items-center">
                             <input
@@ -257,27 +217,7 @@ export default function Contact() {
                               htmlFor="comments"
                               className="text-base font-medium text-grey-700"
                             >
-                              User research
-                            </label>
-                          </div>
-                        </div>
-                        {/* Other */}
-                        <div className="relative flex items-start">
-                          <div className="mt-4 flex h-6 items-center">
-                            <input
-                              id="other"
-                              aria-describedby="other"
-                              name="other"
-                              type="checkbox"
-                              className="h-4 w-4 rounded-md border-grey-300 text-green-600 focus:ring-indigo-600"
-                            />
-                          </div>
-                          <div className="mt-4 ml-3 text-sm leading-6">
-                            <label
-                              htmlFor="comments"
-                              className="text-base font-medium text-grey-700"
-                            >
-                              Other
+                              Application Development
                             </label>
                           </div>
                         </div>
