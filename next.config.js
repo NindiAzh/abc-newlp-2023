@@ -6,7 +6,11 @@ const withPWA = require('next-pwa')({
   disable: process.env.NODE_ENV === 'development'
 })
 
-module.exports = withPWA({
+const withBundleAnalyzer = require("@next/bundle-analyzer")({
+  enabled: process.env.ANALYZE === "true",
+});
+
+module.exports = withBundleAnalyzer(withPWA({
   i18n,
   reactStrictMode: true
-})
+}))

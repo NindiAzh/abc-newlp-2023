@@ -5,6 +5,7 @@ import Stats from "@components/Stats";
 import Solution from "@components/Solution";
 import Belief from "@components/Belief";
 import Project from "@components/Project";
+// const Project = dynamic(() =>  import("../components/Project"))
 import Client from "@components/Client";
 import Newsletter from "@components/Newsletter";
 import type { GetStaticProps, InferGetStaticPropsType } from "next";
@@ -12,6 +13,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import ScrollToTop from "../components/scroll";
+// import dynamic from "next/dynamic";
 
 const Home = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
   const router = useRouter();
