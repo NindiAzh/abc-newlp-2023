@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import { Tab } from "@headlessui/react";
 import ProjectsItem from "../components/ProjectsItem";
 import Gradient1 from "../components/gradient/gradient1";
@@ -31,6 +31,63 @@ export default function Project() {
       name: t("project.abc.slideTwo"),
     },
   ];
+
+  //     name: "Design",
+  //     features: [
+  //       {
+  //         name: "Adaptive and modular",
+  //         description:
+  //           "The Organize base set allows you to configure and evolve your setup as your items and habits change. The included trays and optional add-ons are easily rearranged to achieve that perfect setup.",
+  //         imageSrc:
+  //           "https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-01.jpg",
+  //         imageAlt:
+  //           "Maple organizer base with slots, supporting white polycarbonate trays of various sizes.",
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     name: "Material",
+  //     features: [
+  //       {
+  //         name: "Natural wood options",
+  //         description:
+  //           "Organize has options for rich walnut and bright maple base materials. Accent your desk with a contrasting material, or match similar woods for a calm and cohesive look. Every base is hand sanded and finished.",
+  //         imageSrc:
+  //           "https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-02.jpg",
+  //         imageAlt:
+  //           "Walnut organizer base with pen, sticky note, phone, and bin trays, next to modular drink coaster attachment.",
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     name: "Considerations",
+  //     features: [
+  //       {
+  //         name: "Helpful around the home",
+  //         description:
+  //           "Our customers use Organize throughout the house to bring efficiency to many daily routines. Enjoy Organize in your workspace, kitchen, living room, entry way, garage, and more. We can't wait to see how you'll use it!",
+  //         imageSrc:
+  //           "https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-03.jpg",
+  //         imageAlt:
+  //           "Walnut organizer base with white polycarbonate trays in the kitchen with various kitchen utensils.",
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     name: "Included",
+  //     features: [
+  //       {
+  //         name: "Everything you'll need",
+  //         description:
+  //           "The Organize base set includes the pen, phone, small, and large trays to help you group all your essential items. Expand your set with the drink coaster and headphone stand add-ons.",
+  //         imageSrc:
+  //           "https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-04.jpg",
+  //         imageAlt:
+  //           "Walnut organizer system on black leather desk mat on top of white desk.",
+  //       },
+  //     ],
+  //   },
+  // ];
 
   const control = useAnimation();
   const [ref, inView] = useInView();
@@ -74,11 +131,11 @@ export default function Project() {
           </p>
         </div>
       </Fade>
-      <section className="mx-auto md:-my-[64px] -my-10">
-        <div className="mx-auto container">
-          <Tab.Group as="div" className="mt-4">
-            <div className="flex-auto px-4 sm:px-0">
-              <Tab.List className="flex space-x-10">
+      <div className="container mx-auto">
+        <Tab.Group as="div" className="-mt-4">
+          <div className="flex-auto px-4 sm:px-0">
+            <div className="">
+              <Tab.List className="-mb-px flex space-x-10">
                 {tabs.map((tab) => (
                   <Tab
                     key={tab.name}
@@ -87,7 +144,7 @@ export default function Project() {
                         selected
                           ? "border-green-600 text-green-600"
                           : "text-grey-500",
-                        "outline-0 whitespace-nowrap border-b-4 py-6 text-xl font-semibold cursor-pointer"
+                        "outline-0 whitespace-nowrap border-b-4 py-2 text-xl font-semibold"
                       )
                     }
                   >
@@ -96,71 +153,69 @@ export default function Project() {
                 ))}
               </Tab.List>
             </div>
+          </div>
 
-            {/* Tab Mobile */}
-            <Tab.Panels as={Fragment}>
-              <Tab.Panel className="space-y-16 pt-10 lg:pt-16">
-                <div className="flex -mx-4 mt-0 flex-wrap">
-                  <div className="md:w-6/12 px-5 pb-10">
-                    <ProjectsItem
-                      name="Trans Shopping Mall App Design"
-                      desc={t("project.abc.descTrans")}
-                      hrefgoogle="https://play.google.com/store/apps/details?id=com.transshoppingmall.app"
-                      hrefappstore="https://play.google.com/store/apps/details?id=com.transshoppingmall.app"
-                      descPlay={t("project.abc.linkPlay")}
-                      descStore={t("project.abc.linkStore")}
-                      image="/img-trans.svg"
-                    />
-                  </div>
-                  <div className="md:w-6/12 px-5 pb-10">
-                    <ProjectsItem
-                      name="Sato Carwash Park App Design"
-                      desc={t("project.abc.descSatoCarwash")}
-                      hrefgoogle="/carwash-park-cooming"
-                      hrefappstore="/carwash-park-cooming"
-                      descPlay={t("project.abc.linkPlay")}
-                      descStore={t("project.abc.linkStore")}
-                      image="/img-sato-carwash.svg"
-                    />
-                  </div>
-                  <div className="md:w-6/12 px-5 pb-10 md:mt-[64px]">
-                    <ProjectsItem
-                      name="Sato Point Of Sale App Design"
-                      desc={t("project.abc.descSatoPos")}
-                      hrefgoogle="/carwash-pos-cooming"
-                      hrefappstore="/carwash-pos-cooming"
-                      descPlay={t("project.abc.linkPlay")}
-                      descStore={t("project.abc.linkStore")}
-                      image="/img-sato-pos.svg"
-                    />
-                  </div>
+          <Tab.Panels as={Fragment}>
+            <Tab.Panel className="space-y-16 pt-10 lg:pt-16">
+              <div className="flex -mx-4 mt-0 flex-wrap">
+                {/* Tab Mobile */}
+                <div className="md:w-6/12 px-5 pb-10">
+                  <ProjectsItem
+                    name="Trans Shopping Mall App Design"
+                    desc={t("project.abc.descTrans")}
+                    hrefgoogle="https://play.google.com/store/apps/details?id=com.transshoppingmall.app"
+                    hrefappstore="https://play.google.com/store/apps/details?id=com.transshoppingmall.app"
+                    descPlay={t("project.abc.linkPlay")}
+                    descStore={t("project.abc.linkStore")}
+                    image="/img-trans.svg"
+                  />
                 </div>
-              </Tab.Panel>
-            </Tab.Panels>
-
-            {/* Tab Web Design */}
-            <Tab.Panels as={Fragment}>
-              <Tab.Panel className="space-y-16 pt-10 lg:pt-16">
-                <div className="flex -mx-4 mt-0 flex-wrap">
-                  <div className="md:w-6/12 px-5 pb-10">
-                    <ProjectsItem
-                      name="Trans Shopping Mall App Design"
-                      desc={t("project.abc.descTrans")}
-                      hrefgoogle="https://play.google.com/store/apps/details?id=com.transshoppingmall.app"
-                      hrefappstore="https://play.google.com/store/apps/details?id=com.transshoppingmall.app"
-                      descPlay={t("project.abc.linkPlay")}
-                      descStore={t("project.abc.linkStore")}
-                      image="/img-trans.svg"
-                    />
-                  </div>
+                <div className="md:w-6/12 px-5 pb-10">
+                  <ProjectsItem
+                    name="Sato Carwash Park App Design"
+                    desc={t("project.abc.descSatoCarwash")}
+                    hrefgoogle="/carwash-park-cooming"
+                    hrefappstore="/carwash-park-cooming"
+                    descPlay={t("project.abc.linkPlay")}
+                    descStore={t("project.abc.linkStore")}
+                    image="/img-sato-carwash.svg"
+                  />
                 </div>
-              </Tab.Panel>
-            </Tab.Panels>
-          </Tab.Group>
-        </div>
+                <div className="md:w-6/12 px-5 pb-10 md:mt-[64px]">
+                  <ProjectsItem
+                    name="Sato Point Of Sale App Design"
+                    desc={t("project.abc.descSatoPos")}
+                    hrefgoogle="/carwash-pos-cooming"
+                    hrefappstore="/carwash-pos-cooming"
+                    descPlay={t("project.abc.linkPlay")}
+                    descStore={t("project.abc.linkStore")}
+                    image="/img-sato-pos.svg"
+                  />
+                </div>
+              </div>
+            </Tab.Panel>
+          </Tab.Panels>
 
-        <ScrollToTop />
-      </section>
+          {/* Tab Web Design */}
+          <Tab.Panels as={Fragment}>
+            <Tab.Panel className="space-y-16 pt-10 lg:pt-16">
+              <div className="flex -mx-4 mt-0 flex-wrap">
+                <div className="md:w-6/12 px-5 pb-10">
+                  <ProjectsItem
+                    name="Trans Shopping Mall App Design"
+                    desc={t("project.abc.descTrans")}
+                    hrefgoogle="https://play.google.com/store/apps/details?id=com.transshoppingmall.app"
+                    hrefappstore="https://play.google.com/store/apps/details?id=com.transshoppingmall.app"
+                    descPlay={t("project.abc.linkPlay")}
+                    descStore={t("project.abc.linkStore")}
+                    image="/img-trans.svg"
+                  />
+                </div>
+              </div>
+            </Tab.Panel>
+          </Tab.Panels>
+        </Tab.Group>
+      </div>
     </>
   );
 }

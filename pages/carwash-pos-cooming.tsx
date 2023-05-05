@@ -12,7 +12,7 @@ export default function carwashPosCooming() {
                 Coming Soon!
               </h1>
               <p className="mt-6 text-xl leading-8 text-gray-600">
-                Our Website will launch soon.
+                Our Apps will launch soon.
               </p>
             </div>
           </div>
