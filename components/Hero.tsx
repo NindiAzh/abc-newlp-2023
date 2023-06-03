@@ -50,7 +50,7 @@ export default function Hero() {
           <div>
             <Image
               className="w-[483px] h-[468px] mx-auto lg:mt-0 mt-20 2xl:mx-48"
-              src="/people-section-one.png"
+              src="/hero-img.png"
               alt="Art By Code Hero"
               width={488}
               height={488}

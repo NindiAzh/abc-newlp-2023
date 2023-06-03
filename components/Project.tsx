@@ -60,7 +60,7 @@ export default function Project() {
               hrefappstore='https://apps.apple.com/id/app/trans-shopping-mall-app/id1586931967'
               descPlay={t("project.abc.linkPlay")}
               descStore={t("project.abc.linkStore")}
-              image="/img-trans.svg"
+              image="/img-trans.png"
             />
           </div>
           <div className="md:w-6/12 px-5 pb-10">
@@ -71,7 +71,7 @@ export default function Project() {
               hrefappstore='/carwash-park-cooming'
               descPlay={t("project.abc.linkPlay")}
               descStore={t("project.abc.linkStore")}
-              image="/img-sato-carwash.svg"
+              image="/img-sato-carwash.png"
             />
           </div>
           <div className="md:w-6/12 px-5 pb-10 md:mt-[64px]">
@@ -82,7 +82,7 @@ export default function Project() {
               hrefappstore='/carwash-pos-cooming'
               descPlay={t("project.abc.linkPlay")}
               descStore={t("project.abc.linkStore")}
-              image="/img-sato-pos.svg"
+              image="/img-sato-pos.png"
             />
           </div>
         </div>

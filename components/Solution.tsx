@@ -59,10 +59,10 @@ export default function Solution() {
                 </h3>
                 <Image
                   className="mx-auto mt-[24px] w-[90px] h-auto"
-                  src="/img-apps3.svg"
+                  src="/img-apps3.png"
                   alt="img-apps3"
-                  width={0}
-                  height={0}
+                  width={91}
+                  height={172}
                 />
                 <p className="text-grey-600 text-base leading-[24px] mb-6 mt-[24px]">
                   {t("home.solution.apps")}
@@ -88,10 +88,10 @@ export default function Solution() {
                 </h3>
                 <Image
                   className="mx-auto mt-[24px] w-[250px] h-auto"
-                  src="/img-web.svg"
+                  src="/img-web.png"
                   alt="img-web"
-                  width={0}
-                  height={0}
+                  width={242}
+                  height={172}
                 />
                 <p className="text-grey-600 text-base leading-[24px] mb-6 mt-[24px]">
                   {t("home.solution.web")}
@@ -117,10 +117,10 @@ export default function Solution() {
                 </h3>
                 <Image
                   className="mx-auto mt-[24px] w-[250px] h-auto"
-                  src="/img-uiux.svg"
+                  src="/img-uiux.png"
                   alt="img-uiux"
-                  width={0}
-                  height={0}
+                  width={258}
+                  height={172}
                 />
                 <p className="text-grey-600 text-base leading-[24px] mb-6 mt-[24px]">
                   {t("home.solution.uiux")}
@@ -172,7 +172,7 @@ export default function Solution() {
                   </h3>
                   <Image
                     className="mx-auto mt-[24px]"
-                    src="/img-apps3.svg"
+                    src="/img-apps3.png"
                     alt=""
                     width={90}
                     height={90}
@@ -199,7 +199,7 @@ export default function Solution() {
                   </h3>
                   <Image
                     className="mx-auto mt-[24px]"
-                    src="/img-web.svg"
+                    src="/img-web.png"
                     alt=""
                     width={250}
                     height={250}
@@ -226,7 +226,7 @@ export default function Solution() {
                   </h3>
                   <Image
                     className="mx-auto mt-[24px]"
-                    src="/img-uiux.svg"
+                    src="/img-uiux.png"
                     alt=""
                     width={250}
                     height={250}

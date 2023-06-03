@@ -9,8 +9,8 @@ export default function ProjectsItem({ name, desc, hrefgoogle, hrefappstore, des
         className="w-full"
         src={image}
         alt="img-project"
-        width={0}
-        height={0}
+        width={592}
+        height={360}
       />
       <h3 className="lg:text-2xl text-xl font-semibold mt-4 mb-1">{name}</h3>
       <p className="text-grey-600 mx-auto lg:text-xl text-base">{desc}</p>
