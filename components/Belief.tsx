@@ -52,11 +52,11 @@ export default function Belief() {
             <div className="flex items-start justify-end lg:order-first">
               <Fade direction="left">
                 <Image
-                  src="/img-belief.svg"
+                  src="/img-belief.png"
                   alt="img-belief"
                   className="w-[483px] h-auto mx-auto"
-                  width={0}
-                  height={0}
+                  width={401}
+                  height={418}
                 />
               </Fade>
             </div>

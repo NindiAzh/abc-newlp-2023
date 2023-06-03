@@ -30,10 +30,10 @@ export default function Newsletter() {
     >
       <Image
         className="md:text-start md:mx-0 text-center mx-auto w-[137px] h-auto"
-        src="/icon-newsletter.svg"
+        src="/icon-newsletter.png"
         alt="newsletter"
-        width={0}
-        height={0}
+        width={138}
+        height={134}
       />
       <div className="xl:px-10 lg:px-12 xl:mt-0 lg:mt-0 md:mx-8 mt-8">
         <h1 className="text-grey-900 lg:text-3xl text-2xl font-semibold leading-[38px] ">
