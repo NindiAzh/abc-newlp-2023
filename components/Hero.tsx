@@ -14,7 +14,7 @@ export default function Hero() {
         <div className="flex flex-col justify-center lg:mx-0 mx-0">
           <Fade direction="left">
             <h3 className="md:text-xl text-base text-green-600 font-semibold">
-              {t("home.header.title")} 
+              {t("home.header.title")}
               <span>
               <Fade delay={1e3} cascade damping={1e-1}>Art By Code | ABC</Fade>
               </span>
@@ -50,10 +50,10 @@ export default function Hero() {
           <div>
             <Image
               className="w-[483px] h-[468px] mx-auto lg:mt-0 mt-20 2xl:mx-48"
-              src="/hero-img.svg"
+              src="/people-section-one.png"
               alt="Art By Code Hero"
-              width={0}
-              height={0}
+              width={488}
+              height={488}
               priority
             />
           </div>
