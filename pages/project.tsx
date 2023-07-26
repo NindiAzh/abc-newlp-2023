@@ -117,7 +117,7 @@ export default function Project() {
                   <ProjectsItem
                     name="Sato Carwash Park App Design"
                     desc={t("project.abc.descSatoCarwash")}
-                    hrefgoogle="/carwash-park-cooming"
+                    hrefgoogle="https://play.google.com/store/apps/details?id=id.co.carwashpark.customer&hl=en-ID"
                     hrefappstore="/carwash-park-cooming"
                     descPlay={t("project.abc.linkPlay")}
                     descStore={t("project.abc.linkStore")}
@@ -128,7 +128,7 @@ export default function Project() {
                   <ProjectsItem
                     name="Sato Point Of Sale App Design"
                     desc={t("project.abc.descSatoPos")}
-                    hrefgoogle="/carwash-pos-cooming"
+                    hrefgoogle="https://play.google.com/store/apps/details?id=id.co.carwashpark.pos&hl=en-ID"
                     hrefappstore="/carwash-pos-cooming"
                     descPlay={t("project.abc.linkPlay")}
                     descStore={t("project.abc.linkStore")}
@@ -151,7 +151,7 @@ export default function Project() {
                     hrefappstore="https://play.google.com/store/apps/details?id=com.transshoppingmall.app"
                     descPlay={t("project.abc.linkPlay")}
                     descStore={t("project.abc.linkStore")}
-                    image="/img-trans.svg"
+                    image="/img-trans.png "
                   />
                 </div>
               </div>
