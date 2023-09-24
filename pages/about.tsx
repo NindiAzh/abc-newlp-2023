@@ -124,8 +124,8 @@ export default function About() {
               <div className="flex items-start justify-end lg:order-first">
                 <Fade direction="left">
                   <Image
-                    src="/img-belief.svg"
-                    alt="Product screenshot"
+                    src="/img-belief.png"
+                    alt="about-us-abc"
                     className="w-[483px] h-[468px] mx-auto"
                     width={2432}
                     height={1442}

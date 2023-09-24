@@ -113,7 +113,7 @@ export default function Project() {
                     image="/img-trans.png"
                   />
                 </div>
-                <div className="md:w-6/12 px-5 pb-10">
+                {/* <div className="md:w-6/12 px-5 pb-10">
                   <ProjectsItem
                     name="Sato Carwash Park App Design"
                     desc={t("project.abc.descSatoCarwash")}
@@ -134,7 +134,7 @@ export default function Project() {
                     descStore={t("project.abc.linkStore")}
                     image="/img-sato-pos.png"
                   />
-                </div>
+                </div> */}
               </div>
             </Tab.Panel>
           </Tab.Panels>

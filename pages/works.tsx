@@ -31,7 +31,7 @@ export default function Works() {
     },
     {
       name: t("work.collab.explainTitleThree"),
-      description: t("work.collab.explainDescTwo"),
+      description: t("work.collab.explainDescThree"),
       icon: "/icon-check.svg",
     },
   ];
@@ -334,10 +334,10 @@ export default function Works() {
                           <dt className="font-semibold text-gray-900">
                             <Image
                               src={techs.icon}
-                              alt="tech icon"
+                              alt="tech-icon"
                               width={0}
                               height={0}
-                              className="absolute top-1 left-0 h-[28] w-[28]"
+                              className="absolute top-1 left-1 h-[28px] w-[28px]"
                               aria-hidden="true"
                             />
                             {techs.name}
@@ -353,7 +353,7 @@ export default function Works() {
                 <Fade direction="left">
                   <Image
                     src="/img-works-tech.svg"
-                    alt="passion"
+                    alt="works-tech"
                     className="w-[490px] h-[498.24px] mx-auto"
                     width={0}
                     height={0}
