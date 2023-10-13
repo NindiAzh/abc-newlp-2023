@@ -26,7 +26,16 @@
     },
     "client": {
       "title": "Our Clients",
-      "desc": "Join our list of satisfied clients who have experienced the exceptional service and expertise we offer. Discover how we've helped businesses just like yours achieve their goals"
+      "desc": "Join our list of satisfied clients who have experienced the exceptional service and expertise we offer. Discover how we've helped businesses just like yours achieve their goals",
+      "all": "All",
+      "strategi": "Strategic Partner",
+      "health": "Health & Wellness",
+      "education": "Education",
+      "retail": "Retail",
+      "services": "Services",
+      "estate": "Real Estate",
+      "energy": "Energy",
+      "financial": "Financial Services"
     },
     "contact": {
       "title": "Are you ready?",

@@ -133,13 +133,13 @@ export default function Solusi() {
                         <dd className="mt-2 text-base leading-6 text-grey-600">
                           {appdevs.description}
                         </dd>
-                        <div className="mt-[20px]">
+                        {/* <div className="mt-[20px]">
                           <Link href={appdevs.href} legacyBehavior>
                             <a className="text-base text-green-600 font-semibold leading-6">
                               {appdevs.link}
                             </a>
                           </Link>
-                        </div>
+                        </div> */}
                       </div>
                     ))}
                   </dl>
@@ -184,7 +184,7 @@ export default function Solusi() {
               <Fade direction="left">
               <div className="lg:ml-auto lg:-mt-24 lg:pl-4">
                 <div className="lg:max-w-xl">
-                  <dl className="mt-8 max-w-xl space-y-[48px] lg:max-w-none px-4">
+                  <dl className="mt-8 max-w-xl space-y-[20px] lg:max-w-none px-4">
                     {webdev.map((webdevs) => (
                       <div key={webdevs.name} className="relative pl-16">
                         <dt className="text-xl font-semibold text-gray-900 leading-[30px]">
@@ -198,7 +198,7 @@ export default function Solusi() {
                           />
                           {webdevs.name}
                         </dt>{" "}
-                        <dd className="text-base text-grey-600 leading-6">
+                        <dd className="mt-2 text-base leading-6 text-grey-600">
                           {webdevs.description}
                         </dd>
                       </div>

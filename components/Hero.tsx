@@ -19,8 +19,8 @@ export default function Hero() {
               <Fade delay={1e3} cascade damping={1e-1}>Art By Code | ABC</Fade>
               </span>
             </h3>
-            <div className="mt-[12px] leading-[72px]">
-              <h1 className="text-grey-900 font-bold md:text-6xl text-4xl">
+            <div className="mt-[12px]">
+              <h1 className="text-grey-900 font-bold md:text-[66px] md:leading-[74px] leading-[50px] text-[38px]">
                 <Trans i18nKey="home.header.desc" id="title">
                   Ayo ciptakan sesuatu yang{" "}
                   <span className="text-green-600">indah</span> dengan sebuah{" "}
