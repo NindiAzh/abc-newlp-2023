@@ -43,6 +43,7 @@ export default function Project() {
     }
   }, [control, inView]);
 
+
   return (
     <>
       <Head>
@@ -107,7 +108,7 @@ export default function Project() {
                     name="Trans Shopping Mall App Design"
                     desc={t("project.abc.descTrans")}
                     hrefgoogle="https://play.google.com/store/apps/details?id=com.transshoppingmall.app"
-                    hrefappstore="https://play.google.com/store/apps/details?id=com.transshoppingmall.app"
+                    hrefappstore="https://apps.apple.com/id/app/trans-shopping-mall-app/id1586931967"
                     descPlay={t("project.abc.linkPlay")}
                     descStore={t("project.abc.linkStore")}
                     image="/img-trans.png"
@@ -148,17 +149,17 @@ export default function Project() {
                     name="Trans Shopping Mall App Design"
                     desc={t("project.abc.descTrans")}
                     hrefgoogle="https://play.google.com/store/apps/details?id=com.transshoppingmall.app"
-                    hrefappstore="https://play.google.com/store/apps/details?id=com.transshoppingmall.app"
+                    hrefappstore="https://apps.apple.com/id/app/trans-shopping-mall-app/id1586931967"
                     descPlay={t("project.abc.linkPlay")}
                     descStore={t("project.abc.linkStore")}
-                    image="/img-trans.png "
+                    image="/img-trans.png"
                   />
                 </div>
               </div>
             </Tab.Panel>
           </Tab.Panels>
         </Tab.Group>
-      </div>
+      </div>    
     </>
   );
 }

@@ -111,7 +111,7 @@ export default function Works() {
       href: "#",
     },
     {
-      name: "Microsoft Teams",
+      name: "Google Meet",
       description: t("work.collabTools.microDesc"),
       imageSrc: "/micro.svg",
       href: "#",
@@ -236,7 +236,7 @@ export default function Works() {
                               alt="passion"
                               width={0}
                               height={0}
-                              className="absolute top-1 left-1 h-[28] w-[28]"
+                              className="absolute top-1 left-1 h-[28px] w-[28px]"
                               aria-hidden="true"
                             />
                             {passions.name}
@@ -402,12 +402,12 @@ export default function Works() {
                       {toolOnes.description}
                     </p>
                     <div className="relative mt-[20px] flex">
-                      <div className="mt-0 flex mx-auto text-center">
+                      {/* <div className="mt-0 flex mx-auto text-center">
                         <a href="#" className="text-base text-green-600">
                           {t("work.collabTools.link")}{" "}
                           <span aria-hidden="true">&rarr;</span>
                         </a>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>

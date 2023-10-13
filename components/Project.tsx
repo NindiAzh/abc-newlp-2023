@@ -28,7 +28,7 @@ export default function Project() {
         <div className="grid grid-cols-12 py-20 sm:py-24">
           <Judul>Art By Code</Judul>
           <Tema>{t("home.project.title")}</Tema>
-          <div className="overflow-hidden absolute -left-12">
+          <div className="overflow-hidden absolute -left-40">
             <Image
               src="/gradient-project.svg"
               alt="gradient-project"

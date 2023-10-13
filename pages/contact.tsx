@@ -8,12 +8,42 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import ScrollToTop from "../components/scroll";
 import { Fade } from "react-awesome-reveal";
+import * as yup from "yup";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
 
 export default function Contact() {
   const router = useRouter();
   const { pathname } = router;
   const { t } = useTranslation();
   const desc = t("contact.desc");
+
+  const schema = yup.object({
+    first_name: yup.string().required("First Name is required!"),
+    last_name: yup.string().required("Last Name is required!"),
+    email: yup
+      .string()
+      .email("Email format is not valid")
+      .required("Email is required!"),
+    phone_number: yup.string().required("Phone Number is required!"),
+    location: yup.string().required("Location is required!"),
+    organisasi: yup.string().required("Name Organisasi is required!"),
+    message: yup.string().required("message is required!"),
+  });
+
+  const {
+    register,
+    reset,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(schema),
+  });
+
+  // const submit = {
+
+  // }
+
 
   return (
     <>
@@ -59,11 +89,13 @@ export default function Contact() {
                   {t("contact.desc")}
                 </p>
                 <form
+                  // onSubmit={handleSubmit(onSubmit)}
                   action="#"
                   method="POST"
                   className="mx-auto mt-10 max-w-xl sm:mt-12"
                 >
                   <div className="grid grid-cols-1 gap-y-6 gap-x-8 sm:grid-cols-2">
+                    {/* First Name */}
                     <div>
                       <label
                         htmlFor="first-name"
@@ -73,6 +105,7 @@ export default function Contact() {
                       </label>
                       <div className="mt-2.5">
                         <input
+                          {...register("first_name")}
                           type="text"
                           placeholder={`${t("form.first_name")}`}
                           name="first-name"
@@ -80,8 +113,12 @@ export default function Contact() {
                           autoComplete="given-name"
                           className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                         />
+                        <p className="msg_error">{errors.first_name?.message}</p>
                       </div>
                     </div>
+                    {/* End First Name */}
+
+                    {/* Last Name */}
                     <div>
                       <label
                         htmlFor="last-name"
@@ -91,6 +128,7 @@ export default function Contact() {
                       </label>
                       <div className="mt-2.5">
                         <input
+                          {...register("last_name")}
                           type="text"
                           placeholder={`${t("form.last_name")}`}
                           name="last-name"
@@ -98,8 +136,12 @@ export default function Contact() {
                           autoComplete="family-name"
                           className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                         />
+                        <p className="msg_error">{errors.last_name?.message}</p>
                       </div>
                     </div>
+                    {/* End Last Name */}
+
+                    {/* Email */}
                     <div className="sm:col-span-2">
                       <label
                         htmlFor="email"
@@ -109,6 +151,7 @@ export default function Contact() {
                       </label>
                       <div className="mt-2.5">
                         <input
+                          {...register("email")}
                           type="email"
                           placeholder="Cth. you@company.com"
                           name="email"
@@ -116,8 +159,12 @@ export default function Contact() {
                           autoComplete="email"
                           className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                         />
+                        <p className="msg_error">{errors.email?.message}</p>
                       </div>
                     </div>
+                    {/* End Email */}
+
+                    {/* Organisasi */}
                     <div className="sm:col-span-2">
                       <label
                         htmlFor="name"
@@ -127,6 +174,7 @@ export default function Contact() {
                       </label>
                       <div className="mt-2.5">
                         <input
+                          {...register("organisasi")}
                           type="text"
                           placeholder={`${t("form.organization")}`}
                           name="name-organisasi"
@@ -134,8 +182,12 @@ export default function Contact() {
                           autoComplete="email"
                           className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                         />
+                        <p className="msg_error">{errors.organisasi?.message}</p>
                       </div>
                     </div>
+                    {/* End Organisasi */}
+
+                    {/* Message */}
                     <div className="sm:col-span-2">
                       <label
                         htmlFor="message"
@@ -145,6 +197,7 @@ export default function Contact() {
                       </label>
                       <div className="mt-2.5">
                         <textarea
+                          {...register("message")}
                           name="message"
                           placeholder={`${t("form.message")}`}
                           id="message"
@@ -152,8 +205,10 @@ export default function Contact() {
                           className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                           defaultValue={""}
                         />
+                        <p className="msg_error">{errors.message?.message}</p>
                       </div>
                     </div>
+                    {/* End Message */}
                   </div>
                   <fieldset className="mt-6 ">
                     <legend className="block text-sm leading-5 text-grey-700 font-semibold">
@@ -161,7 +216,7 @@ export default function Contact() {
                     </legend>
                     <div>
                       <div className="grid grid-cols-1 gap-y-0 gap-x-0 sm:grid-cols-1">
-                        {/* Web Development */}
+                        {/* App Development */}
                         <div className="relative flex items-start">
                           <div className="mt-4 flex h-6 items-center">
                             <input
@@ -177,11 +232,11 @@ export default function Contact() {
                               htmlFor="comments"
                               className="text-base font-medium text-grey-700"
                             >
-                              Web Development
+                              App Development
                             </label>
                           </div>
                         </div>
-                        {/* UI/UX design */}
+                        {/* Web Development */}
                         <div className="relative flex items-start">
                           <div className="mt-4 flex h-6 items-center">
                             <input
@@ -197,11 +252,11 @@ export default function Contact() {
                               htmlFor="comments"
                               className="text-base font-medium text-grey-700"
                             >
-                              UI/UX design
+                              Web Development
                             </label>
                           </div>
                         </div>
-                        {/* Application Development */}
+                        {/* UI/UX Design */}
                         <div className="relative flex items-start">
                           <div className="mt-4 flex h-6 items-center">
                             <input
@@ -217,7 +272,7 @@ export default function Contact() {
                               htmlFor="comments"
                               className="text-base font-medium text-grey-700"
                             >
-                              Application Development
+                              UI/UX Design
                             </label>
                           </div>
                         </div>

@@ -26,7 +26,16 @@
     },
     "client": {
       "title": "Klien Kami",
-      "desc": "Bergabunglah dengan daftar klien puas kami yang telah mengalami layanan dan keahlian luar biasa yang kami tawarkan. Temukan bagaimana kami telah membantu bisnis seperti milikmu mencapai tujuan mereka."
+      "desc": "Bergabunglah dengan daftar klien puas kami yang telah mengalami layanan dan keahlian luar biasa yang kami tawarkan. Temukan bagaimana kami telah membantu bisnis seperti milikmu mencapai tujuan mereka.",
+      "all": "Semua",
+      "strategi": "Mitra Strategis",
+      "health": "Kesehatan & Kebugaran",
+      "education": "Pendidikan",
+      "retail": "Ritel",
+      "services": "Jasa",
+      "estate": "Real Estat",
+      "energy": "Energi",
+      "financial": "Jasa Keuangan"
     },
     "contact": {
       "title": "Apakah kamu siap?",
