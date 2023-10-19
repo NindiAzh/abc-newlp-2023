@@ -7,6 +7,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import Head from "next/head";
+import ProjectsItem_2 from "../components/ProjectsItem_2";
 import ScrollToTop from "../components/scroll";
 import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -42,7 +43,6 @@ export default function Project() {
       control.start("hidden");
     }
   }, [control, inView]);
-
 
   return (
     <>
@@ -114,6 +114,14 @@ export default function Project() {
                     image="/img-trans.png"
                   />
                 </div>
+                <div className="md:w-6/12 px-5 pb-10">
+                  <ProjectsItem_2
+                    name="Theopilates Internal Web-App"
+                    hrefwebsite="https://theolapilates.com/"
+                    descLink={t("project.abc.descTheopilates")}
+                    image="/project_theopilates.svg"
+                  />
+                </div>
                 {/* <div className="md:w-6/12 px-5 pb-10">
                   <ProjectsItem
                     name="Sato Carwash Park App Design"
@@ -155,11 +163,19 @@ export default function Project() {
                     image="/img-trans.png"
                   />
                 </div>
+                <div className="md:w-6/12 px-5 pb-10">
+                  <ProjectsItem_2
+                    name="Theopilates Internal Web-App"
+                    hrefwebsite="https://theolapilates.com/"
+                    descLink={t("project.abc.descTheopilates")}
+                    image="/project_theopilates.svg"
+                  />
+                </div>
               </div>
             </Tab.Panel>
           </Tab.Panels>
         </Tab.Group>
-      </div>    
+      </div>
     </>
   );
 }

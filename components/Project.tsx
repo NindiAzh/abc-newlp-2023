@@ -3,6 +3,7 @@ import Tema from "@components/tema";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
 import ProjectsItem from "./ProjectsItem";
+import ProjectsItem_2 from "./ProjectsItem_2";
 import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
@@ -54,7 +55,7 @@ export default function Project() {
         <div className="flex -mx-4 mt-0 flex-wrap">
           <div className="md:w-6/12 px-5 pb-10">
             <ProjectsItem
-              name="Trans Shopping Mall App Design"
+              name="Trans Shopping Mall Internal Web-App"
               desc={t("project.abc.descTrans")}
               hrefgoogle='https://play.google.com/store/apps/details?id=com.transshoppingmall.app'
               hrefappstore='https://apps.apple.com/id/app/trans-shopping-mall-app/id1586931967'
@@ -63,17 +64,14 @@ export default function Project() {
               image="/img-trans.png"
             />
           </div>
-          {/* <div className="md:w-6/12 px-5 pb-10">
-            <ProjectsItem
-              name="Sato Carwash Park App Design"
-              desc={t("project.abc.descSatoCarwash")}
-              hrefgoogle='/carwash-park-cooming'
-              hrefappstore='/carwash-park-cooming'
-              descPlay={t("project.abc.linkPlay")}
-              descStore={t("project.abc.linkStore")}
-              image="/img-sato-carwash.png"
+          <div className="md:w-6/12 px-5 pb-10">
+            <ProjectsItem_2
+              name="Theopilates Internal Web-App"
+              hrefwebsite="https://theolapilates.com/"
+              descLink={t("project.abc.descTheopilates")}
+              image="/project_theopilates.svg"
             />
-          </div> */}
+          </div>
           {/* <div className="md:w-6/12 px-5 pb-10 md:mt-[64px]">
             <ProjectsItem
               name="Sato Point Of Sale App Design"

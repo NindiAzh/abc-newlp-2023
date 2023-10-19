@@ -102,7 +102,7 @@ export default function Client() {
                 </div>
               </div>
               {/* Energy */}
-              <div className="xl:mx-[500px] border flex flex-row rounded-2xl border-grey-200 lg:w-[320px] lg:h-[75px] md:w-[300px] md:h-[75px] items-center lg:mx-[200px] md:-mt-8 2xl:-mt-0 lg:-mt-6">
+              <div className="xl:mx-[500px] border flex flex-row rounded-2xl border-grey-200 lg:w-[320px] lg:h-[75px] md:w-[300px] md:h-[75px] items-center lg:mx-[200px] md:-mt-8 xl:-mt-0 lg:-mt-6">
                 <JudulClient>Energy</JudulClient>
                 <Image
                   className="lg:ml-8 col-span-2 lg:max-h-12 md:max-h-10 w-full object-contain lg:col-span-1 h-auto"
@@ -194,7 +194,7 @@ export default function Client() {
                 />
               </div>
               {/* Retail */}
-              <div className="xl:mx-[465px] lg:mx-auto border flex flex-row rounded-2xl border-grey-200 lg:w-[470px] lg:h-[75px] items-center md:w-[400px] md:h-[75px] md:-mt-8 2xl:-mt-0 lg:-mt-6">
+              <div className="xl:mx-[465px] lg:mx-auto border flex flex-row rounded-2xl border-grey-200 lg:w-[470px] lg:h-[75px] items-center md:w-[400px] md:h-[75px] md:-mt-8 xl:-mt-0 lg:-mt-6">
                 <JudulClient>Retail</JudulClient>
                 <Image
                   className="lg:ml-4 col-span-2 lg:max-h-12 md:max-h-10 w-full object-contain lg:col-span-1 h-auto"
@@ -224,18 +224,25 @@ export default function Client() {
           <div className="mx-auto max-w-7xl px-6 mt-8 2xl:px-[70px] lg:px-8">
             <div className="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:gap-x-8 sm:gap-y-14 lg:mx-0 lg:max-w-none xl:grid-cols-8 lg:grid-cols-2 md:grid-cols-1">
               {/* Health Wellness */}
-              <div className="border flex flex-row rounded-2xl border-grey-200 lg:w-[280px] lg:h-[75px] items-center xl:mx-20 md:w-[250px] md:h-[75px] md:-mt-2 2xl:-mt-0 lg:-mt-0">
+              <div className="border flex flex-row rounded-2xl border-grey-200 lg:w-[300px] lg:h-[75px] items-center xl:mx-20 md:w-[250px] md:h-[75px] md:-mt-2 2xl:-mt-0 lg:-mt-0">
                 <JudulClient>Health & Wellness</JudulClient>
 
                 <Image
-                  className="ml-0 col-span-2 lg:max-h-12 md:max-h-10 w-full object-contain lg:col-span-1 h-auto"
+                  className="col-span-2 lg:max-h-12 md:max-h-10 w-full object-contain lg:col-span-1 h-auto"
                   src="/mufit.svg"
                   alt="mufit"
                   width={0}
                   height={0}
                 />
                 <Image
-                  className="-ml-8 col-span-2 lg:max-h-12 md:max-h-10 w-full object-contain lg:col-span-1 h-auto"
+                  className="col-span-2 lg:max-h-12 md:max-h-10 w-full object-contain lg:col-span-1 h-auto"
+                  src="/theopilates.svg"
+                  alt="theopilates"
+                  width={0}
+                  height={0}
+                />
+                <Image
+                  className="col-span-2 lg:max-h-12 md:max-h-10 w-full object-contain lg:col-span-1 h-auto"
                   src="/vbd.svg"
                   alt="vbd"
                   width={0}
@@ -243,7 +250,7 @@ export default function Client() {
                 />
               </div>
               {/* Wellness Education */}
-              <div className="xl:mx-[252px] lg:-mx-[125px] border flex flex-row rounded-2xl border-grey-200 lg:w-[590px] lg:h-[75px] items-center md:w-[550px] md:h-[75px] md:-mt-8 2xl:-mt-0 lg:-mt-0">
+              <div className="xl:mx-[270px] lg:-mx-[125px] border flex flex-row rounded-2xl border-grey-200 lg:w-[590px] lg:h-[75px] items-center md:w-[550px] md:h-[75px] md:-mt-8 2xl:-mt-0 lg:-mt-0">
                 <JudulClient>Wellness Education</JudulClient>
                 <Image
                   className="lg:ml-4 md:ml-4 col-span-2 lg:max-h-12 md:max-h-10 w-full object-contain lg:col-span-1 h-auto"

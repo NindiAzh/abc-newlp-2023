@@ -185,6 +185,13 @@ const index = () => {
             />
             <Image
               className="col-span-2 max-h-10 w-full object-contain h-auto"
+              src="/theopilates.svg"
+              alt="theopilates"
+              width={0}
+              height={0}
+            />
+            <Image
+              className="col-span-2 max-h-10 w-full object-contain h-auto"
               src="/vbd.svg"
               alt="vbd"
               width={0}
