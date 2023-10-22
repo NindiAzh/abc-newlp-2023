@@ -106,7 +106,9 @@
       "slideTwo": "Web Design",
       "linkPlay": "Visit Google Play",
       "linkStore": "Visit AppStore",
-      "descTheopilates": "Visit Website"
+      "linkTheopilates": "Visit Website",
+      "descTheopilates": "Easily organize your pilates schedule without any hassle."
+
     }
   },
   "work": {

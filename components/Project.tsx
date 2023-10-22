@@ -57,8 +57,8 @@ export default function Project() {
             <ProjectsItem
               name="Trans Shopping Mall Internal Web-App"
               desc={t("project.abc.descTrans")}
-              hrefgoogle='https://play.google.com/store/apps/details?id=com.transshoppingmall.app'
-              hrefappstore='https://apps.apple.com/id/app/trans-shopping-mall-app/id1586931967'
+              hrefgoogle="https://play.google.com/store/apps/details?id=com.transshoppingmall.app"
+              hrefappstore="https://apps.apple.com/id/app/trans-shopping-mall-app/id1586931967"
               descPlay={t("project.abc.linkPlay")}
               descStore={t("project.abc.linkStore")}
               image="/img-trans.png"
@@ -67,8 +67,9 @@ export default function Project() {
           <div className="md:w-6/12 px-5 pb-10">
             <ProjectsItem_2
               name="Theopilates Internal Web-App"
+              desc={t("project.abc.descTheopilates")}
               hrefwebsite="https://theolapilates.com/"
-              descLink={t("project.abc.descTheopilates")}
+              descLink={t("project.abc.linkTheopilates")}
               image="/project_theopilates.svg"
             />
           </div>
