@@ -166,7 +166,7 @@ export default function Project() {
                 </div>
                 <div className="md:w-6/12 px-5 pb-10">
                   <ProjectsItem_2
-                    name="Theopilates Internal Web-App"
+                    name="Theopilates Web-App"
                     desc={t("project.abc.descTheopilates")}
                     hrefwebsite="https://theolapilates.com/"
                     descLink={t("project.abc.linkTheopilates")}
