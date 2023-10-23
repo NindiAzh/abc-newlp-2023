@@ -249,9 +249,9 @@ export default function Client() {
                   height={0}
                 />
               </div>
-              {/* Wellness Education */}
+              {/* Services */}
               <div className="xl:mx-[270px] lg:-mx-[125px] border flex flex-row rounded-2xl border-grey-200 lg:w-[590px] lg:h-[75px] items-center md:w-[550px] md:h-[75px] md:-mt-8 2xl:-mt-0 lg:-mt-0">
-                <JudulClient>Wellness Education</JudulClient>
+                <JudulClient>Services</JudulClient>
                 <Image
                   className="lg:ml-4 md:ml-4 col-span-2 lg:max-h-12 md:max-h-10 w-full object-contain lg:col-span-1 h-auto"
                   src="/simgroup.svg"

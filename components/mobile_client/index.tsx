@@ -198,9 +198,9 @@ const index = () => {
               height={0}
             />
           </div>
-          {/* Wellness Education */}
+          {/* Services */}
           <div className="border flex flex-col rounded-2xl border-grey-200 items-center justify-center w-auto h-[100px] mt-6">
-            <JudulClient>Wellness Education</JudulClient>
+            <JudulClient>Services</JudulClient>
             <div className="grid grid-cols-4 mt-3 mx-4">
               <Image
                 className="col-span-0 mt-2 max-h-10 w-full object-contain h-auto"

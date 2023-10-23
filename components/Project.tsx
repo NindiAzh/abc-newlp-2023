@@ -55,7 +55,7 @@ export default function Project() {
         <div className="flex -mx-4 mt-0 flex-wrap">
           <div className="md:w-6/12 px-5 pb-10">
             <ProjectsItem
-              name="Trans Shopping Mall Internal Web-App"
+              name="Trans Shopping Mall Web-App"
               desc={t("project.abc.descTrans")}
               hrefgoogle="https://play.google.com/store/apps/details?id=com.transshoppingmall.app"
               hrefappstore="https://apps.apple.com/id/app/trans-shopping-mall-app/id1586931967"
@@ -66,7 +66,7 @@ export default function Project() {
           </div>
           <div className="md:w-6/12 px-5 pb-10">
             <ProjectsItem_2
-              name="Theopilates Internal Web-App"
+              name="Theopilates Web-App"
               desc={t("project.abc.descTheopilates")}
               hrefwebsite="https://theolapilates.com/"
               descLink={t("project.abc.linkTheopilates")}
