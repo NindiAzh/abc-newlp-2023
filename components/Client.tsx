@@ -9,6 +9,7 @@ import { useEffect } from "react";
 import { Popup } from "../components/motion";
 import { Fade } from "react-awesome-reveal";
 import MobileClient from "@components/mobile_client";
+import { Trans } from "next-i18next";
 
 export default function Client() {
   const { t } = useTranslation();
@@ -65,7 +66,9 @@ export default function Client() {
             <div className="mx-auto grid max-w-lg grid-cols-1 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:gap-x-8 sm:gap-y-14 lg:mx-0 lg:max-w-none xl:grid-cols-8 lg:grid-cols-2 md:grid-cols-1">
               {/* Strategic Partner */}
               <div className="border flex flex-row rounded-2xl border-grey-200 lg:w-[460px] lg:h-[75px] md:w-[400px] md:h-[75px] items-center">
-                <JudulClient>Strategic Partner</JudulClient>
+                <JudulClient>
+                  <Trans i18nKey="strategi">Strategic Partner</Trans>
+                </JudulClient>
                 <Image
                   className="lg:ml-10 col-span-2 lg:max-h-12 md:max-h-10 w-full object-contain lg:col-span-1 h-auto"
                   src="/ctcrop.svg"
@@ -90,7 +93,9 @@ export default function Client() {
               </div>
               {/* real Estate */}
               <div className="xl:mx-[350px] lg:mx-[60px] border flex flex-row rounded-2xl border-grey-200 lg:w-[260px] lg:h-[75px] md:w-[255px] md:h-[75px] md:-mt-8 2xl:-mt-0 lg:-mt-0 items-center">
-                <JudulClient>Real Estate</JudulClient>
+                <JudulClient>
+                  <Trans i18nKey="estate">Real Estate</Trans>
+                </JudulClient>
                 <div className="flex">
                   <Image
                     className="lg:ml-4 col-span-2 lg:max-h-12 md:max-h-10 w-full object-contain lg:col-span-1 h-auto"
@@ -103,7 +108,9 @@ export default function Client() {
               </div>
               {/* Energy */}
               <div className="xl:mx-[500px] border flex flex-row rounded-2xl border-grey-200 lg:w-[320px] lg:h-[75px] md:w-[300px] md:h-[75px] items-center lg:mx-[200px] md:-mt-8 xl:-mt-0 lg:-mt-6">
-                <JudulClient>Energy</JudulClient>
+                <JudulClient>
+                  <Trans i18nKey="energy">Energy</Trans>
+                </JudulClient>
                 <Image
                   className="lg:ml-8 col-span-2 lg:max-h-12 md:max-h-10 w-full object-contain lg:col-span-1 h-auto"
                   src="/medco-energi.svg"
@@ -119,7 +126,9 @@ export default function Client() {
             <div className="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:gap-x-8 sm:gap-y-14 lg:mx-0 lg:max-w-none xl:grid-cols-1 lg:grid-cols-1 md:grid-cols-1">
               {/* Financial Services */}
               <div className="border flex flex-row rounded-2xl border-grey-200 lg:w-[780px] lg:h-[75px] items-center justify-center xl:mx-40 lg:mx-auto md:w-[620px] md:h-[75px] md:-mt-2 2xl:-mt-0 lg:-mt-0">
-                <JudulClient>Financial Services</JudulClient>
+                <JudulClient>
+                  <Trans i18nKey="finance">Financial Services</Trans>
+                </JudulClient>
                 <Image
                   className="lg:ml-10 md:ml-4 col-span-2 lg:max-h-12 md:max-h-6 w-full object-contain lg:col-span-1 h-auto"
                   src="/mandala.svg"
@@ -156,7 +165,9 @@ export default function Client() {
             <div className="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:gap-x-8 sm:gap-y-14 lg:mx-0 lg:max-w-none xl:grid-cols-8 lg:grid-cols-1 md:grid-cols-1">
               {/* Wellness Education */}
               <div className="border flex flex-row rounded-2xl border-grey-200 lg:w-[575px] lg:h-[75px] items-center lg:mx-auto md:w-[500px] md:h-[75px] md:-mt-2 2xl:-mt-0 lg:-mt-0">
-                <JudulClient>Wellness Education</JudulClient>
+                <JudulClient>
+                  <Trans i18nKey="education">Wellness Education</Trans>
+                </JudulClient>
                 <Image
                   className="lg:ml-10 col-span-2 lg:max-h-12 md:max-h-10 w-full object-contain lg:col-span-1 h-auto"
                   src="/alfajar.svg"
@@ -195,7 +206,9 @@ export default function Client() {
               </div>
               {/* Retail */}
               <div className="xl:mx-[465px] lg:mx-auto border flex flex-row rounded-2xl border-grey-200 lg:w-[470px] lg:h-[75px] items-center md:w-[400px] md:h-[75px] md:-mt-8 xl:-mt-0 lg:-mt-6">
-                <JudulClient>Retail</JudulClient>
+                <JudulClient>
+                  <Trans i18nKey="retail">Retail</Trans>
+                </JudulClient>
                 <Image
                   className="lg:ml-4 col-span-2 lg:max-h-12 md:max-h-10 w-full object-contain lg:col-span-1 h-auto"
                   src="/transshop.svg"
@@ -225,7 +238,9 @@ export default function Client() {
             <div className="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:gap-x-8 sm:gap-y-14 lg:mx-0 lg:max-w-none xl:grid-cols-8 lg:grid-cols-2 md:grid-cols-1">
               {/* Health Wellness */}
               <div className="border flex flex-row rounded-2xl border-grey-200 lg:w-[300px] lg:h-[75px] items-center xl:mx-20 md:w-[250px] md:h-[75px] md:-mt-2 2xl:-mt-0 lg:-mt-0">
-                <JudulClient>Health & Wellness</JudulClient>
+                <JudulClient>
+                  <Trans i18nKey="health">Health &amp; Wellness</Trans>
+                </JudulClient>
 
                 <Image
                   className="col-span-2 lg:max-h-12 md:max-h-10 w-full object-contain lg:col-span-1 h-auto"
@@ -251,7 +266,9 @@ export default function Client() {
               </div>
               {/* Services */}
               <div className="xl:mx-[270px] lg:-mx-[125px] border flex flex-row rounded-2xl border-grey-200 lg:w-[590px] lg:h-[75px] items-center md:w-[550px] md:h-[75px] md:-mt-8 2xl:-mt-0 lg:-mt-0">
-                <JudulClient>Services</JudulClient>
+                <JudulClient>
+                  <Trans i18nKey="services">Services</Trans>
+                </JudulClient>
                 <Image
                   className="lg:ml-4 md:ml-4 col-span-2 lg:max-h-12 md:max-h-10 w-full object-contain lg:col-span-1 h-auto"
                   src="/simgroup.svg"

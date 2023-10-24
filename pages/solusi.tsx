@@ -102,7 +102,7 @@ export default function Solusi() {
             <h2 className="text-base font-semibold leading-[24px] text-green-600 flex">
               {t("solution.appdev.app")}
             </h2>
-            <h2 className="mt-[12px] col-span-full text-grey-900 font-semibold mb-[12px] md:text-4xl text-3xl leading-[44px] max-w-3xl">
+            <h2 className="mt-[12px] col-span-full text-grey-900 font-semibold mb-[12px] md:text-4xl text-3xl md:leading-[44px] leading-[44px] max-w-3xl">
               {t("solution.appdev.title")}
             </h2>
             <p className="mt-[20px] col-span-full text-grey-600 md:text-xl text-lg leading-[30px] max-w-3xl">
@@ -170,7 +170,7 @@ export default function Solusi() {
           <h2 className="text-base font-semibold leading-[24px] text-green-600 flex">
             {t("solution.webdev.web")}
           </h2>
-          <h2 className="mt-[12px] col-span-full text-grey-900 font-semibold mb-[12px] md:text-4xl text-3xl leading-[44px] max-w-3xl">
+          <h2 className="mt-[12px] col-span-full text-grey-900 font-semibold mb-[12px] md:text-4xl text-3xl md:leading-[44px] leading-[44px] max-w-3xl">
             {t("solution.webdev.title")}
           </h2>
           <p className="mt-[20px] col-span-full text-grey-600 md:text-xl text-lg leading-[30px] max-w-3xl">
@@ -230,7 +230,7 @@ export default function Solusi() {
           <h2 className="text-base font-semibold leading-[24px] text-green-600 flex">
             {t("solution.ui/ux.uiux")}
           </h2>
-          <h2 className="mt-[12px] col-span-full text-grey-900 font-semibold mb-[12px] md:text-4xl text-3xl leading-[44px] max-w-3xl">
+          <h2 className="mt-[12px] col-span-full text-grey-900 font-semibold mb-[12px] md:text-4xl text-3xl md:leading-[44px] leading-[44px] max-w-3xl">
             {t("solution.ui/ux.title")}
           </h2>
           {/* gradient */}

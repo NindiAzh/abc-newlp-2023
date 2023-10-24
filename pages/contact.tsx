@@ -80,7 +80,9 @@ export default function Contact() {
             <div className="px-6 2xl:-mx-10 xl:mx-12 lg:mx-20">
               <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
                 <h2 className="col-span-full text-green-700 font-semibold mb-[24px] text-xl">
+                <Trans i18nKey="Tagcontact">
                   CONTACT ME
+                </Trans>
                 </h2>
                 <p className="col-span-full text-grey-900 font-semibold text-4xl md:text-5xl mb-[10px]">
                   {t("contact.title")}

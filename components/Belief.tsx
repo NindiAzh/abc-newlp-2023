@@ -27,7 +27,9 @@ export default function Belief() {
               <div className="lg:max-w-2xl">
                 <Fade direction="right">
                   <h2 className="text-green-600 font-semibold text-sm md:text-base mb-1 md:mb-3">
+                  <Trans i18nKey="Tagbelief">
                     OUR BELIEF
+                  </Trans>
                   </h2>
                   <p className="text-3xl lg:text-4xl leading-[44px] text-grey-900">
                     <Trans i18nKey="belief">

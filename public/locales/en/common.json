@@ -1,7 +1,16 @@
 {
   "more": "<0>Want to know more</0>",
   "contact_us": "<0>Contact us</0>",
+  "Tagbelief": "OUR BELIEF",
   "belief": "We believe in empowering technology for all, and realize that <2>we can make a difference by providing quality technology services</2>",
+  "strategi": "Strategic Partner",
+  "health": "Health & Wellness",
+  "education": "Wellness Education",
+  "retail": "Retail",
+  "services": "Services",
+  "estate": "Real Estate",
+  "energy": "Energy",
+  "finance": "Financial Services",
   "home": {
     "header": {
       "title": "Hello, we are ",
@@ -38,6 +47,7 @@
       "financial": "Financial Services"
     },
     "contact": {
+      "Tagcontact": "CONTACT ME",
       "title": "Are you ready?",
       "desc": "We are always ready to answer all your questions and meet your needs"
     }

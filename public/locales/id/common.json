@@ -1,7 +1,16 @@
 {
   "more": "<0>Mau tau lebih banyak</0>",
   "contact_us": "<0>Hubungi kami</0>",
+  "Tagbelief": "KEPERCAYAAN KAMI",
   "belief": "Kami percaya pada pemberdayaan teknologi untuk semua, dan sadar bahwa <2>kami dapat membuat perubahan dengan memberikan layanan teknologi yang berkualitas</2>",
+  "strategi": "Mitra Strategis",
+  "health": "Kesehatan & Kebugaran",
+  "education": "Pendidikan",
+  "retail": "Ritel",
+  "services": "Jasa",
+  "estate": "Real Estat",
+  "energy": "Energi",
+  "finance": "Jasa Keuangan",
   "home": {
     "header": {
       "title": "Hai, kami adalah ",
@@ -27,17 +36,10 @@
     "client": {
       "title": "Klien Kami",
       "desc": "Bergabunglah dengan daftar klien puas kami yang telah mengalami layanan dan keahlian luar biasa yang kami tawarkan. Temukan bagaimana kami telah membantu bisnis seperti milikmu mencapai tujuan mereka.",
-      "all": "Semua",
-      "strategi": "Mitra Strategis",
-      "health": "Kesehatan & Kebugaran",
-      "education": "Pendidikan",
-      "retail": "Ritel",
-      "services": "Jasa",
-      "estate": "Real Estat",
-      "energy": "Energi",
-      "financial": "Jasa Keuangan"
+      "all": "Semua"
     },
     "contact": {
+      "Tagcontact": "HUBUNGI SAYA",
       "title": "Apakah kamu siap?",
       "desc": "Kami selalu siap untuk menjawab segala pertanyaan dan kebutuhan kamu"
     }
@@ -107,7 +109,6 @@
       "linkStore": "Kunjungi AppStore",
       "linkTheopilates": "Visit Website",
       "descTheopilates": "Atur jadwal pilates kamu dengan mudah tanpa perlu repot"
-
     }
   },
   "work": {
@@ -149,7 +150,7 @@
       "teleDesc": "Untuk berkelanjutan komunikasi dengan tim",
       "microDesc": "Untuk konferensi video dan koordinas ",
       "gdocsDesc": "Untuk dinamis kolaborasi dan dokumentasi",
-      "figmaDesc": "Untuk merancang dan menyajikandesain maket",
+      "figmaDesc": "Untuk merancang dan menyajikan desain maket",
       "whimDesc": "Untuk merancang dan persentasi gambar rangka",
       "link": "Lihat integrasi",
       "clickup": "Untuk management task & monitoring timeline"
