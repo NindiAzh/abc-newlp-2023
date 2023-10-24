@@ -152,7 +152,9 @@
       "gdocsDesc": "For dynamic collaboration and documentation",
       "figmaDesc": "To design and present a mockup design",
       "whimDesc": "To design and present truss drawings",
-      "link": "View integration"
+      "link": "View integration",
+      "clickup": "For task management & timeline monitoring"
+
     }
   },
   "contact": {

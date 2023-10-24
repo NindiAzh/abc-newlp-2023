@@ -11,10 +11,10 @@ import ScrollToTop from "../components/scroll";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
-import {
-  list2,
-} from "../components/motion";
+import MobileClient from "@components/mobile_client";
+import { list2 } from "../components/motion";
 import { Fade } from "react-awesome-reveal";
+import Client from "@components/Client";
 
 export default function About() {
   const router = useRouter();
@@ -156,7 +156,11 @@ export default function About() {
             </dl>
           </div>
           <hr className="md:w-6/6 my-6 mt-4 border-[#EAECF0] sm:mx-auto lg:my-8" />
+          <div className="container -mt-10">
+            <Client/>
+          </div>
         </div>
+
         <div className="container -mt-10">
           <Newsletter />
         </div>

@@ -82,11 +82,11 @@
     "titleAbout": "Siapa kami!",
     "help": {
       "title": "Siapa yang kami bantu?",
-      "desc": "Dari usaha kecil, menengah, sampai dengan besar yang mencari teknologidalam pekembangan dan efisiensi bisnis. Kami bertujuan untuk menjadirekan strategis, jangka panjang yang dapat mewujudkan kebutuhan danjuga menjadi lawan diskusi dari para rekan kami."
+      "desc": "Dari usaha kecil, menengah, sampai dengan besar yang mencari teknologi dalam pekembangan dan efisiensi bisnis. Kami bertujuan untuk menjadi rekan strategis, jangka panjang yang dapat mewujudkan kebutuhan dan juga menjadi lawan diskusi dari para rekan kami."
     },
     "belief": {
       "title": "Apa yang kami percayai?",
-      "desc": "Bekerjalah dengan sepenuh hati integritas untuk memberikan hasil yangterbaik, karena kesuksesan rekankami akan menjadi pendiri kita untukbisa lebih berkembang juga"
+      "desc": "Bekerjalah dengan sepenuh hati integritas untuk memberikan hasil yang terbaik, karena kesuksesan rekan kami akan menjadi pendiri kita untuk bisa lebih berkembang juga"
     },
     "stats": {
       "success": "Proyek yang Berhasil",
@@ -151,7 +151,8 @@
       "gdocsDesc": "Untuk dinamis kolaborasi dan dokumentasi",
       "figmaDesc": "Untuk merancang dan menyajikandesain maket",
       "whimDesc": "Untuk merancang dan persentasi gambar rangka",
-      "link": "Lihat integrasi"
+      "link": "Lihat integrasi",
+      "clickup": "Untuk management task & monitoring timeline"
     }
   },
   "contact": {

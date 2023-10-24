@@ -113,13 +113,13 @@ export default function Works() {
     {
       name: "Google Meet",
       description: t("work.collabTools.microDesc"),
-      imageSrc: "/micro.svg",
+      imageSrc: "/googlemeet.svg",
       href: "#",
     },
     {
-      name: "Google Docs",
+      name: "Lark Suite",
       description: t("work.collabTools.gdocsDesc"),
-      imageSrc: "/gdocs.svg",
+      imageSrc: "/lakrsuite.svg",
       href: "#",
     },
     {
@@ -132,6 +132,12 @@ export default function Works() {
       name: "Whimsical",
       description: t("work.collabTools.whimDesc"),
       imageSrc: "/whimsical.svg",
+      href: "#",
+    },
+    {
+      name: "Click Up",
+      description: t("work.collabTools.clickup"),
+      imageSrc: "/clickup.svg",
       href: "#",
     },
   ];
