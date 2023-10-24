@@ -11,6 +11,7 @@
   "estate": "Real Estate",
   "energy": "Energy",
   "finance": "Financial Services",
+  "Tagcontact": "CONTACT ME",
   "home": {
     "header": {
       "title": "Hello, we are ",
@@ -47,7 +48,6 @@
       "financial": "Financial Services"
     },
     "contact": {
-      "Tagcontact": "CONTACT ME",
       "title": "Are you ready?",
       "desc": "We are always ready to answer all your questions and meet your needs"
     }

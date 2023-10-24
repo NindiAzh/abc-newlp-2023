@@ -11,6 +11,7 @@
   "estate": "Real Estat",
   "energy": "Energi",
   "finance": "Jasa Keuangan",
+  "Tagcontact": "HUBUNGI SAYA",
   "home": {
     "header": {
       "title": "Hai, kami adalah ",
@@ -39,7 +40,6 @@
       "all": "Semua"
     },
     "contact": {
-      "Tagcontact": "HUBUNGI SAYA",
       "title": "Apakah kamu siap?",
       "desc": "Kami selalu siap untuk menjawab segala pertanyaan dan kebutuhan kamu"
     }
