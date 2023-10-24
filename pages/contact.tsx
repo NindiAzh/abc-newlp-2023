@@ -1,7 +1,7 @@
 import { GetStaticProps } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { Trans, useTranslation } from "next-i18next";
 import Gradient1 from "../components/gradient/gradient1";
 import { useRouter } from "next/router";
@@ -25,10 +25,9 @@ export default function Contact() {
       .string()
       .email("Email format is not valid")
       .required("Email is required!"),
-    phone_number: yup.string().required("Phone Number is required!"),
-    location: yup.string().required("Location is required!"),
     organisasi: yup.string().required("Name Organisasi is required!"),
-    message: yup.string().required("message is required!"),
+    message: yup.string().required("Message is required!"),
+    services: yup.array().required("Choose Services is required!"),
   });
 
   const {
@@ -40,10 +39,27 @@ export default function Contact() {
     resolver: yupResolver(schema),
   });
 
-  // const submit = {
+  const onSubmit = (values: any) => {
+    const email = values.email
+    const first_name = values.first_name
+    const last_name = values.last_name
+    const services = values.services
+    const organisasi = values.organisasi
+    const message = values.message
+  
+    const subject = `${first_name} ${last_name} ${email} - ${services}`
+    const body = `Nama Organisasi: ${organisasi}%0D%0A%0D%0A${message}`
+    const emailLink = `mailto:hello@artbycode.id?subject=${subject}&body=${body}`
+    window.location.href = emailLink;
 
-  // }
+    reset();
+  };
 
+  // const [firstname, setFirstName] = useState('')
+  // const [lastname, setLastName] = useState('')
+  // const [email, setEmail] = useState('')
+  // const [organisasi, setOrganisasi] = useState('')
+  // const [message, setMessage] = useState('')
 
   return (
     <>
@@ -80,9 +96,7 @@ export default function Contact() {
             <div className="px-6 2xl:-mx-10 xl:mx-12 lg:mx-20">
               <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
                 <h2 className="col-span-full text-green-700 font-semibold mb-[24px] text-xl">
-                <Trans i18nKey="Tagcontact">
-                  CONTACT ME
-                </Trans>
+                  <Trans i18nKey="Tagcontact">CONTACT ME</Trans>
                 </h2>
                 <p className="col-span-full text-grey-900 font-semibold text-4xl md:text-5xl mb-[10px]">
                   {t("contact.title")}
@@ -91,9 +105,7 @@ export default function Contact() {
                   {t("contact.desc")}
                 </p>
                 <form
-                  // onSubmit={handleSubmit(onSubmit)}
-                  action="#"
-                  method="POST"
+                  onSubmit={handleSubmit(onSubmit)}
                   className="mx-auto mt-10 max-w-xl sm:mt-12"
                 >
                   <div className="grid grid-cols-1 gap-y-6 gap-x-8 sm:grid-cols-2">
@@ -107,15 +119,16 @@ export default function Contact() {
                       </label>
                       <div className="mt-2.5">
                         <input
-                          {...register("first_name")}
+                          className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                           type="text"
                           placeholder={`${t("form.first_name")}`}
-                          name="first-name"
-                          id="first-name"
+                          id="first_name"
                           autoComplete="given-name"
-                          className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                          {...register("first_name")}
                         />
-                        <p className="msg_error">{errors.first_name?.message}</p>
+                        <p className="msg_error">
+                          {errors.first_name?.message}
+                        </p>
                       </div>
                     </div>
                     {/* End First Name */}
@@ -130,13 +143,12 @@ export default function Contact() {
                       </label>
                       <div className="mt-2.5">
                         <input
-                          {...register("last_name")}
                           type="text"
                           placeholder={`${t("form.last_name")}`}
-                          name="last-name"
-                          id="last-name"
+                          id="last_name"
                           autoComplete="family-name"
                           className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                          {...register("last_name")}
                         />
                         <p className="msg_error">{errors.last_name?.message}</p>
                       </div>
@@ -153,13 +165,12 @@ export default function Contact() {
                       </label>
                       <div className="mt-2.5">
                         <input
-                          {...register("email")}
                           type="email"
                           placeholder="Cth. you@company.com"
-                          name="email"
                           id="email"
                           autoComplete="email"
                           className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                          {...register("email")}
                         />
                         <p className="msg_error">{errors.email?.message}</p>
                       </div>
@@ -176,15 +187,16 @@ export default function Contact() {
                       </label>
                       <div className="mt-2.5">
                         <input
-                          {...register("organisasi")}
                           type="text"
                           placeholder={`${t("form.organization")}`}
-                          name="name-organisasi"
-                          id="name-organisasi"
+                          id="organisasi"
                           autoComplete="email"
                           className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                          {...register("organisasi")}
                         />
-                        <p className="msg_error">{errors.organisasi?.message}</p>
+                        <p className="msg_error">
+                          {errors.organisasi?.message}
+                        </p>
                       </div>
                     </div>
                     {/* End Organisasi */}
@@ -199,13 +211,11 @@ export default function Contact() {
                       </label>
                       <div className="mt-2.5">
                         <textarea
-                          {...register("message")}
-                          name="message"
                           placeholder={`${t("form.message")}`}
                           id="message"
                           rows={4}
                           className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                          defaultValue={""}
+                          {...register("message")}
                         />
                         <p className="msg_error">{errors.message?.message}</p>
                       </div>
@@ -222,11 +232,12 @@ export default function Contact() {
                         <div className="relative flex items-start">
                           <div className="mt-4 flex h-6 items-center">
                             <input
-                              id="website-design"
-                              aria-describedby="website-design"
-                              name="website-design"
+                              id="App Development"
+                              aria-describedby="App Development"
                               type="checkbox"
                               className="h-4 w-4 rounded-md border-grey-300 text-green-600 focus:ring-indigo-600"
+                              value={"App Development"}
+                              {...register("services")}
                             />
                           </div>
                           <div className="mt-4 ml-3 text-sm leading-6">
@@ -242,11 +253,12 @@ export default function Contact() {
                         <div className="relative flex items-start">
                           <div className="mt-4 flex h-6 items-center">
                             <input
-                              id="uiux-design"
-                              aria-describedby="uiux-design"
-                              name="uiux-design"
+                              id="Web Development"
+                              aria-describedby="Web Development"
                               type="checkbox"
                               className="h-4 w-4 rounded-md border-grey-300 text-green-600 focus:ring-indigo-600"
+                              value={"Web Development"}
+                              {...register("services")}
                             />
                           </div>
                           <div className="mt-4 ml-3 text-sm leading-6">
@@ -262,11 +274,12 @@ export default function Contact() {
                         <div className="relative flex items-start">
                           <div className="mt-4 flex h-6 items-center">
                             <input
-                              id="user-research"
-                              aria-describedby="user-research"
-                              name="user-research"
+                              id="UI/UX Design"
+                              aria-describedby="UI/UX Design"
                               type="checkbox"
                               className="h-4 w-4 rounded-md border-grey-300 text-green-600 focus:ring-indigo-600"
+                              value={"UI/UX Design"}
+                              {...register("services")}
                             />
                           </div>
                           <div className="mt-4 ml-3 text-sm leading-6">
