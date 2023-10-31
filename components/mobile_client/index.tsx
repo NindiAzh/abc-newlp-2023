@@ -175,7 +175,7 @@ const index = () => {
         <div className="grid grid-cols-1 items-center">
           {/* Health Wellness */}
           <div className="border flex flex-nowrap rounded-2xl border-grey-200 w-[250px] h-[75px] items-center mx-auto">
-            <JudulClient>Health & Wellness</JudulClient>
+            <JudulClient>Health <span className="-mx-0.5">&amp;</span> Wellness</JudulClient>
             <Image
               className="col-span-2 max-h-10 w-full object-contain h-auto"
               src="/mufit.svg"

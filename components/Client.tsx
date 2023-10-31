@@ -226,7 +226,7 @@ export default function Client() {
             <div className="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:gap-x-8 sm:gap-y-14 lg:mx-0 lg:max-w-none xl:grid-cols-8 lg:grid-cols-2 md:grid-cols-1">
               {/* Health Wellness */}
               <div className="border flex flex-row rounded-2xl border-grey-200 lg:w-[300px] lg:h-[75px] items-center xl:mx-20 md:w-[250px] md:h-[75px] md:-mt-2 2xl:-mt-0 lg:-mt-0">
-                <JudulClient>Health &amp; Wellness</JudulClient>
+                <JudulClient>Health <span className="-mx-0.5">&amp;</span> Wellness</JudulClient>
 
                 <Image
                   className="col-span-2 lg:max-h-12 md:max-h-10 w-full object-contain lg:col-span-1 h-auto"

@@ -39,12 +39,12 @@ export default function Solution() {
         </Fade>
         {/* Card */}
         <Fade direction="left">
-          <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:gap-10 lg:gap-8 md:gap-10 gap-10">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:gap-10 lg:gap-4 md:gap-10 gap-10">
             {/* card 1 */}
             <motion.li
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              className="col-span-1 flex flex-col rounded-xl bg-white text-center shadow-xl"
+              className="rounded-xl bg-white text-center shadow-xl"
             >
               <div className="p-4 px-14 lg:block hidden">
                 <Image
@@ -58,7 +58,7 @@ export default function Solution() {
                   Apps Development
                 </h3>
                 <Image
-                  className="mx-auto mt-[24px] w-[90px] h-auto"
+                  className="mx-auto mt-[24px] 2xl:w-[89px] xl:w-[95px] lg:w-[80px] h-auto"
                   src="/img-apps3.png"
                   alt="img-apps3"
                   width={91}
@@ -73,7 +73,7 @@ export default function Solution() {
             <motion.li
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              className="col-span-1 flex flex-col rounded-xl bg-white text-center shadow-xl"
+              className="rounded-xl bg-white text-center shadow-xl"
             >
               <div className="p-4 px-14 lg:block hidden">
                 <Image
@@ -87,7 +87,7 @@ export default function Solution() {
                   Web Development
                 </h3>
                 <Image
-                  className="mx-auto mt-[24px] w-[250px] h-auto"
+                  className="mx-auto mt-[24px] 2xl:w-[237px] xl:w-[218px] h-auto"
                   src="/img-web.png"
                   alt="img-web"
                   width={242}
@@ -102,7 +102,7 @@ export default function Solution() {
             <motion.li
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              className="col-span-1 flex flex-col rounded-xl bg-white text-center shadow-xl"
+              className="rounded-xl bg-white text-center shadow-xl"
             >
               <div className="p-4 px-14 lg:block hidden">
                 <Image
@@ -116,7 +116,7 @@ export default function Solution() {
                   UI/UX Design
                 </h3>
                 <Image
-                  className="mx-auto mt-[24px] w-[250px] h-auto"
+                  className="mx-auto mt-[24px] 2xl:w-[253px] xl:w-[233px] lg:w-[150px] h-auto"
                   src="/img-uiux.png"
                   alt="img-uiux"
                   width={258}
@@ -198,7 +198,7 @@ export default function Solution() {
                     Web Development
                   </h3>
                   <Image
-                    className="mx-auto mt-[24px]"
+                    className="mx-auto mt-[17px]"
                     src="/img-web.png"
                     alt=""
                     width={250}
@@ -225,7 +225,7 @@ export default function Solution() {
                     UI/UX Design
                   </h3>
                   <Image
-                    className="mx-auto mt-[24px]"
+                    className="mx-auto mt-[27px]"
                     src="/img-uiux.png"
                     alt=""
                     width={250}
